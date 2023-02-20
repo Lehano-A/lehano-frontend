@@ -1,0 +1,8 @@
+.header__main-monster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 120px;
+  width: 550px;
+}

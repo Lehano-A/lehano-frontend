@@ -1,0 +1,18 @@
+.page {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  min-width: 303px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #CDCECA, #ECEEDE, #FEFBEC, #c8cfcf);
+
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* div, img {
+  border: 1px black solid;
+}
+ */

@@ -1,0 +1,13 @@
+.header__welcome-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  color: #2d105f;
+  margin: 0 40px 0 0;
+}
+
+.header__welcome-box > span {
+  font-family: "Comfortaa-Bold";
+  font-size: 23px;
+  font-weight: 500;
+}

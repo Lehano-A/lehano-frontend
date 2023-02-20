@@ -1,0 +1,20 @@
+.header__welcome-button {
+  background-color: #FFC01A;
+  font-family: 'Comfortaa-Bold';
+  font-size: 23px;
+  border: none;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.15s ease-in-out;
+}
+
+.header__welcome-button:hover {
+  background-color: #fdcb4d;
+}
+
+.header__welcome-button:active {
+  transform: scale(0.98);
+}

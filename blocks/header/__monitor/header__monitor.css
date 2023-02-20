@@ -1,0 +1,9 @@
+.header__monitor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 23px;
+  margin: 0 auto;
+  width: 800px;
+  z-index: -100;
+}

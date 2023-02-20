@@ -1,0 +1,9 @@
+.header__monsters-box {
+  display: flex;
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 750px;
+  width: 1280px;
+  margin: 0 auto;
+}
