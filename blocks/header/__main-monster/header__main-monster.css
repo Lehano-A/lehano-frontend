@@ -5,4 +5,5 @@
   margin: 0 auto;
   top: 120px;
   width: 550px;
+  z-index: 2;
 }

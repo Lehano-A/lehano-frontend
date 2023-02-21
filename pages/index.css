@@ -3,7 +3,9 @@
 
 @import url("../blocks/page/page.css");
 
+
 @import url("../blocks/header/header.css");
+@import url("../blocks/header/__cover/header__cover.css");
 @import url("../blocks/header/__welcome-box/header__welcome-box.css");
 @import url("../blocks/header/__welcome-text/header__welcome-text.css");
 @import url("../blocks/header/__monsters-box/header__monsters-box.css");
@@ -23,6 +25,7 @@
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__path-list/header__path-list.css");
 
-@import url("../blocks/header/__button-next-block/header__button-next-block.css");
+@import url("../blocks/button-next-block/button-next-block.css");
+@import url("../blocks/link-next-block/link-next-block.css");
 
-
+@import url("../blocks/technologies/technologies.css");
