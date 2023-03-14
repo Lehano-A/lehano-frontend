@@ -3,21 +3,11 @@
 
 @import url("../blocks/page/page.css");
 
-
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__cover/header__cover.css");
 @import url("../blocks/header/__welcome-box/header__welcome-box.css");
 @import url("../blocks/header/__welcome-text/header__welcome-text.css");
 @import url("../blocks/header/__monsters-box/header__monsters-box.css");
-@import url("../blocks/header/__left-sea-green-monster/header__left-sea-green-monster.css");
-@import url("../blocks/header/__left-red-monster/header__left-red-monster.css");
-@import url("../blocks/header/__left-yellow-little-flying-monster/header__left-yellow-little-flying-monster.css");
-@import url("../blocks/header/__left-yellow-big-monster/header__left-yellow-big-monster.css");
-@import url("../blocks/header/__monitor/header__monitor.css");
-@import url("../blocks/header/__right-violet-monster/header__right-violet-monster.css");
-@import url("../blocks/header/__right-sea-green-monster/header__right-sea-green-monster.css");
-@import url("../blocks/header/__right-dark-blue-flying-monster/header__right-dark-blue-flying-monster.css");
-@import url("../blocks/header/__main-monster/header__main-monster.css");
 
 @import url("../blocks/header/__welcome-button/header__welcome-button.css");
 @import url("../blocks/header/__welcome-text-box/header__welcome-text-box.css");
