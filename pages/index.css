@@ -18,4 +18,6 @@
 @import url("../blocks/button-next-block/button-next-block.css");
 @import url("../blocks/link-next-block/link-next-block.css");
 
+@import url("../blocks/about/about.css");
+
 @import url("../blocks/technologies/technologies.css");
