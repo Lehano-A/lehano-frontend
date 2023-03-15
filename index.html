@@ -14,9 +14,10 @@
     <div class="header__cover">
       <nav>
         <ul class="header__path-list">
+          <li class="header__list-item"><a href="#about" class="header__link">О себе</a></li>
           <li class="header__list-item"><a href="#" class="header__link">Технологии</a></li>
           <li class="header__list-item"><a href="#" class="header__link">Работы</a></li>
-          <li class="header__list-item"><a href="#" class="header__link">О себе</a></li>
+
         </ul>
       </nav>
 
@@ -41,12 +42,37 @@
 
   <!-- НАЧАЛО MAIN -->
   <main class="main">
-    <section class="about">
+
+    <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
+    <section id="about">
       <h2 class="about__title">О себе</h2>
+
+      <div class="about__text-image-box">
+        <div>
+          <div class="about__text-box box-shadow">
+            <p class="text">Меня зовут - Алексей. Мне 33 года. Проживаю в городе Долгопрудный, Московской области.</p>
+            <p class="text">Я окончил курсы Яндекс.Практикума по профессии <span
+                class="text_bold">"Frontend-разработчик"</span> и <span class="text_bold">"Алгоритмы и структуры
+                данных"</span>.</p>
+
+            <p class="text">У меня есть опыт разработки нескольких учебных проектов с использованием
+              <abbr class="text__abbr text_bold" title="HyperText Markup Language">HTML</abbr>
+              <span class="text_bold">/</span>
+              <abbr class="text__abbr text_bold" title="Cascading Style Sheets">CSS</abbr><span class="text_bold"> /
+                JavaScript</span>
+              , и <abbr class="text__abbr text_bold" title="Single Page Application">SPA</abbr> построенное на
+              <span class="text_bold">React. </span>
+              Также имею базовые навыки в <span class="text_bold">Node.js</span>, <span class="text_bold">Git</span> и
+              других инструментах, необходимых для разработки.
+            </p>
+          </div>
+        </div>
+        <img class="about__image-about" src="./images/about.svg">
+      </div>
+
     </section>
-    <!-- <section class="technologies" id="tech">
-      <h2>Технологии</h2>
-    </section> -->
+    <!--  КОНЕЦ БЛОКА "О СЕБЕ" -->
+
   </main>
   <!-- КОНЕЦ MAIN -->
 

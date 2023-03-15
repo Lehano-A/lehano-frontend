@@ -4,6 +4,12 @@
 @import url("../blocks/page/page.css");
 @import url("../blocks/main/main.css");
 
+@import url("../blocks/mix/text/text.css");
+@import url("../blocks/mix/text/__abbr/text__abbr.css");
+@import url("../blocks/mix/text/_bold/text_bold.css");
+
+@import url("../blocks/mix/box-shadow/box-shadow.css");
+
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__cover/header__cover.css");
 @import url("../blocks/header/__welcome-box/header__welcome-box.css");
@@ -19,9 +25,9 @@
 @import url("../blocks/button-next-block/button-next-block.css");
 @import url("../blocks/link-next-block/link-next-block.css");
 
-
-
-@import url("../blocks/about/about.css");
+@import url("../blocks/about/__text-image-box/about__text-image-box.css");
 @import url("../blocks/about/__title/about__title.css");
+@import url("../blocks/about/__image-about/about__image-about.css");
+@import url("../blocks/about/__text-box/about__text-box.css");
 
 @import url("../blocks/technologies/technologies.css");
