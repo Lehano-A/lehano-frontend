@@ -1,0 +1,10 @@
+.tech__link {
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  animation-duration: ease-in-out;
+}
+
+.tech__link:hover {
+  transform: scale(1.2);
+}

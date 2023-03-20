@@ -1,0 +1,8 @@
+.tech__grid-card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 120px;
+  grid-auto-rows: 120px;
+  grid-gap: 10px;
+}

@@ -3,9 +3,13 @@
   display: flex;
   flex-direction: column;
   min-width: 303px;
-  font-family: 'Comfortaa-Regular';
+  font-family: "Comfortaa-Regular";
   margin: 0 auto;
   background: #f0f1f6;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* div, img, section, body, header {

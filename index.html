@@ -10,14 +10,13 @@
 <body class="page">
 
   <!-- HEADER НАЧАЛО -->
-  <header class="header">
+  <header class="header margin-block">
     <div class="header__cover">
       <nav>
         <ul class="header__path-list">
           <li class="header__list-item"><a href="#about" class="header__link">О себе</a></li>
-          <li class="header__list-item"><a href="#" class="header__link">Технологии</a></li>
+          <li class="header__list-item"><a href="#tech" class="header__link">Технологии</a></li>
           <li class="header__list-item"><a href="#" class="header__link">Работы</a></li>
-
         </ul>
       </nav>
 
@@ -31,7 +30,7 @@
       </div>
 
       <div class="header__monsters-box">
-        <img src="./images/monsters-at-the-monitor.svg">
+        <img src="/images/monsters-at-the-monitor.svg">
       </div>
 
       <!-- <a href="#tech" class="link-next-block"><button class="button-next-block" type="button"></button></a> -->
@@ -44,34 +43,285 @@
   <main class="main">
 
     <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
-    <section id="about">
-      <h2 class="about__title">О себе</h2>
+    <section class="margin-block" id="about">
 
-      <div class="about__text-image-box">
-        <div>
-          <div class="about__text-box box-shadow">
-            <p class="text">Меня зовут - Алексей. Мне 33 года. Проживаю в городе Долгопрудный, Московской области.</p>
-            <p class="text">Я окончил курсы Яндекс.Практикума по профессии <span
-                class="text_bold">"Frontend-разработчик"</span> и <span class="text_bold">"Алгоритмы и структуры
-                данных"</span>.</p>
-
-            <p class="text">У меня есть опыт разработки нескольких учебных проектов с использованием
-              <abbr class="text__abbr text_bold" title="HyperText Markup Language">HTML</abbr>
-              <span class="text_bold">/</span>
-              <abbr class="text__abbr text_bold" title="Cascading Style Sheets">CSS</abbr><span class="text_bold"> /
-                JavaScript</span>
-              , и <abbr class="text__abbr text_bold" title="Single Page Application">SPA</abbr> построенное на
-              <span class="text_bold">React. </span>
-              Также имею базовые навыки в <span class="text_bold">Node.js</span>, <span class="text_bold">Git</span> и
-              других инструментах, необходимых для разработки.
-            </p>
-          </div>
+      <div class="about__position-section">
+        <div class="about__title-box-margin">
+          <h2 class="section__title">О себе</h2>
+          <p class="section__subtitle section__subtitle_violet">пара слов - один абзац</p>
         </div>
-        <img class="about__image-about" src="./images/about.svg">
-      </div>
 
+        <div class="about__text-image-box">
+          <div>
+            <div class="about__text-box box-shadow">
+              <p class="text">Меня зовут - Алексей. Мне 33 года. Проживаю в городе Долгопрудный, Московской области.</p>
+              <p class="text">Я окончил курсы Яндекс.Практикума по профессии <span
+                  class="text_bold">"Frontend-разработчик"</span> и <span class="text_bold">"Алгоритмы и структуры
+                  данных"</span>.</p>
+
+              <p class="text">У меня есть опыт разработки нескольких учебных проектов с использованием
+                <abbr class="text_bold" title="HyperText Markup Language">HTML</abbr>
+                <span class="text_bold">/</span>
+                <abbr class="text_bold" title="Cascading Style Sheets">CSS</abbr><span class="text_bold"> /
+                  JavaScript</span>
+                , и <abbr class="text_bold" title="Single Page Application">SPA</abbr> построенное на
+                <span class="text_bold">React. </span>
+                Также имею базовые навыки в <span class="text_bold">Node.js</span>, <span class="text_bold">Git</span> и
+                других инструментах, необходимых для разработки веб-приложений и дизайна.
+              </p>
+            </div>
+          </div>
+          <img class="about__image-about" src="/images/about.svg">
+        </div>
+
+      </div>
     </section>
     <!--  КОНЕЦ БЛОКА "О СЕБЕ" -->
+
+
+    <!--  НАЧАЛО БЛОКА "ТЕХНОЛОГИИ" -->
+    <section class="tech margin-block" id="tech">
+
+      <div>
+        <h2 class="section__title">Технологии</h2>
+        <p class="section__subtitle section__subtitle_orange">которые использую в разработке</p>
+      </div>
+
+      <!-- КОРОБКА ДЛЯ ИЗОБРАЖЕНИЯ БЛОКА И СПИСКА КАРТОЧЕК -->
+      <div class="tech__image-grid-box">
+        <img class="tech__image-tech " src="/images/tech.svg">
+
+        <!-- СПИСОК-ГРИД ИЗ КАРТОЧЕК -->
+        <ul class="tech__grid-list">
+
+
+          <!--  ЯЗЫКИ -->
+          <li class="tech__list-item tech__list-item-language">
+            <h3 class="tech__list-title">Языки</h3>
+
+            <div class="tech__grid-card">
+
+              <!-- HTML -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/html5.svg"
+                    alt="Изображение оранжевого щита, на котором нарисована цифра '5'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">HTML</figcaption>
+              </figure>
+
+              <!-- CSS -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/css3.svg"
+                    alt="Изображение синего щита, на котором нарисована цифра '3'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">CSS</figcaption>
+              </figure>
+
+              <!-- JS -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/javascript.svg"
+                    alt="Изображение жёлтого квадрата, в нижнем левом углу которого, написаны буквы 'JS', высота шрифта - в половину квадрата.">
+                </a>
+                <figcaption class="tech__card-description text_bold">JavaScript</figcaption>
+              </figure>
+
+            </div>
+          </li>
+
+
+          <!-- ФРЕЙМВОРКИ -->
+          <li class="tech__list-item tech__list-item-framework">
+            <h3 class="tech__list-title">Фреймворки</h3>
+
+            <div class="tech__grid-card">
+
+              <!-- React -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://ru.reactjs.org/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/react.svg"
+                    alt="Изображение голубого круга, по двум диагоналям и экватору которого, нарисованы три голубые проходящие сплошные орбиты.">
+                </a>
+                <figcaption class="tech__card-description text_bold">React</figcaption>
+              </figure>
+
+              <!-- Express -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/express.svg"
+                    alt="Изображение слова 'express' чёрным цветом и тонким шрифтом.">
+                </a>
+                <figcaption class="tech__card-description text_bold">express</figcaption>
+              </figure>
+
+            </div>
+          </li>
+
+
+          <!-- БАЗА ДАННЫХ -->
+          <li class="tech__list-item tech__list-item-data-base">
+            <h3 class="tech__list-title">База данных</h3>
+
+            <div class="tech__grid-card">
+
+              <!-- MongoDB -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+                  <img style="width: 70px;" class="tech__logo" src="/images/tech-logo/mongodb.svg"
+                    alt="Изображение зелёного листочка от дерева, который стоит вертикально верхней частью к нам, а справа от него, сразу идёт название 'mongoDB', где 'mongo' - тёмно-коричневого цвета, а 'DB' - светло-коричневого.">
+                </a>
+                <figcaption class="tech__card-description text_bold">mongoDB</figcaption>
+              </figure>
+            </div>
+          </li>
+
+
+          <!-- ИНСТРУМЕНТЫ -->
+          <li class="tech__list-item tech__list-item-tool">
+            <h3 class="tech__list-title">Инструменты</h3>
+
+            <div class="tech__grid-card">
+
+              <!-- Node.js -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://nodejs.org/en/docs" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/nodejs.svg"
+                    alt="Изображение слова 'node', каждая буква которого имеет вид соты. Буква 'o' зелёного цвета, остальные - чёрного. Под словом 'node' по центру, расположена одна сота зелёного цвета, изображённая в виде обведённого края толщиной в несколько пикселей, а внутри написаны буквы 'js' - тоже зелёного цвета.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Node.js</figcaption>
+              </figure>
+
+              <!-- GitBash -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://gitforwindows.org/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/gitbash.svg"
+                    alt="Изображение квадрата, который поставили на угол. Квадрат разделён на 4 небольших квадрата. Нижний квадрат - это тот, на котором стоит основной большой квадрат, - жёлтого цвета, левее квадрат - синего цвета, правее квадрат - зелёного цвета, верний квадрат - красного цвета. Между квадратами есть узкий белый промежуток, который выглядит как буква 'x'. В верхнем красном квадрате, почти с левой его середины начиная с края, нарисован отрезок белого цвета, который заканчивается белым кругом почти у нижней части этого же красного квадрата. От круга из красного квадрата, вертикально вниз опускается отрезок, который заходит на жёлтый квадрат и заканчивается кругом почти на середине жёлтого квадрата. И снова от круга в красном квадрате нарисован отрезок, который заходит в зелёный квадрат и заканчивается кругом, который располагается недалеко от левого угла зелёного квадрата. Толщина отрезков примерно - 5 пикселей, а диаметр кружков примерно - 10 пикселей.">
+                </a>
+                <figcaption class="tech__card-description text_bold">GitBash</figcaption>
+              </figure>
+
+              <!-- GitHub -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://github.com/Lehano-A" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/github.svg"
+                    alt="Изображение чёрного круга, внутри которого, белым цветом нарисован облик воображаемого человечка, который одет в костюм, голова которого напоминает кошачью с длинными двумя усами с каждой стороны. А нижняя часть костюма - это пять щупалец осьминога. Человечек стоит на четырёх щупальцах, а крайняя левая щупальца поднята и отведена в левую сторону с исполнением жеста в виде приветствия.">
+                </a>
+                <figcaption class="tech__card-description text_bold">GitHub</figcaption>
+              </figure>
+
+              <!-- Styled components -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/styled-components.svg"
+                    alt="Изображение белого квадрата, края которого обведены чёрным цветом шириной в пару пикселей. Внутри квадрата, в верхней его части, чёрным цветом нарисованы символы <>, внутри которых вставлен эмодзи изображающий женскую руку с покраской лаком её ногтей. В нижней части квадрата, черным цветом написаны в колонку два слова - 'styled components'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">styled components</figcaption>
+              </figure>
+
+              <!-- MUI -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://mui.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/mui.svg"
+                    alt="Изображение трёх букв 'Mui' в сине-голубых цветах.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Material UI</figcaption>
+              </figure>
+
+              <!-- NPM -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/npm.svg"
+                    alt="Изображение трёх букв 'npm' в белом цвете, края которого обведены тёмно-кирпичным цветом шириной примерно 10 пикселей.">
+                </a>
+                <figcaption class="tech__card-description text_bold">npm</figcaption>
+              </figure>
+
+              <!-- Postman -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.postman.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/postman.svg"
+                    alt="Изображение оранжевого круга, внутри которого белым цветом нарисован человечек со стороны напоминающий супермена. Человечек изображён в рост и в профиль, руки его по швам, он вытянут, голова находится в верхней правой части круга, а ноги - в левой нижней, таким образом человечек вытянут внутри круга, тем самым изображая суперменский полёт вверх по диагонали.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Postman</figcaption>
+              </figure>
+
+              <!-- Figma -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/figma.svg"
+                    alt="Изображение пяти кругообразных разноцветных фигур, находящиеся вплотную друг к дружке стоя вертикально. В самом низу располагается кругообразная фигура зелёного цвета, правая верхная часть которого сходится в 90 градусов. Выше находится полуовал, правая сторона которого полностью вертикальная, а нижняя и верхняя - прямые, левая соответственно - закруглена. Выше располагается точно такой же полуовал красного цвета. Правее находится точно такая же фигура лососевого цвета, но в зеркальном отражении. Красная и лососевая фигуры образуют единую фигуру - овал, а точнее фигуру, которая точно похожа на капсулу какого-нибудь лекарства, верхняя и нижняя стороны которой - прямые. Под лососевой фигурой располагается голубой круг.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Figma</figcaption>
+              </figure>
+
+              <!-- Mongoose -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://mongoosejs.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/mongoose.svg"
+                    alt="Изображение в профиль облик тёмно-кирпичного цвета головы и шеи мангуста, голова которого направлена вправо. В нижней части изображения написана белым цветом жирная буква 'M'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">mongoose</figcaption>
+              </figure>
+
+              <!-- Visual Studio Code -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/vscode.svg"
+                    alt="Изображение абстрактного вида, напоминающая толовище и перекрещенные руки человека - вид сверху. Нарисована голубым цветом узкая трапеция, которая стоит вертикально на своём углу, короткой стороной повернувшись вправо. На длинной стороне трапеции, тёмно-синим нарисованы трапецивидные вытянутые фигуры, которые исходят из верхнего и нижнего угла по диагоналям. Верхняя фигура направлена - вниз по диагонали, а нижняя фигура - вверх, тем самым образуя перекрестие.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Visual Studio Code</figcaption>
+              </figure>
+            </div>
+          </li>
+
+
+          <!-- ГРАФИКА -->
+          <li class="tech__list-item tech__list-item-graphic">
+            <h3 class="tech__list-title">Графика</h3>
+
+            <div class="tech__grid-card">
+
+              <!-- Photoshop -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.adobe.com/ru/products/photoshop.html" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/photoshop.svg"
+                    alt="Изображение квадрата тёмно-синего цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы голубым цветом - 'Ps'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Photoshop</figcaption>
+              </figure>
+
+              <!-- Illustrator -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.adobe.com/ru/products/illustrator.html" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/illustrator.svg"
+                    alt="Изображение квадрата тёмно-кирпичного цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы светло-оранжевым цветом - 'Ai'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">Illustrator</figcaption>
+              </figure>
+
+              <!-- After Effects -->
+              <figure class="tech__card">
+                <a class="tech__link" href="https://www.adobe.com/ru/products/aftereffects.html" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="tech__logo" src="/images/tech-logo/after-effects.svg" alt="Изображение квадрата тёмно-сиреневого цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы сиреневым цветом - 'Ae'.">
+                </a>
+                <figcaption class="tech__card-description text_bold">After Effects</figcaption>
+              </figure>
+
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <!--  КОНЕЦ БЛОКА "ТЕХНОЛОГИИ" -->
 
   </main>
   <!-- КОНЕЦ MAIN -->

@@ -1,0 +1,4 @@
+.tech__list-item-language {
+  grid-column: language;
+  grid-row: language;
+}

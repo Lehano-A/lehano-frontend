@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Comfortaa-Regular";
   font-style: normal;
-  font-weight: 400;
   src: url("./Comfortaa-Regular.woff2") format("woff2"),
     url("./Comfortaa-Regular.woff") format("woff");
 }
@@ -9,7 +8,6 @@
 @font-face {
   font-family: "Comfortaa-Bold";
   font-style: normal;
-  font-weight: 500;
   src: url("./Comfortaa-Bold.woff2") format("woff2"),
     url("./Comfortaa-Bold.woff") format("woff");
 }

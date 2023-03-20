@@ -1,4 +1,11 @@
 .header {
-  background: linear-gradient(to bottom, #cdceca, #eceede, #fefbec, #c8cfcf, #f0f1f6 99%);
+  background: linear-gradient(
+    to bottom,
+    #cdceca,
+    #eceede,
+    #fefbec,
+    #c8cfcf,
+    #f0f1f6 99%
+  );
   background-repeat: no-repeat;
 }

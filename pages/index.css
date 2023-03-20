@@ -1,14 +1,19 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 
+@import url("../common/text/text.css");
+@import url("../common/text/_bold/text_bold.css");
+@import url("../common/margin-block/margin-block.css");
+
+@import url("../common/section/__title/section__title.css");
+@import url("../common/section/__subtitle/section__subtitle.css");
+@import url("../common/section/__subtitle/_violet/section__subtitle_violet.css");
+@import url("../common/section/__subtitle/_orange/section__subtitle_orange.css");
+
 @import url("../blocks/page/page.css");
 @import url("../blocks/main/main.css");
 
-@import url("../blocks/mix/text/text.css");
-@import url("../blocks/mix/text/__abbr/text__abbr.css");
-@import url("../blocks/mix/text/_bold/text_bold.css");
-
-@import url("../blocks/mix/box-shadow/box-shadow.css");
+@import url("../blocks/common/box-shadow/box-shadow.css");
 
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__cover/header__cover.css");
@@ -25,9 +30,26 @@
 @import url("../blocks/button-next-block/button-next-block.css");
 @import url("../blocks/link-next-block/link-next-block.css");
 
+@import url("../blocks/about/__position-section/about__position-section.css");
 @import url("../blocks/about/__text-image-box/about__text-image-box.css");
-@import url("../blocks/about/__title/about__title.css");
 @import url("../blocks/about/__image-about/about__image-about.css");
 @import url("../blocks/about/__text-box/about__text-box.css");
+@import url("../blocks/about/__title-box-margin/about__title-box-margin.css");
 
-@import url("../blocks/technologies/technologies.css");
+@import url("../blocks/tech/tech.css");
+@import url("../blocks/tech/__grid-list/tech__grid-list.css");
+@import url("../blocks/tech/__link/tech__link.css");
+@import url("../blocks/tech/__image-grid-box/tech__image-grid-box.css");
+@import url("../blocks/tech/__image-tech/tech__image-tech.css");
+@import url("../blocks/tech/__logo/tech__logo.css");
+@import url("../blocks/tech/__grid-card/tech__grid-card.css");
+@import url("../blocks/tech/__card/tech__card.css");
+@import url("../blocks/tech/__card-description/tech__card-description.css");
+@import url("../blocks/tech/__list-title/tech__list-title.css");
+@import url("../blocks/tech/__list-item/tech__list-item.css");
+@import url("../blocks/tech/__list-item-language/tech__list-item-language.css");
+@import url("../blocks/tech/__list-item-framework/tech__list-item-framework.css");
+@import url("../blocks/tech/__list-item-data-base/tech__list-item-data-base.css");
+@import url("../blocks/tech/__list-item-tool/tech__list-item-tool.css");
+@import url("../blocks/tech/__list-item-graphic/tech__list-item-graphic.css");
+
