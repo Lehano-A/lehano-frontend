@@ -1,0 +1,9 @@
+.about__box {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+}

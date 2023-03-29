@@ -1,3 +1,4 @@
-.section__subtitle{
+.section__subtitle {
   margin: 0;
+  white-space: nowrap;
 }

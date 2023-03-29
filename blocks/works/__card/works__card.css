@@ -1,0 +1,12 @@
+.works__card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 150px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.works__card:hover .works__cover-card {
+  opacity: 100;
+}

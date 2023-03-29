@@ -1,5 +1,6 @@
 .about__position-section {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
+  z-index: 1;
 }

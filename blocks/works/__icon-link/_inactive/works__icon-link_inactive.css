@@ -1,0 +1,8 @@
+.works__icon-link_inactive {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.works__icon-link_inactive:hover {
+  opacity: 0.3;
+}

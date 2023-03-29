@@ -2,7 +2,7 @@
   display: grid;
   justify-items: start;
   align-items: start;
-  grid-template-columns: auto;
+  grid-template-columns: minmax(auto-fit, 380px);
   grid-template-rows: auto;
   grid-template-areas:
     "language framework data-base"

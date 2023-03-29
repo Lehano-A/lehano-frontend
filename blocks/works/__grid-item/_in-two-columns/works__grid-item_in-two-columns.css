@@ -1,0 +1,3 @@
+.works__grid-item_in-two-columns {
+  grid-column: span 2;
+}
