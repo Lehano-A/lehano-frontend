@@ -1,0 +1,21 @@
+.works__button-block-coffee {
+  position: relative;
+  bottom: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+}
+
+.works__button-block-coffee::before {
+  content: "";
+  background-image: url("./../../../images/icons/upside-down-face.svg");
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}

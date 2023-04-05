@@ -5,7 +5,8 @@
   min-width: 303px;
   font-family: "Comfortaa-Regular";
   margin: 0 auto;
-  /* background: #f0f1f6; */
+  position: relative;
+ 
 }
 
 html {

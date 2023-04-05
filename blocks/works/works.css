@@ -1,9 +1,9 @@
 .works {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
   position: relative;
-  justify-content: center;
 }
 
 .works::before {
@@ -14,7 +14,8 @@
   transform: translate(-50%, -50px);
   background-image: url("./../../../images/backgrounds/bg-works.svg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  padding: 0 0 175px 0;
+  padding: 0 0 170px 0;
 }

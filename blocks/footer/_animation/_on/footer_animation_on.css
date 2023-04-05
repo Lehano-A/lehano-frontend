@@ -1,0 +1,13 @@
+.footer_animation_on {
+  animation: move-bottom-block-footer 0.7s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-bottom-block-footer {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -1034px;
+  }
+}
