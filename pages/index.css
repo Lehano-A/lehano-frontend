@@ -1,6 +1,7 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 
+
 @import url("../common/text/text.css");
 @import url("../common/text/_bold/text_bold.css");
 @import url("../common/margin-block/margin-block.css");
@@ -119,3 +120,8 @@
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/_animation/_off/footer_animation_off.css");
 @import url("../blocks/footer/_animation/_on/footer_animation_on.css");
+@import url("../blocks/footer/__contacts/footer__contacts.css");
+@import url("../blocks/footer/__list-contacts/footer__list-contacts.css");
+@import url("../blocks/footer/__icon-item-list/footer__icon-item-list.css");
+@import url("../blocks/footer/__list-item/footer__list-item.css");
+@import url("../blocks/footer/__link-contacts/footer__link-contacts.css");

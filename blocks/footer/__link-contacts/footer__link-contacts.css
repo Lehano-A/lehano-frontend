@@ -1,0 +1,17 @@
+.footer__link-contacts {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__link-contacts:hover {
+  scale: 0.9;
+}
+
+.footer__link-contacts:visited {
+  color: #fff;
+}
+
+.footer__link-contacts:active {
+  color: #fff;
+}
+

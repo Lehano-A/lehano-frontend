@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .works::before {
@@ -12,7 +13,7 @@
   top: -50px;
   left: 50%;
   transform: translate(-50%, -50px);
-  background-image: url("./../../../images/backgrounds/bg-works.svg");
+  background-image: url("./../../images/backgrounds/bg-works.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
