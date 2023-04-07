@@ -17,6 +17,7 @@
           <li class="header__list-item"><a href="#about" class="header__link">О себе</a></li>
           <li class="header__list-item"><a href="#tech" class="header__link">Технологии</a></li>
           <li class="header__list-item"><a href="#works" class="header__link">Работы</a></li>
+          <li class="header__list-item"><a href="#secret" class="header__link">Секрет</a></li>
         </ul>
       </nav>
 
@@ -48,7 +49,7 @@
       <div class="about__box">
 
         <div class="about__position-section">
-          <div class="about__title-box-margin">
+          <div class="section__title-subtitle-box about__title-box-margin">
             <h2 class="section__title">О себе</h2>
             <p class="section__subtitle section__subtitle_color_purple">пара слов - один абзац</p>
           </div>
@@ -88,7 +89,7 @@
     <!--  НАЧАЛО БЛОКА "ТЕХНОЛОГИИ" -->
     <section class="tech margin-block" id="tech">
 
-      <div>
+      <div class="section__title-subtitle-box">
         <h2 class="section__title">Технологии</h2>
         <p class="section__subtitle section__subtitle_color_orange">которые использую в разработке</p>
       </div>
@@ -360,13 +361,15 @@
 
 
     <!--  НАЧАЛО БЛОКА "РАБОТЫ" -->
-    <section class="works margin-block" id="works">
+    <section class="works margin-block">
 
       <div class="works__title-grid-box">
 
         <div class="section__title-subtitle-box">
-          <h2 class="section__title">Работы</h2>
-          <p class="section__subtitle section__subtitle_color_scarlet">выполненные с ❤️</p>
+          <h2 class="section__title" id="works">Работы</h2>
+          <div>
+            <p class="section__subtitle section__subtitle_color_scarlet">выполненные с ❤️</p>
+          </div>
         </div>
 
         <!-- ------------------------------- Pet-проекты ------------------------------- -->
@@ -766,46 +769,70 @@
           </ul>
         </div>
       </div>
-      <button class="works__button-block-coffee"></button>
+      <button class="works__button-block-secret" id="secret"></button>
     </section>
     <!--  КОНЕЦ БЛОКА "РАБОТЫ" -->
 
 
-    <!-- НАЧАЛО БЛОКА "COFFEE" -->
-    <section class="coffee">
+    <!-- НАЧАЛО БЛОКА "SECRET" -->
+    <section class="secret">
+      <div class="secret__common-box">
 
-      <div>
-        <div class="section__title-subtitle-box">
-          <h2 class="section__title">Кофе</h2>
-          <p class="section__subtitle section__subtitle_color_beige">много не бывает 🤎</p>
-        </div>
+        <!--  <button class="secret__button-refresh" type="button">
+          <img class="secret__icon-button" src="./images/icons/refresh.svg"
+            alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги.">
+        </button> -->
 
-        <div class="coffee__text-box">
-          <p>Вот что может произойти, если пренебрегать употреблением достаточного количества кофе
-          </p>
-          <p>Основано на реальных событиях</p>
-        </div>
-      </div>
+        <div class="secret__title-subtitle-text-box">
+          <div class="section__title-subtitle-box">
 
-      <div class="coffee__text-before-after-slider">
-        <p class="coffee__slider-text-start">норма</p>
+            <div class="secret__title-button-box">
+              <h2 class="section__title">Кофе</h2>
 
-        <!-- НАЧАЛО "БЫЛО/СТАЛО" -->
-        <div class="coffee__before-after-slider-box">
-          <div class="coffee__before-after-box">
-            <div class="coffee__image-after-box">
-              <img class="coffee__image-after" src="./images/blocks/coffee/fine-app.svg">
             </div>
-            <input class=" coffee__button-slider" type="range" min="0" max="100" value="100">
+
+            <div>
+              <p class="section__subtitle section__subtitle_color_beige">много не бывает <span
+                  id="secret-icon">🤎</span>
+              </p>
+              <button class="secret__button-refresh" type="button">
+                <img class="secret__icon-button" src="./images/icons/refresh.svg"
+                  alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги.">
+              </button>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="secret__text-box">
+            <p>Вот что может произойти, если пренебрегать употреблением достаточного количества <span
+                id="secret-word">кофе</span>
+            </p>
+            <p>Основано на реальных событиях</p>
           </div>
         </div>
-        <!-- КОНЕЦ "БЫЛО/СТАЛО" -->
 
-        <p class="coffee__slider-text-end">недостаточно</p>
+        <div class="secret__text-before-after-slider">
+          <p class="secret__slider-text-start">норма</p>
+
+          <!-- НАЧАЛО "БЫЛО/СТАЛО" -->
+          <div class="secret__before-after-slider-box">
+            <div class="secret__before-after-box">
+              <div class="secret__image-after-box">
+                <img class="secret__image-after" src="./images/blocks/secret/fine-app.svg">
+              </div>
+              <input class=" secret__button-slider" type="range" min="0" max="100" value="100">
+            </div>
+          </div>
+          <!-- КОНЕЦ "БЫЛО/СТАЛО" -->
+
+          <p class="secret__slider-text-end">недостаточно</p>
+        </div>
       </div>
-
     </section>
-    <!-- КОНЕЦ БЛОКА "COFFEE" -->
+    <!-- КОНЕЦ БЛОКА "SECRET" -->
 
   </main>
   <!-- КОНЕЦ MAIN -->
@@ -832,9 +859,9 @@
   </footer>
   <!-- FOOTER - КОНЕЦ -->
 
-  <script type="module" src="./blocks/works/__button-block-coffee/works__button-block-coffee.js"></script>
-  <script type="module" src="./blocks/coffee/__button-slider/coffee__button-slider.js"></script>
-
+  <script type="module" src="./blocks/works/__button-block-secret/works__button-block-secret.js"></script>
+  <script type="module" src="./blocks/secret/__button-slider/secret__button-slider.js"></script>
+  <script type="module" src="./blocks/secret/__button-refresh/secret__button-refresh.js"></script>
 </body>
 
 </html>
