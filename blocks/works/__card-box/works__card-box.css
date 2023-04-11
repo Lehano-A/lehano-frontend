@@ -1,9 +1,0 @@
-.works__card-box {
-  display: flex;
-  max-width: 370px;
-  width: 100%;
-}
-
-.works__card-box:not(:last-of-type) {
-  margin: 0 20px 0 0;
-}

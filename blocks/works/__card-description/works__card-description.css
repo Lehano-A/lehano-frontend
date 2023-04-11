@@ -1,8 +1,0 @@
-.works__card-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 300px;
-  padding: 0 15px;
-}
