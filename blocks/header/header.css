@@ -1,6 +1,6 @@
 .header {
-    background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);
-    position: relative;
+  background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);
+  position: relative;
 }
 
 .header::before {
@@ -8,7 +8,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url("./../../../images/backgrounds/bg-header.svg");
+  background-image: url("./../../images/backgrounds/bg-header.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;

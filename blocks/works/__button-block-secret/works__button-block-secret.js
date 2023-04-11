@@ -49,3 +49,5 @@ function setTimerAnimating() {
     isAnimating = false;
   }, 700);
 }
+
+export { blockSecret };

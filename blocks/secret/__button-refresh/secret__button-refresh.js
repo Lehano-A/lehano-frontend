@@ -1,4 +1,6 @@
-const blockSecret = document.querySelector('.secret');
+import { blockSecret } from './../../works/__button-block-secret/works__button-block-secret';
+
+// const blockSecret = document.querySelector('.secret');
 const buttonRefresh = blockSecret.querySelector('.secret__button-refresh');
 
 const secretWords = [
