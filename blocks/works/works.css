@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  background-color: #fff;
 }
 
 .works::before {

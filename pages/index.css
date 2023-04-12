@@ -38,7 +38,11 @@
 @import url("../blocks/about/__position-section/about__position-section.css");
 @import url("../blocks/about/__text-image-box/about__text-image-box.css");
 @import url("../blocks/about/__image-character/about__image-character.css");
+@import url("../blocks/about/__main-text-box/about__main-text-box.css");
 @import url("../blocks/about/__text-box/about__text-box.css");
+@import url("../blocks/about/__text-box/_width-1/about__text-box_width-1.css");
+@import url("../blocks/about/__text-box/_width-2/about__text-box_width-2.css");
+@import url("../blocks/about/__text-box/_width-3/about__text-box_width-3.css");
 @import url("../blocks/about/__title-box-margin/about__title-box-margin.css");
 
 /* ------------------------------- ТЕХНОЛОГИИ ------------------------------- */
