@@ -10,7 +10,7 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, '../docs')
   },
 
   module: {
@@ -53,7 +53,7 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['../docs/*', '!../docs/CNAME'], dangerouslyAllowCleanPatternsOutsideProject: true, dry: false }),
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',
