@@ -3,7 +3,7 @@
 
 @import url("../common/text/text.css");
 @import url("../common/text/_bold/text_bold.css");
-@import url("../common/margin-block/margin-block.css");
+@import url("../common/margin-section/margin-section.css");
 @import url("../common/box-shadow/box-shadow.css");
 @import url("../common/section/__title-subtitle-box/section__title-subtitle-box.css");
 @import url("../common/section/__title/section__title.css");
