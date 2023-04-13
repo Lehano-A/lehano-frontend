@@ -1,4 +1,22 @@
 .header__link {
   text-decoration: none;
   color: #2d105f;
+  position: relative;
+  z-index: 0;
+}
+
+.header__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #fdcb4d;
+  transition: width 0.35s ease-out;
+  z-index: -1;
+}
+
+.header__link:hover::after {
+  width: 100%;
 }
