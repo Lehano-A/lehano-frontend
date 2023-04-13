@@ -8,6 +8,8 @@
   flex-direction: row-reverse;
 }
 
-.works__list-item:nth-child(2) {
-  grid-column-end: span 2;
+@media (max-width: 1279px) {
+  .works__grid {
+    grid-template-columns: repeat(2, 370px);
+  }
 }

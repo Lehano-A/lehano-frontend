@@ -1,3 +1,9 @@
 .works__grid-item_in-two-columns {
   grid-column: span 2;
 }
+
+@media (max-width: 1279px) {
+  .works__grid-item_in-two-columns {
+    grid-column: 2;
+  }
+}
