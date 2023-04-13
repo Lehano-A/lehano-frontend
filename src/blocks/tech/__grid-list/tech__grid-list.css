@@ -2,7 +2,7 @@
   display: grid;
   justify-items: start;
   align-items: start;
-  grid-template-columns: minmax(auto-fit, 380px);
+  grid-template-columns: minmax(min-content, 380px);
   grid-template-rows: auto;
   grid-template-areas:
     "language framework data-base"
@@ -10,4 +10,13 @@
   grid-column-gap: 70px;
   grid-row-gap: 40px;
   padding: 0;
+}
+
+@media (max-width: 1149px) {
+  .tech__grid-list {
+    grid-template-areas:
+      "language framework"
+      "data-base   ."
+      "tool     graphic";
+  }
 }

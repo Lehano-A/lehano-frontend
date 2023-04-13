@@ -20,3 +20,9 @@
   opacity: 20%;
   z-index: -100;
 }
+
+@media (max-width: 1149px) {
+  .tech::before {
+    top: 280px;
+  }
+}
