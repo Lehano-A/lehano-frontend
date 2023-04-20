@@ -11,7 +11,7 @@
 
   <!-- HEADER НАЧАЛО -->
   <header class="header">
-    <div class="header__cover">
+    <div class="header__common-box">
       <nav>
         <ul class="header__path-list">
           <li class="header__list-item"><a href="#about" class="header__link">О себе</a></li>
@@ -31,9 +31,7 @@
         </div>
       </div>
 
-      <div class="header__monsters-box">
-        <img src="./images/monsters-at-the-monitor.svg">
-      </div>
+      <img class="header__main-image" src="./images/monsters-at-the-monitor.svg">
 
     </div>
   </header>
@@ -44,14 +42,16 @@
   <main class="main">
 
     <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
-    <section class="about" id="about">
+    <section class="about margin-section" id="about">
 
       <div class="about__box">
 
         <div class="about__position-section">
-          <div class="section__title-subtitle-box about__title-box-margin">
+          <div class="section__title-subtitle-box">
             <h2 class="section__title">О себе</h2>
-            <p class="section__subtitle section__subtitle_color_purple">пара слов - один абзац</p>
+            <div>
+              <p class="section__subtitle section__subtitle_color_purple">пара слов - один абзац</p>
+            </div>
           </div>
 
           <div class="about__text-image-box">
@@ -99,7 +99,9 @@
 
       <div class="section__title-subtitle-box">
         <h2 class="section__title">Технологии</h2>
-        <p class="section__subtitle section__subtitle_color_orange">которые использую в разработке</p>
+        <div>
+          <p class="section__subtitle section__subtitle_color_orange">которые использую в разработке</p>
+        </div>
       </div>
 
       <!-- КОРОБКА ДЛЯ ИЗОБРАЖЕНИЯ БЛОКА И СПИСКА КАРТОЧЕК -->
@@ -190,35 +192,6 @@
                     alt="Логотип базы данных 'mongoDB'. Изображение зелёного листочка от дерева, который стоит вертикально верхней частью к нам, а справа от него, сразу идёт название 'mongoDB', где 'mongo' - тёмно-коричневого цвета, а 'DB' - светло-коричневого.">
                 </a>
                 <figcaption class="tech__card-description text_bold">mongoDB</figcaption>
-              </figure>
-
-              <!-- JS -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/javascript.svg"
-                    alt="Логотип базы данных 'mongoDB'. Изображение жёлтого квадрата, в нижнем правом углу которого, написаны буквы 'JS', высота шрифта - в половину квадрата.">
-                </a>
-                <figcaption class="tech__card-description text_bold">JavaScript</figcaption>
-              </figure>
-              <!-- JS -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/javascript.svg"
-                    alt="Изображение жёлтого квадрата, в нижнем левом углу которого, написаны буквы 'JS', высота шрифта - в половину квадрата.">
-                </a>
-                <figcaption class="tech__card-description text_bold">JavaScript</figcaption>
-              </figure>
-
-              <!-- JS -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/javascript.svg"
-                    alt="Изображение жёлтого квадрата, в нижнем левом углу которого, написаны буквы 'JS', высота шрифта - в половину квадрата.">
-                </a>
-                <figcaption class="tech__card-description text_bold">JavaScript</figcaption>
               </figure>
             </div>
           </li>
@@ -808,20 +781,17 @@
 
         <div class="secret__title-subtitle-text-box">
 
+          <button class="secret__button-refresh" type="button">
+            <img class="secret__icon-button" src="./images/icons/refresh.svg"
+              alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги.">
+          </button>
+
           <div class="section__title-subtitle-box">
-            <div class="secret__title-button-box">
-              <h2 class="section__title">Кофе</h2>
-
-            </div>
-
+            <h2 class="section__title">Кофе</h2>
             <div>
               <p class="section__subtitle section__subtitle_color_beige">много не бывает <span
                   id="secret-icon">🤎</span>
               </p>
-              <button class="secret__button-refresh" type="button">
-                <img class="secret__icon-button" src="./images/icons/refresh.svg"
-                  alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги.">
-              </button>
             </div>
           </div>
 
@@ -834,7 +804,7 @@
           </div>
         </div>
 
-        <div class="secret__text-before-after-slider">
+        <div class="secret__text-before-after-slider-box">
           <p class="secret__slider-text-start">норма</p>
 
           <!-- НАЧАЛО "БЫЛО/СТАЛО" -->
@@ -857,20 +827,29 @@
   </main>
   <!-- КОНЕЦ MAIN -->
 
+
   <!-- FOOTER - НАЧАЛО -->
   <footer class="footer" id="footer">
     <div class="footer__contacts">
       <ul class="footer__list-contacts">
-        <li class="footer__list-item"><img class="footer__icon-item-list" title="Telegram"
+        <li class="footer__list-item">
+          <img class="footer__icon-item-list" title="Telegram"
             alt="Логотип 'Telegram' в виде бумажного самолётика, который устремлён носом в правый верхний угол"
-            src="./images/icons/telegram-white.svg">lehano</a></li>
-        <li class="footer__list-item"><img class="footer__icon-item-list" title="Email" alt="Иконка закрытого конверта"
-            src="./images/icons/email-white.svg">hello@lehano.ru</li>
+            src="./images/icons/telegram-white.svg"> lehano
+        </li>
+
+        <li class="footer__list-item">
+          <img class="footer__icon-item-list" title="Email" alt="Иконка закрытого конверта"
+            src="./images/icons/email-white.svg"> hello@lehano.ru
+        </li>
+
         <li class="footer__list-item">
           <img class="footer__icon-item-list"
             alt="Логотип сервиса контроля версий кода 'GitHub'. Изображение чёрного круга, внутри которого, белым цветом нарисован облик воображаемого человечка, который одет в костюм, голова которого напоминает кошачью с длинными двумя усами с каждой стороны. А нижняя часть костюма - это пять щупалец осьминога. Человечек стоит на четырёх щупальцах, а крайняя левая щупальца поднята и отведена в левую сторону с исполнением жеста в виде приветствия."
-            title="GitHub" src="./images/icons/github-white.svg"><a class="footer__link-contacts"
-            href="https://github.com/Lehano-A" target="_blank" rel="noopener noreferrer">Lehano-A</a>
+            title="GitHub" src="./images/icons/github-white.svg">
+          <a class="footer__link-contacts" href="https://github.com/Lehano-A" target="_blank" rel="noopener noreferrer">
+            Lehano-A
+          </a>
         </li>
       </ul>
     </div>

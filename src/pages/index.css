@@ -19,10 +19,10 @@
 
 /* --------------------------------- HEADER --------------------------------- */
 @import url("../blocks/header/header.css");
-@import url("../blocks/header/__cover/header__cover.css");
+@import url("../blocks/header/__common-box/header__common-box.css");
 @import url("../blocks/header/__welcome-box/header__welcome-box.css");
 @import url("../blocks/header/__welcome-text/header__welcome-text.css");
-@import url("../blocks/header/__monsters-box/header__monsters-box.css");
+@import url("../blocks/header/__main-image/header__main-image.css");
 @import url("../blocks/header/__welcome-button/header__welcome-button.css");
 @import url("../blocks/header/__welcome-text-box/header__welcome-text-box.css");
 @import url("../blocks/header/__list-item/header__list-item.css");
@@ -43,7 +43,6 @@
 @import url("../blocks/about/__text-box/_width-1/about__text-box_width-1.css");
 @import url("../blocks/about/__text-box/_width-2/about__text-box_width-2.css");
 @import url("../blocks/about/__text-box/_width-3/about__text-box_width-3.css");
-@import url("../blocks/about/__title-box-margin/about__title-box-margin.css");
 
 /* ------------------------------- ТЕХНОЛОГИИ ------------------------------- */
 @import url("../blocks/tech/tech.css");
@@ -105,8 +104,8 @@
 /* --------------------------------- SECRET --------------------------------- */
 @import url("../blocks/secret/secret.css");
 @import url("../blocks/secret/__common-box/secret__common-box.css");
-@import url("../blocks/secret/__title-button-box/secret__title-button-box.css");
-@import url("../blocks/secret/__text-before-after-slider-box/secret__text-before-after-slider.css");
+@import url("../blocks/secret/__title-box/secret__title-box.css");
+@import url("../blocks/secret/__text-before-after-slider-box/secret__text-before-after-slider-box.css");
 @import url("../blocks/secret/__text-box/secret__text-box.css");
 @import url("../blocks/secret/__before-after-box/secret__before-after-box.css");
 @import url("../blocks/secret/__image-after/secret__image-after.css");

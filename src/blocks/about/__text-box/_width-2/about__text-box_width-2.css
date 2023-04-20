@@ -1,4 +1,17 @@
 .about__text-box_width-2 {
   max-width: 350px;
+  min-width: 200px;
   margin-left: 230px;
+}
+
+@media (max-width: 800px) {
+  .about__text-box_width-2 {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 675px) {
+  .about__text-box_width-2 {
+    margin-left: 0;
+  }
 }

@@ -1,11 +1,12 @@
-import { blockWorks, blockSecret, blockFooter, regexSearchNums } from "../../common/common";
+import { blockWorks, blockSecret, blockFooter } from "../../common/common";
 import { getValueSidePosition } from "../../utils/utils";
-
+import { isSecretOpened } from "../works/__button-block-secret/works__button-block-secret";
 
 let prevBottomWorks = null;
+let prevHeightSecret = null;
 
 
-// получение начального top блока "secret"
+// получение начального top блока 'secret'
 function getInitialTopSecret() {
 
   const bottomBlockWorks = getBottomWorks()
@@ -17,15 +18,26 @@ function getInitialTopSecret() {
 }
 
 
-// установить начальный top блока "secret"
+// установить начальный top блока 'secret'
 function setInitialTopSecret() {
   blockSecret.style.top = `${getInitialTopSecret()}px`;
 }
 
 
-// получение текущего bottom блока "works"
-function getBottomWorks() {
+// получить высоту блока 'secret'
+function getHeightSecret() {
+  return blockSecret.clientHeight;
+}
 
+
+// сохранить начальное значение высоты блока 'secret'
+function savetInitialHeightSecret() {
+  prevHeightSecret = getHeightSecret();
+}
+
+
+// получение текущего bottom блока 'works'
+function getBottomWorks() {
   const styleBlockWorks = getComputedStyle(blockWorks);
   const marginBottomWorks = parseInt(styleBlockWorks.marginBottom)
 
@@ -33,7 +45,7 @@ function getBottomWorks() {
 }
 
 
-// обновление top блока 'secret
+// обновление top блока 'secret'
 function updateTopSecret(topFooter) {
   if (topFooter === 0) {
     blockSecret.style.top = `${getBottomWorks() - blockSecret.clientHeight}px`;
@@ -46,6 +58,14 @@ function updateTopSecret(topFooter) {
 // обработчик изменения ширины окна
 function handleResize() {
   const currentBottomWorks = getBottomWorks();
+  const currentHeightSecret = getHeightSecret();
+
+  // если блок 'secret' открыт,
+  // и текущий height блока 'secret' !== предыдущему height блока 'secret
+  if (isSecretOpened && currentHeightSecret !== prevHeightSecret) {
+    blockFooter.style.top = `${currentHeightSecret}px`;
+    prevHeightSecret = currentHeightSecret
+  }
 
   // если текущий bottom блока 'works' !== предыдущему bottom блока 'works'
   if (currentBottomWorks !== prevBottomWorks) {
@@ -57,7 +77,10 @@ function handleResize() {
 }
 
 
-window.addEventListener('load', setInitialTopSecret, { once: true })
+window.addEventListener('load', () => {
+  setInitialTopSecret();
+  savetInitialHeightSecret();
+}, { once: true })
 
 window.addEventListener('resize', handleResize)
 

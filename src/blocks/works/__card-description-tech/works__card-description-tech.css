@@ -2,3 +2,9 @@
   font-size: 12px;
   margin: 0;
 }
+
+@media (max-width: 410px) {
+  .works__card-description-tech {
+    font-size: 11px;
+  }
+}

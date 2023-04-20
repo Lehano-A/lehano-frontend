@@ -1,5 +1,3 @@
 .section__title-subtitle-box {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 34px;
 }

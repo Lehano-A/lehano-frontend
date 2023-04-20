@@ -20,3 +20,15 @@
       "tool     graphic";
   }
 }
+
+@media (max-width: 800px) {
+  .tech__grid-list {
+    grid-template-areas:
+      "language"
+      "framework"
+      "data-base"
+      "tool"
+      "graphic";
+    justify-items: center;
+  }
+}

@@ -1,6 +1,7 @@
 .footer__link-contacts {
+  line-height: 1.5;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .footer__link-contacts:hover {
@@ -18,4 +19,3 @@
 .footer__link-contacts:link {
   color: #fff;
 }
-

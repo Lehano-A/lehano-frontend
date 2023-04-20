@@ -1,4 +1,11 @@
 .works__title-grid-box {
   position: relative;
   margin-top: 50px;
+  padding: 0 30px;
+}
+
+@media (max-width: 858px) {
+  .works__title-grid-box {
+    padding: 10px;
+  }
 }

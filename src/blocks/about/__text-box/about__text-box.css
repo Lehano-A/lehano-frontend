@@ -1,6 +1,9 @@
 .about__text-box {
   padding: 20px;
-  margin: 32px 0 0 50px;
   background: #fff;
   border-radius: 20px;
+}
+
+.about__text-box:not(:last-of-type) {
+  margin-bottom: 32px;
 }

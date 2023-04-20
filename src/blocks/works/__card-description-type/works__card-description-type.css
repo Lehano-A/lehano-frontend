@@ -2,3 +2,9 @@
   font-size: 14px;
   margin: 0 0 3px 0;
 }
+
+@media (max-width: 410px) {
+  .works__card-description-type {
+    font-size: 12px;
+  }
+}

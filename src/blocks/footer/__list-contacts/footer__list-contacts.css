@@ -1,4 +1,10 @@
 .footer__list-contacts {
-  list-style: none;
   font-size: 20px;
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  .footer__list-contacts {
+    font-size: 18px;
+  }
 }

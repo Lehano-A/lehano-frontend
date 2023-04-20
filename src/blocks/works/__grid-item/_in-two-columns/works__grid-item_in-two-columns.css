@@ -7,3 +7,9 @@
     grid-column: 2;
   }
 }
+
+@media (max-width: 858px) {
+  .works__grid-item_in-two-columns {
+    grid-column: 1;
+  }
+}

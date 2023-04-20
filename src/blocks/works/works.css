@@ -21,3 +21,20 @@
   height: 100%;
   padding: 0 0 170px 0;
 }
+
+@media (max-width: 858px) {
+  .works::before {
+    background-size: 250% 100%;
+    transform: translate(-50%, -100px);
+  }
+  .works {
+    margin: 0 0 0 0;
+    padding: 0 0 45px 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .works::before {
+    background-size: 350% 100%;
+  }
+}

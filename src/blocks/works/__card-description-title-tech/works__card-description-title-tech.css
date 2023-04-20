@@ -1,5 +1,11 @@
 .works__card-description-title-tech {
   font-size: 14px;
-  font-family: 'Comfortaa-Bold';
+  font-family: "Comfortaa-Bold";
   margin: 0 0 8px 0;
+}
+
+@media (max-width: 410px) {
+  .works__card-description-title-tech {
+    font-size: 12px;
+  }
 }

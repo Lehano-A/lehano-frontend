@@ -1,3 +1,9 @@
 .footer__contacts {
   margin: 0 0 80px 140px;
 }
+
+@media (max-width: 858px) {
+  .footer__contacts {
+    margin: 0 0 80px 0;
+  }
+}

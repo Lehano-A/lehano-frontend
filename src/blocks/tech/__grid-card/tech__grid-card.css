@@ -5,3 +5,9 @@
   grid-auto-rows: 120px;
   grid-gap: 10px;
 }
+
+@media (max-width: 800px) {
+  .tech__grid-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

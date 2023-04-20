@@ -3,3 +3,9 @@
   font-size: 28px;
   margin: 0;
 }
+
+@media (max-width: 800px) {
+  .section__title {
+    font-size: 22px;
+  }
+}

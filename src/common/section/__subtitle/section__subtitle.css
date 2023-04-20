@@ -3,3 +3,9 @@
   margin: 0;
   white-space: nowrap;
 }
+
+@media (max-width: 800px) {
+  .section__subtitle {
+    font-size: 14px;
+  }
+}

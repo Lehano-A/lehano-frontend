@@ -1,4 +1,4 @@
-import { blockWorks, blockSecret, blockFooter, regexSearchNums } from "../../../common/common";
+import { blockWorks, blockSecret, blockFooter } from "../../../common/common";
 import { getBottomWorks } from "../../secret/secret";
 import {
   commonDuration,
@@ -17,8 +17,8 @@ import { getValueSidePosition } from "../../../utils/utils";
 
 const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret');
 
-let isAnimating = false;
-
+let isAnimating = null;
+let isSecretOpened = null;
 
 // таймер для очередной возможности запуска анимации
 function setTimerAnimation() {
@@ -36,13 +36,15 @@ function moveBlocksDown() {
 
   blockSecret.animate(rulesSecret, optionsMoveDown).onfinish = function () {
     blockSecret.style.top = `${currentBottomWorks}px`
-  }
+  };
 
   blockFooter.animate(rulesFooter, optionsMoveDown).onfinish = function () {
     blockFooter.style.top = `${blockSecret.clientHeight}px`
-  }
+  };
 
-  buttonBlockSecret.animate(rulesRotateIcon180, optionsRotate180)
+  buttonBlockSecret.animate(rulesRotateIcon180, optionsRotate180);
+
+  isSecretOpened = true;
 }
 
 
@@ -54,13 +56,15 @@ function moveBlocksTop() {
 
   blockSecret.animate(rulesSecret, optionsMoveTop).onfinish = function () {
     blockSecret.style.top = `${currentBottomWorks - blockSecret.clientHeight}px`
-  }
+  };
 
   blockFooter.animate(rulesFooter, optionsMoveTop).onfinish = function () {
     blockFooter.style.top = `${0}px`
-  }
+  };
 
-  buttonBlockSecret.animate(rulesRotateIcon360, optionsRotate360)
+  buttonBlockSecret.animate(rulesRotateIcon360, optionsRotate360);
+
+  isSecretOpened = false;
 }
 
 
@@ -88,3 +92,5 @@ function launchAnimation() {
 
 
 buttonBlockSecret.addEventListener('click', () => { launchAnimation() });
+
+export { isSecretOpened };
