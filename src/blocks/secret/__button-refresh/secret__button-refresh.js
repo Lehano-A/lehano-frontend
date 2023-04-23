@@ -1,82 +1,71 @@
 import { blockSecret } from "../../../common/common";
-
+import { getRulesAnimationChangeRgba, optionsChangeRgba } from "../__secret-word/secret__secret-word-animation-data";
+const titleSecret = blockSecret.querySelector('.section__title');
+const subtitleSecret = blockSecret.querySelector('.section__subtitle');
+const secretWord = blockSecret.querySelector('.secret__secret-word');
+const iconSecret = blockSecret.querySelector('#secret-icon');
 const buttonRefresh = blockSecret.querySelector('.secret__button-refresh');
+
 
 const secretWords = [
   {
     title: 'Мата',
     icons: '🤬',
-    bg: '#f19797',
+    bg: 'rgba(241, 151, 151, 1)',
   },
   {
     title: 'Общения с животными',
     icons: '🦕🦏🐊',
-    bg: '#c7f197',
+    bg: 'rgba(199, 242, 150, 1)',
   },
   {
     title: 'Злости и ярости',
     icons: '😠😤😡',
-    bg: '#b45050',
+    bg: 'rgba(180, 80, 80, 1)',
   },
   {
     title: 'Коньяка',
     icons: '🥃',
-    bg: '#dfba82',
+    bg: 'rgba(223, 186, 130, 1)',
   },
   {
     title: 'Витаминов',
     icons: '🍑🍒🍓🍏🍊',
-    bg: '#8adf82',
+    bg: 'rgba(138, 223, 130, 1)',
   },
   {
     title: 'Сладкого',
     icons: '🍰🧁🍩🍦🍭',
-    bg: '#b9f0ed',
+    bg: 'rgba(185, 240, 237, 1)',
   },
   {
     title: 'Улиток в рационе',
     icons: '🐌',
-    bg: '#f7fdc4',
+    bg: 'rgba(247, 253, 196, 1)',
   },
   {
     title: 'Веселья',
     icons: '🎢🎉✨',
-    bg: '#f8c4fd',
+    bg: 'rgba(248, 196, 253, 1)',
   },
   {
     title: 'Игрулек',
     icons: '🎮',
-    bg: '#f2c4fd',
+    bg: 'rgba(250, 163, 246, 1)',
 
   },
   {
     title: 'Ультра хэви-металла',
     icons: '🤘🎸🤘',
-    bg: '#b6b6b6',
+    bg: 'rgba(182, 182, 182, 1)',
   },
 ]
-
-
-buttonRefresh.addEventListener('click', () => {
-  const currentTitle = blockSecret.querySelector('.section__title');
-  const currentSubtitle = blockSecret.querySelector('.section__subtitle');
-  const secretWord = blockSecret.querySelector('#secret-word');
-  const iconSecret = blockSecret.querySelector('#secret-icon');
-
-
-  const { title, icons, bg } = getRandomSecret(currentTitle.textContent, null)
-
-  currentTitle.textContent = title;
-  secretWord.textContent = title.toLowerCase();
-  iconSecret.textContent = icons;
-  currentSubtitle.style.backgroundColor = bg;
-})
 
 
 // получить рандомный секрет
 function getRandomSecret(currentTitle, randomNum) {
 
-  randomNum = getRandomNum(secretWords.length - 1)
+  randomNum = getRandomNum(secretWords.length)
   const randomWord = secretWords[randomNum].title
 
   if (randomWord !== currentTitle) {
@@ -87,8 +76,19 @@ function getRandomSecret(currentTitle, randomNum) {
 }
 
 
-
 // получить рандомное число в пределах аргумента
 function getRandomNum(num) {
   return Math.floor(Math.random() * num)
 }
+
+
+buttonRefresh.addEventListener('click', () => {
+  const { title, icons, bg } = getRandomSecret(titleSecret.textContent, null);
+  const rulesSecretWord = getRulesAnimationChangeRgba(bg);
+
+  titleSecret.textContent = title;
+  subtitleSecret.style.backgroundColor = bg;
+  iconSecret.textContent = icons;
+  secretWord.textContent = title.toLowerCase();
+  secretWord.animate(rulesSecretWord, optionsChangeRgba);
+})
