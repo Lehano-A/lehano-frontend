@@ -12,7 +12,7 @@ import {
   optionsMoveTop,
   optionsRotate180,
   optionsRotate360
-} from "./works__animation-data"
+} from "./works__button-block-secret-animation-data"
 import { getValueSidePosition } from "../../../utils/utils";
 
 const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret');

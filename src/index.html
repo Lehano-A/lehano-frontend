@@ -6,9 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Lehano - порфтолио frontend-разработчика на старте </title>
+
+  <style>
+    .page {
+      overflow: hidden;
+    }
+
+    .preloader {     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);      
+      z-index: 1000;
+    }
+
+    .preloader__spinner {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(181, 239, 248, 1);
+      border-top-color: rgb(118, 234, 252);
+      border-radius: 50%;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
 </head>
 
 <body class="page">
+
+  <div class="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
 
   <!-- HEADER НАЧАЛО -->
   <header class="header">
