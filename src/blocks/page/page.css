@@ -4,8 +4,9 @@
   flex-direction: column;
   min-width: 303px;
   font-family: "Comfortaa-Regular";
+  color: #000;
   margin: 0 auto;
-  position: relative;
+  position: relative; 
 }
 
 html {

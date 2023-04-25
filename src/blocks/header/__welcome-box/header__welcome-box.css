@@ -2,7 +2,6 @@
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
-  color: #2d105f;
   margin: 50px 40px 30px 0;
 }
 
@@ -10,7 +9,6 @@
   font-family: "Comfortaa-Bold";
   font-size: 23px;
   font-weight: 500;
-  color: #2d105f;
 }
 
 @media (max-width: 758px) {
