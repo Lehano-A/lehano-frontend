@@ -1,4 +1,4 @@
-import { blockSecret } from "../../../common/common";
+import { blockSecret, getRandomNum } from "../../../common/common";
 import { getRulesAnimationChangeRgba, optionsChangeRgba } from "../__secret-word/secret__secret-word-animation-data";
 const titleSecret = blockSecret.querySelector('.section__title');
 const subtitleSecret = blockSecret.querySelector('.section__subtitle');
@@ -76,12 +76,6 @@ function getRandomSecret(currentTitle, randomNum) {
 }
 
 
-// получить рандомное число в пределах аргумента
-function getRandomNum(num) {
-  return Math.floor(Math.random() * num)
-}
-
-
 buttonRefresh.addEventListener('click', () => {
   const { title, icons, bg } = getRandomSecret(titleSecret.textContent, null);
   const rulesSecretWord = getRulesAnimationChangeRgba(bg);
@@ -90,5 +84,6 @@ buttonRefresh.addEventListener('click', () => {
   subtitleSecret.style.backgroundColor = bg;
   iconSecret.textContent = icons;
   secretWord.textContent = title.toLowerCase();
+  
   secretWord.animate(rulesSecretWord, optionsChangeRgba);
 })
