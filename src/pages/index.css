@@ -105,6 +105,7 @@
 
 /* --------------------------------- SECRET --------------------------------- */
 @import url("../blocks/secret/secret.css");
+@import url("../blocks/secret/_visible/secret_visible.css");
 @import url("../blocks/secret/__common-box/secret__common-box.css");
 @import url("../blocks/secret/__title-box/secret__title-box.css");
 @import url("../blocks/secret/__text-before-after-slider-box/secret__text-before-after-slider-box.css");

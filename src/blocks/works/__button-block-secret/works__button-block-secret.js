@@ -20,6 +20,7 @@ const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret'
 let isAnimating = null;
 let isSecretOpened = null;
 
+
 // таймер для очередной возможности запуска анимации
 function setTimerAnimation() {
   setTimeout(() => {
@@ -33,6 +34,8 @@ function moveBlocksDown() {
   const rulesSecret = getRulesAnimationMoveDownSecret();
   const rulesFooter = getRulesAnimationMoveDownFooter();
   const currentBottomWorks = getBottomWorks();
+
+  blockSecret.classList.add('secret_visible');
 
   blockSecret.animate(rulesSecret, optionsMoveDown).onfinish = function () {
     blockSecret.style.top = `${currentBottomWorks}px`
@@ -56,6 +59,7 @@ function moveBlocksTop() {
 
   blockSecret.animate(rulesSecret, optionsMoveTop).onfinish = function () {
     blockSecret.style.top = `${currentBottomWorks - blockSecret.clientHeight}px`
+    blockSecret.classList.remove('secret_visible');
   };
 
   blockFooter.animate(rulesFooter, optionsMoveTop).onfinish = function () {
