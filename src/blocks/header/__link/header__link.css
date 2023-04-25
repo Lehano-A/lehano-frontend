@@ -1,9 +1,9 @@
 .header__link {
   position: relative;
-  color: #2d105f;
   text-decoration: none;
   white-space: nowrap;
   z-index: 0;
+  color: #000;
 }
 
 .header__link::after {
@@ -20,8 +20,4 @@
 
 .header__link:hover::after {
   width: 100%;
-}
-
-.header__link:visited {
-  color: #000;
 }
