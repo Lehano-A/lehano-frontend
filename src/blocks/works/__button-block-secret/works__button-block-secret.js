@@ -12,7 +12,7 @@ import {
   optionsMoveTop,
   optionsRotate180,
   optionsRotate360
-} from "./works__button-block-secret-animation-data"
+} from "./works__button-block-secret-animation-data";
 import { getValueSidePosition } from "../../../utils/utils";
 
 const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret');
@@ -23,9 +23,12 @@ let isSecretOpened = null;
 
 // таймер для очередной возможности запуска анимации
 function setTimerAnimation() {
-  setTimeout(() => {
+  const timer = setTimeout(() => {
     isAnimating = false;
+    clearTimeout(timer);
   }, commonDuration);
+
+  return timer;
 }
 
 
@@ -38,11 +41,11 @@ function moveBlocksDown() {
   blockSecret.classList.add('secret_visible');
 
   blockSecret.animate(rulesSecret, optionsMoveDown).onfinish = function () {
-    blockSecret.style.top = `${currentBottomWorks}px`
+    blockSecret.style.top = `${currentBottomWorks}px`;
   };
 
   blockFooter.animate(rulesFooter, optionsMoveDown).onfinish = function () {
-    blockFooter.style.top = `${blockSecret.clientHeight}px`
+    blockFooter.style.top = `${blockSecret.clientHeight}px`;
   };
 
   buttonBlockSecret.animate(rulesRotateIcon180, optionsRotate180);
@@ -79,17 +82,18 @@ function launchAnimation() {
 
   if (!isAnimating) {
     isAnimating = true;
-    setTimerAnimation()
+
+    setTimerAnimation();
 
     // если top блока 'secret' выше bottom блока 'works'
     if (currentTopSecret < currentBottomWorks) {
-      moveBlocksDown()
+      moveBlocksDown();
       return
     }
 
     // если top блока 'secret' равен bottom блока 'works'
     if (currentTopSecret === currentBottomWorks) {
-      moveBlocksTop()
+      moveBlocksTop();
     }
   }
 }
