@@ -76,7 +76,7 @@ function moveBlocksTop() {
 
 
 // запуск анимации
-function launchAnimation() {
+function handleLaunchAnimation() {
   const currentBottomWorks = getBottomWorks();
   const currentTopSecret = getValueSidePosition(blockSecret, 'top');
 
@@ -99,6 +99,6 @@ function launchAnimation() {
 }
 
 
-buttonBlockSecret.addEventListener('click', () => { launchAnimation() });
+buttonBlockSecret.addEventListener('click', handleLaunchAnimation);
 
 export { isSecretOpened };
