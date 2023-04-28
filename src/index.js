@@ -1,12 +1,8 @@
-window.addEventListener('load', handlerOnload);
+window.addEventListener('load', handlerOnload,  { once: true });
 
 function handlerOnload() {
   document.querySelector('.page').style.overflow = 'visible';
-  document.querySelector('.header').style.display = 'block';
-  document.querySelector('.main').style.display = 'flex';
-  document.querySelector('.footer').style.display = 'flex';
   document.querySelector('.preloader').remove();
-  window.removeEventListener('load', handlerOnload);
 }
 
 import './index.html';

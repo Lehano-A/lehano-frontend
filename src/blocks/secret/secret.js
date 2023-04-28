@@ -59,21 +59,18 @@ function updateTopSecret(topFooter) {
 function handleResize() {
   const currentBottomWorks = getBottomWorks();
   const currentHeightSecret = getHeightSecret();
+  const topFooter = getValueSidePosition(blockFooter, 'top')
 
   // если блок 'secret' открыт,
   // и текущий height блока 'secret' !== предыдущему height блока 'secret
   if (isSecretOpened && currentHeightSecret !== prevHeightSecret) {
     blockFooter.style.top = `${currentHeightSecret}px`;
+
     prevHeightSecret = currentHeightSecret
   }
 
-  // если текущий bottom блока 'works' !== предыдущему bottom блока 'works'
-  if (currentBottomWorks !== prevBottomWorks) {
-    const topFooter = getValueSidePosition(blockFooter, 'top')
-
-    updateTopSecret(topFooter)
-    prevBottomWorks = currentBottomWorks
-  }
+  updateTopSecret(topFooter)
+  prevBottomWorks = currentBottomWorks
 }
 
 

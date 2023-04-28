@@ -2,9 +2,8 @@ import { blockWorks, blockSecret, blockFooter } from "../../../common/common";
 import { getBottomWorks } from "../../secret/secret";
 import {
   commonDuration,
-  getRulesAnimationMoveDownSecret,
+  getRulesAnimationMoveBlockDown,
   getRulesAnimationMoveTopSecret,
-  getRulesAnimationMoveDownFooter,
   getRulesAnimationMoveTopFooter,
   rulesRotateIcon180,
   rulesRotateIcon360,
@@ -34,17 +33,16 @@ function setTimerAnimation() {
 
 // передвинуть блоки вниз
 function moveBlocksDown() {
-  const rulesSecret = getRulesAnimationMoveDownSecret();
-  const rulesFooter = getRulesAnimationMoveDownFooter();
-  const currentBottomWorks = getBottomWorks();
+  const rulesMoveDown = getRulesAnimationMoveBlockDown();
+
 
   blockSecret.classList.add('secret_visible');
 
-  blockSecret.animate(rulesSecret, optionsMoveDown).onfinish = function () {
-    blockSecret.style.top = `${currentBottomWorks}px`;
+  blockSecret.animate(rulesMoveDown, optionsMoveDown).onfinish = function () {
+    blockSecret.style.top = `${getBottomWorks()}px`;
   };
 
-  blockFooter.animate(rulesFooter, optionsMoveDown).onfinish = function () {
+  blockFooter.animate(rulesMoveDown, optionsMoveDown).onfinish = function () {
     blockFooter.style.top = `${blockSecret.clientHeight}px`;
   };
 
@@ -58,9 +56,11 @@ function moveBlocksDown() {
 function moveBlocksTop() {
   const rulesSecret = getRulesAnimationMoveTopSecret();
   const rulesFooter = getRulesAnimationMoveTopFooter();
-  const currentBottomWorks = getBottomWorks();
+
 
   blockSecret.animate(rulesSecret, optionsMoveTop).onfinish = function () {
+    const currentBottomWorks = getBottomWorks();
+
     blockSecret.style.top = `${currentBottomWorks - blockSecret.clientHeight}px`
     blockSecret.classList.remove('secret_visible');
   };

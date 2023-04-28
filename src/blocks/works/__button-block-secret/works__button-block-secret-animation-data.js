@@ -2,27 +2,19 @@ import { blockSecret } from "../../../common/common";
 import { getBottomWorks } from "../../secret/secret";
 
 
-function getRulesAnimationMoveDownSecret() {
+function getRulesAnimationMoveBlockDown() {
   return [
-    { top: `${getBottomWorks() - blockSecret.clientHeight}px` },
-    { top: `${getBottomWorks()}px` }
+    { transform: `translateY(0)` },
+    { transform: `translateY(${blockSecret.clientHeight}px)` }
   ]
 }
 
 
 function getRulesAnimationMoveTopSecret() {
   return [
-    { top: `${getBottomWorks()}px` },
-    { top: `${getBottomWorks() - blockSecret.clientHeight}px` },
+    { transform: `translateY(0)` },
+    { transform: `translateY(${-blockSecret.clientHeight}px)` }
   ]
-}
-
-
-function getRulesAnimationMoveDownFooter() {
-  return [
-    { top: `${0}px` },
-    { top: `${blockSecret.clientHeight}px` }
-  ];
 }
 
 
@@ -77,9 +69,8 @@ const optionsRotate360 = {
 
 export {
   commonDuration,
-  getRulesAnimationMoveDownSecret,
+  getRulesAnimationMoveBlockDown,
   getRulesAnimationMoveTopSecret,
-  getRulesAnimationMoveDownFooter,
   getRulesAnimationMoveTopFooter,
   rulesRotateIcon180,
   rulesRotateIcon360,
