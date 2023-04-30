@@ -1,27 +1,23 @@
-import { blockSecret } from "../../../common/common";
-
-
-function getRulesAnimationMoveBlockDown() {
+function getRulesAnimationMoveBlockDown(heightSecret) {
   return [
     { transform: `translateY(0)` },
-    { transform: `translateY(${blockSecret.clientHeight}px)` }
+    { transform: `translateY(${heightSecret}px)` }
+  ]
+}
+
+function getRulesAnimationMoveTopSecret(heightSecret) {
+  return [
+    { transform: `translateY(0)` },
+    { transform: `translateY(${-heightSecret}px)` }
   ]
 }
 
 
-function getRulesAnimationMoveTopSecret() {
+function getRulesAnimationMoveTopFooter(heightSecret) {
   return [
-    { transform: `translateY(0)` },
-    { transform: `translateY(${-blockSecret.clientHeight}px)` }
+    { top: `${heightSecret}px` },
+    { top: 0 }
   ]
-}
-
-
-function getRulesAnimationMoveTopFooter() {
-  return [
-    { top: `${blockSecret.clientHeight}px` },
-    { top: 0 },
-  ];
 }
 
 

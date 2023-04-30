@@ -1,7 +1,5 @@
 import { blockSecret, blockFooter } from "../../common/common";
-
 import { isSecretOpened } from "../works/__button-block-secret/works__button-block-secret";
-
 
 let prevHeightSecret = null;
 
@@ -27,8 +25,9 @@ function handleResize() {
   if (isSecretOpened && currentHeightSecret !== prevHeightSecret) {
     blockSecret.style.bottom = `${-currentHeightSecret}px`;
     blockFooter.style.top = `${currentHeightSecret}px`;
-    prevHeightSecret = currentHeightSecret
   }
+
+  prevHeightSecret = currentHeightSecret;
 }
 
 
@@ -36,3 +35,4 @@ window.addEventListener('load', savetInitialHeightSecret, { once: true })
 
 window.addEventListener('resize', handleResize)
 
+export { getHeightSecret };
