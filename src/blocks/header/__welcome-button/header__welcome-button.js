@@ -6,6 +6,19 @@ const buttonBox = blockHeader.querySelector('.header__welcome-button-box');
 const smiles = ['😜', '🤗', '🥳', '👻', '🖖', '✌', '🤝', '🚀', '🌞', '🔥', '✨', '🎉', '🎊', '🧡', '😸', '😊', '😉'];
 
 let listSaveRandomNum = {};
+let isAnimating = null;
+let DURATION_LAUNCH = 100;
+
+
+// таймер для очередной возможности запуска анимации
+function setTimerAnimation() {
+  const timer = setTimeout(() => {
+    isAnimating = false;
+    clearTimeout(timer);
+  }, DURATION_LAUNCH);
+
+  return timer;
+}
 
 
 function createSmiles(event) {
@@ -29,20 +42,24 @@ function createSmiles(event) {
 
 /* слушатель стоит на контейнере, а не на самой кнопке, поскольку
    если клик происходит на краю кнопки, то событие не фиксируется
-   из-за анимации scale() у кнопки, которая изменяет кнопки => и границы события
+   из-за анимации scale() у кнопки, которая изменяет кнопку => и границы события
 */
 buttonBox.addEventListener('click', (event) => {
+  if (!isAnimating) {
+    isAnimating = true;
+    setTimerAnimation()
 
-  for (let i = 0; i <= 4; i++) {
-    const smile = createSmiles(event)
-    const rulesAnimation = getRulesAnimationSmiles();
+    for (let i = 0; i <= 4; i++) {
+      const smile = createSmiles(event)
+      const rulesAnimation = getRulesAnimationSmiles();
 
-    smile.animate(rulesAnimation, optionsTranslateSmile).onfinish = function () {
-      smile.remove();
+      smile.animate(rulesAnimation, optionsTranslateSmile).onfinish = function () {
+        smile.remove();
+      }
     }
-  }
 
-  listSaveRandomNum = {};
+    listSaveRandomNum = {};
+  }
 })
 
 
