@@ -25,7 +25,7 @@
 @media (max-width: 858px) {
   .works::before {
     background-size: 250% 100%;
-    transform: translate(-50%, -100px);
+    transform: translate(-50%, -120px);
   }
   .works {
     margin: 0 0 0 0;

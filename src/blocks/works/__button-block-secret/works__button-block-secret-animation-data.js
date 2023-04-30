@@ -1,5 +1,4 @@
 import { blockSecret } from "../../../common/common";
-import { getBottomWorks } from "../../secret/secret";
 
 
 function getRulesAnimationMoveBlockDown() {
@@ -21,7 +20,7 @@ function getRulesAnimationMoveTopSecret() {
 function getRulesAnimationMoveTopFooter() {
   return [
     { top: `${blockSecret.clientHeight}px` },
-    { top: `${0}px` },
+    { top: 0 },
   ];
 }
 
@@ -38,37 +37,37 @@ const rulesRotateIcon360 = [
 ];
 
 
-const commonDuration = 700;
+const COMMON_DURATION = 700;
 
 
 const optionsMoveDown = {
-  duration: commonDuration,
+  duration: COMMON_DURATION,
   easing: 'ease-in',
 }
 
 
 const optionsMoveTop = {
-  duration: commonDuration,
+  duration: COMMON_DURATION,
   easing: 'ease-out',
 }
 
 
 const optionsRotate180 = {
-  duration: commonDuration,
+  duration: COMMON_DURATION,
   easing: 'ease-in',
   fill: 'forwards'
 }
 
 
 const optionsRotate360 = {
-  duration: commonDuration,
+  duration: COMMON_DURATION,
   easing: 'ease-out',
   fill: 'forwards'
 }
 
 
 export {
-  commonDuration,
+  COMMON_DURATION,
   getRulesAnimationMoveBlockDown,
   getRulesAnimationMoveTopSecret,
   getRulesAnimationMoveTopFooter,
