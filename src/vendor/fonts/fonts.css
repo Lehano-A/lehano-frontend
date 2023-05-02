@@ -1,13 +1,15 @@
 @font-face {
   font-family: "Comfortaa-Regular";
-  font-style: normal;
-  src: url("./Comfortaa-Regular.woff2") format("woff2"),
+  src: local("Comfortaa-Regular"), local("Comfortaa Regular"),
+    url("./Comfortaa-Regular.woff2") format("woff2"),
     url("./Comfortaa-Regular.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Comfortaa-Bold";
-  font-style: normal;
-  src: url("./Comfortaa-Bold.woff2") format("woff2"),
+  src: local("Comfortaa-Bold"), local("Comfortaa Bold"),
+    url("./Comfortaa-Bold.woff2") format("woff2"),
     url("./Comfortaa-Bold.woff") format("woff");
+  font-weight: bold;
 }
