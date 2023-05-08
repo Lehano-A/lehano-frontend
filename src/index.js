@@ -1,4 +1,4 @@
-window.addEventListener('load', handlerOnload,  { once: true });
+window.addEventListener('load', handlerOnload, { once: true });
 
 function handlerOnload() {
   document.querySelector('.page').style.overflow = 'visible';

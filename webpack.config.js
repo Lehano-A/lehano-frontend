@@ -4,15 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
-
-
 module.exports = {
   entry: {
-    app: './index.js',
+    app: './src/index.js',
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../docs')
+    path: path.resolve(__dirname, './docs')
   },
 
   module: {
@@ -55,9 +53,9 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['../docs/*', '!../docs/CNAME'], dangerouslyAllowCleanPatternsOutsideProject: true, dry: false }),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['./docs/*', '!./docs/CNAME'], dangerouslyAllowCleanPatternsOutsideProject: true, dry: false }),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: 'src/index.html',
       filename: 'index.html',
     }),
   ],
