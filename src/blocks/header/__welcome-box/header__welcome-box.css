@@ -3,6 +3,8 @@
   align-items: baseline;
   justify-content: flex-end;
   margin: 50px 40px 30px 0;
+ position: relative;
+ z-index: 1;
 }
 
 .header__welcome-box > span {

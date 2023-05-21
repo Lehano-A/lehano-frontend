@@ -4,6 +4,8 @@
   font-size: 20px;
   font-weight: 500;
   list-style: none;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 758px) {
