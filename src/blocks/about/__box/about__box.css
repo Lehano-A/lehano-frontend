@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 950px) {
   .about__box {
     justify-content: center;
   }

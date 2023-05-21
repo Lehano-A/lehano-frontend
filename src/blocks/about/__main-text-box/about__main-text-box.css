@@ -1,9 +1,8 @@
 .about__main-text-box {
   max-width: 790px;
-  width: 100%;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 575px) {
   .about__main-text-box {
     display: flex;
     flex-direction: column;
