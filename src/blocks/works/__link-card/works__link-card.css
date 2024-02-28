@@ -1,9 +1,7 @@
 .works__link-card {
-  height: 18px;
-  width: 18px;
+  display: flex;
 }
 
-.works__link-card:last-of-type {
-  width: 24px;
-  height: 24px;
+.works__link-card[id='githubRepoLink'] {
+  margin-top: auto;
 }
