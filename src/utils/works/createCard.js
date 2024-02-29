@@ -16,7 +16,7 @@ function createCard(project) {
 
   handleRequireNodes(cardClone, project)
   handleProjectType(cardClone, type)
-  handleUsedTechs(cardClone, type)
+  handleUsedTechs(cardClone, usedTechs)
   handleFeatures(cardClone, features)
   handleLinks(cardClone, links)
 

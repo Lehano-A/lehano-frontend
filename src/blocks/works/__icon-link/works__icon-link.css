@@ -1,6 +1,4 @@
 .works__icon-link {
-  width: 18px;
-  height: 24px;
   transition: opacity 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -9,8 +7,20 @@
   opacity: 0.5;
 }
 
+.works__icon-link[id='projectIcon'] {
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+}
+
 .works__icon-link[id='githubRepoIcon'] {
-  width: 22px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-top: auto;
+}
+
+@media (max-width: 410px) {
+  .works__icon-link[id='githubRepoIcon'] {
+    margin-left: auto;
+  }
 }

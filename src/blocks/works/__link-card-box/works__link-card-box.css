@@ -13,6 +13,7 @@
 
 @media (max-width: 410px) {
   .works__link-card-box {
+    align-items: center;
     flex-direction: row;
     width: 80px;
     height: 20px;
