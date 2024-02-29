@@ -155,255 +155,37 @@
         <!-- СПИСОК-ГРИД ИЗ КАРТОЧЕК -->
         <ul class="tech__grid-list">
 
-
           <!--  ЯЗЫКИ -->
           <li class="tech__list-item tech__list-item-language">
             <h3 class="title__list-item">Языки</h3>
-
-            <div class="tech__grid-card">
-
-              <!-- HTML -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/html5.svg"
-                    alt="Логотип языка разметки 'HTML'. Изображение оранжевого щита, на котором нарисована цифра '5'.">
-                </a>
-                <figcaption class="tech__card-description">HTML</figcaption>
-              </figure>
-
-              <!-- CSS -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/css3.svg"
-                    alt="Логотип языка стилей 'CSS'. Изображение синего щита, на котором нарисована цифра '3'.">
-                </a>
-                <figcaption class="tech__card-description">CSS</figcaption>
-              </figure>
-
-              <!-- JS -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/javascript.svg"
-                    alt="Логотип языка программирования 'JavaScript'. Изображение жёлтого квадрата, в нижнем правом углу которого, написаны буквы 'JS', высота шрифта - в половину квадрата.">
-                </a>
-                <figcaption class="tech__card-description">JavaScript</figcaption>
-              </figure>
-
-            </div>
+            <ul id="langs" class="tech__grid-card"></ul>
           </li>
 
 
           <!-- ФРЕЙМВОРКИ -->
           <li class="tech__list-item tech__list-item-framework">
             <h3 class="title__list-item">Фреймворки</h3>
-
-            <div class="tech__grid-card">
-
-              <!-- React -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://ru.reactjs.org/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/react.svg"
-                    alt="Логотип frontend-фреймворка 'React'. Изображение голубого круга, по двум диагоналям и экватору которого, нарисованы три голубые проходящие сплошные орбиты.">
-                </a>
-                <figcaption class="tech__card-description">React</figcaption>
-              </figure>
-
-              <!-- Express -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/express.svg"
-                    alt="Логотип backend-фреймворка 'express'. Изображение слова 'express' чёрным цветом и тонким шрифтом.">
-                </a>
-                <figcaption class="tech__card-description">express</figcaption>
-              </figure>
-
-              <!-- MUI -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://mui.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/mui.svg"
-                    alt="Логотип библиотеки пользовательского интерфейса - Material UI. Изображение трёх букв 'Mui' в сине-голубых цветах.">
-                </a>
-                <figcaption class="tech__card-description">Material UI</figcaption>
-              </figure>
-            </div>
+            <ul id="frameworks" class="tech__grid-card"></ul>
           </li>
 
 
           <!-- БАЗА ДАННЫХ -->
           <li class="tech__list-item tech__list-item-data-base">
             <h3 class="title__list-item">База данных</h3>
-
-            <div class="tech__grid-card">
-
-              <!-- MongoDB -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
-                  <img style="width: 70px;" class="tech__logo" src="./images/tech-card-logos/mongodb.svg"
-                    alt="Логотип базы данных 'mongoDB'. Изображение зелёного листочка от дерева, который стоит вертикально верхней частью к нам, а справа от него, сразу идёт название 'mongoDB', где 'mongo' - тёмно-коричневого цвета, а 'DB' - светло-коричневого.">
-                </a>
-                <figcaption class="tech__card-description">mongoDB</figcaption>
-              </figure>
-            </div>
+            <ul id="dataBases" class="tech__grid-card"></ul>
           </li>
-
 
           <!-- ИНСТРУМЕНТЫ -->
           <li class="tech__list-item tech__list-item-tool">
             <h3 class="title__list-item">Инструменты</h3>
-
-            <div class="tech__grid-card">
-
-              <!-- Node.js -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://nodejs.org/en/docs" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/nodejs.svg"
-                    alt="Логотип среды выполнения 'Node.js' для языка программирования JavaScript на стороне backend. Изображение слова 'node', каждая буква которого имеет вид соты. Буква 'o' зелёного цвета, остальные - чёрного. Под словом 'node' по центру, расположена одна сота зелёного цвета, изображённая в виде обведённого края толщиной в несколько пикселей, а внутри написаны буквы 'js' - тоже зелёного цвета.">
-                </a>
-                <figcaption class="tech__card-description">Node.js</figcaption>
-              </figure>
-
-              <!-- GitBash -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://gitforwindows.org/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/gitbash.svg"
-                    alt="Логотип терминала 'GitBash' для операционной системы Windows. Изображение квадрата, который поставили на угол. Квадрат разделён на 4 небольших квадрата. Нижний квадрат - это тот, на котором стоит основной большой квадрат, - жёлтого цвета, левее квадрат - синего цвета, правее квадрат - зелёного цвета, верний квадрат - красного цвета. Между квадратами есть узкий белый промежуток, который выглядит как буква 'x'. В верхнем красном квадрате, почти с левой его середины начиная с края, нарисован отрезок белого цвета, который заканчивается белым кругом почти у нижней части этого же красного квадрата. От круга из красного квадрата, вертикально вниз опускается отрезок, который заходит на жёлтый квадрат и заканчивается кругом почти на середине жёлтого квадрата. И снова от круга в красном квадрате нарисован отрезок, который заходит в зелёный квадрат и заканчивается кругом, который располагается недалеко от левого угла зелёного квадрата. Толщина отрезков примерно - 5 пикселей, а диаметр кружков примерно - 10 пикселей.">
-                </a>
-                <figcaption class="tech__card-description">GitBash</figcaption>
-              </figure>
-
-              <!-- GitHub -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://github.com/Lehano-A" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/github.svg"
-                    alt="Логотип сервиса контроля версий кода 'GitHub'. Изображение чёрного круга, внутри которого, белым цветом нарисован облик воображаемого человечка, который одет в костюм, голова которого напоминает кошачью с длинными двумя усами с каждой стороны. А нижняя часть костюма - это пять щупалец осьминога. Человечек стоит на четырёх щупальцах, а крайняя левая щупальца поднята и отведена в левую сторону с исполнением жеста в виде приветствия.">
-                </a>
-                <figcaption class="tech__card-description">GitHub</figcaption>
-              </figure>
-
-              <!-- Styled components -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/styled-components.svg"
-                    alt="Логотип CSS-библиотеки 'styled elements' для 'React'. Изображение белого квадрата, края которого обведены чёрным цветом шириной в пару пикселей. Внутри квадрата, в верхней его части, чёрным цветом нарисованы символы <>, внутри которых вставлен эмодзи изображающий женскую руку с покраской лаком её ногтей. В нижней части квадрата, черным цветом написаны в колонку два слова - 'styled components'.">
-                </a>
-                <figcaption class="tech__card-description">styled components</figcaption>
-              </figure>
-
-              <!-- NPM -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/npm.svg"
-                    alt="Логотип менеджера пакетов для Node.js - NPM. Изображение трёх букв 'npm' в белом цвете, края которого обведены тёмно-кирпичным цветом шириной примерно 10 пикселей.">
-                </a>
-                <figcaption class="tech__card-description">npm</figcaption>
-              </figure>
-
-              <!-- Postman -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.postman.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/postman.svg"
-                    alt="Логотип инструмента разработки API - Postman. Изображение оранжевого круга, внутри которого белым цветом нарисован человечек со стороны напоминающий супермена. Человечек изображён в рост и в профиль, руки его по швам, он вытянут, голова находится в верхней правой части круга, а ноги - в левой нижней, таким образом человечек вытянут внутри круга, тем самым изображая суперменский полёт вверх по диагонали.">
-                </a>
-                <figcaption class="tech__card-description">Postman</figcaption>
-              </figure>
-
-              <!-- Figma -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/figma.svg"
-                    alt="Логотип графического инструмента Figma. Изображение пяти кругообразных разноцветных фигур, находящиеся вплотную друг к дружке стоя вертикально. В самом низу располагается кругообразная фигура зелёного цвета, правая верхная часть которого сходится в 90 градусов. Выше находится полуовал, правая сторона которого полностью вертикальная, а нижняя и верхняя - прямые, левая соответственно - закруглена. Выше располагается точно такой же полуовал красного цвета. Правее находится точно такая же фигура лососевого цвета, но в зеркальном отражении. Красная и лососевая фигуры образуют единую фигуру - овал, а точнее фигуру, которая точно похожа на капсулу какого-нибудь лекарства, верхняя и нижняя стороны которой - прямые. Под лососевой фигурой располагается голубой круг.">
-                </a>
-                <figcaption class="tech__card-description">Figma</figcaption>
-              </figure>
-
-              <!-- Mongoose -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://mongoosejs.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/mongoose.svg"
-                    alt="Логотип библиотеки Mongoose для работы с базой данных mongoDB. Изображение в профиль облик тёмно-кирпичного цвета головы и шеи мангуста, голова которого направлена вправо. В нижней части изображения написана белым цветом жирная буква 'M'.">
-                </a>
-                <figcaption class="tech__card-description">mongoose</figcaption>
-              </figure>
-
-              <!-- Visual Studio Code -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/vscode.svg"
-                    alt=" Логотип редактора программного обеспечения 'Visual Studio Code'. Изображение абстрактного вида, напоминающая толовище и перекрещенные руки человека - вид сверху. Нарисована голубым цветом узкая трапеция, которая стоит вертикально на своём углу, короткой стороной повернувшись вправо. На длинной стороне трапеции, тёмно-синим нарисованы трапецивидные вытянутые фигуры, которые исходят из верхнего и нижнего угла по диагоналям. Верхняя фигура направлена - вниз по диагонали, а нижняя фигура - вверх, тем самым образуя перекрестие.">
-                </a>
-                <figcaption class="tech__card-description">Visual Studio Code</figcaption>
-              </figure>
-
-              <!-- БЭМ -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://ru.bem.info/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/bem.svg"
-                    alt="Логотип методологии 'БЭМ'. Изображение буквы 'Ь' вместе с символом нижнего подчёркивания. Нарисованы горизонтальными чёрными и белыми полосами.">
-                </a>
-                <figcaption class="tech__card-description">БЭМ</figcaption>
-              </figure>
-
-              <!-- Webpack -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/webpack.svg"
-                    alt="Логотип инструмента сборки проектов 'webpack'. Изображение состоит из иллюстрации и текста. Иллюстрация: куб голубого цвета с белыми гранями. Внутри куба находится куб поменьше синего цвета. После иллюстрации написано чёрным цветом название инструмента 'webpack'">
-                </a>
-                <figcaption class="tech__card-description">Webpack</figcaption>
-              </figure>
-
-              <!-- Redux -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/redux.svg"
-                    alt="Логотип библиотеки для управления состоянием приложения - 'Redux'. Изображение фиолетового цвета. Изображение трёх кругов, каждый из которых имеет свою овальную орбиту, и хвост символизирующий на 2/3 проделанный путь по своей орбите. Каждый круг пронизывает, почти по центру, площадь орбиты каждого из кругов. Стоп-кадр как раз на том месте, где каждый круг пронизывает центр другого круга.">
-                </a>
-                <figcaption class="tech__card-description">Redux</figcaption>
-              </figure>
-            </div>
+            <ul id="instruments" class="tech__grid-card"></ul>
           </li>
 
 
           <!-- ГРАФИКА -->
           <li class="tech__list-item tech__list-item-graphic">
             <h3 class="title__list-item">Графика</h3>
-
-            <div class="tech__grid-card">
-
-              <!-- Photoshop -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.adobe.com/ru/products/photoshop.html" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/photoshop.svg"
-                    alt="Изображение квадрата тёмно-синего цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы голубым цветом - 'Ps'.">
-                </a>
-                <figcaption class="tech__card-description">Photoshop</figcaption>
-              </figure>
-
-              <!-- Illustrator -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.adobe.com/ru/products/illustrator.html" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/illustrator.svg"
-                    alt="Изображение квадрата тёмно-кирпичного цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы светло-оранжевым цветом - 'Ai'.">
-                </a>
-                <figcaption class="tech__card-description">Illustrator</figcaption>
-              </figure>
-
-              <!-- After Effects -->
-              <figure class="tech__card">
-                <a class="tech__link" href="https://www.adobe.com/ru/products/aftereffects.html" target="_blank"
-                  rel="noopener noreferrer">
-                  <img class="tech__logo" src="./images/tech-card-logos/after-effects.svg"
-                    alt="Изображение квадрата тёмно-сиреневого цвета с закруглёнными углами. По центру большим шрифтом написаны две буквы сиреневым цветом - 'Ae'.">
-                </a>
-                <figcaption class="tech__card-description">After Effects</figcaption>
-              </figure>
-
-            </div>
+            <ul id="graphics" class="tech__grid-card"></ul>
           </li>
         </ul>
       </div>
@@ -531,6 +313,19 @@
   <!-- FOOTER - КОНЕЦ -->
 
 </body>
+
+
+<template id="templateCardTech">
+  <li class="tech__list-item">
+    <figure class="tech__card">
+      <a class="tech__link" rel="noopener noreferrer">
+        <img class="tech__logo">
+      </a>
+      <figcaption class="tech__card-description"></figcaption>
+    </figure>
+  </li>
+</template>
+
 
 
 <template id="templateCardWork">

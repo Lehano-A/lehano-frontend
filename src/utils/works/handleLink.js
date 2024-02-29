@@ -1,3 +1,4 @@
+import setAttrsLinkNode from "../common/setAttrsLinkNode"
 import { textTitleLinkCardWork } from "../constants"
 import handleIcon from "./handleIcon"
 
@@ -26,7 +27,7 @@ function handleLink(cardClone, links, keyElementHandledLink) {
 
 
   if (uri) { // если ссылка существует
-    handleExistingLink(linkNode, uri)
+    setAttrsLinkNode(linkNode, uri)
     handleIcon(iconNode, 'active', keyElementHandledLink)
   } else
 
@@ -34,14 +35,6 @@ function handleLink(cardClone, links, keyElementHandledLink) {
       handleEmptyLink(linkNode, iconNode)
       handleIcon(iconNode, 'inactive', keyElementHandledLink)
     }
-}
-
-
-
-// обработать существующую ссылку
-function handleExistingLink(linkNode, uri) {
-  linkNode.setAttribute('href', uri)
-  linkNode.setAttribute('target', '_blank')
 }
 
 
