@@ -126,7 +126,7 @@ const educationalProjects = [
 
   {
     data: {
-      name: 'Мини-соцсеть "Mesto',
+      name: 'Мини-соцсеть "Mesto"',
       type: 'Одностраничное приложение',
       usedTechs: 'React / CSS',
       features: 'frontend',
@@ -147,7 +147,7 @@ const educationalProjects = [
 
   {
     data: {
-      name: 'Мини-соцсеть "Mesto',
+      name: 'Мини-соцсеть "Mesto"',
       type: 'Одностраничное приложение',
       usedTechs: 'JavaScript / Mongoose / Express',
       features: 'backend',
@@ -167,7 +167,7 @@ const educationalProjects = [
 
   {
     data: {
-      name: 'Мини-соцсеть "Mesto',
+      name: 'Мини-соцсеть "Mesto"',
       type: 'Одностраничное приложение',
       usedTechs: 'HTML / CSS / JavaScript',
       features: 'классы',

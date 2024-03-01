@@ -6,7 +6,7 @@ function handlerOnload() {
 }
 
 import './index.html';
-import './pages/index.css';
+import './index.css';
 import './common/common.js';
 import './blocks/header/__welcome-button/header__welcome-button.js'
 import './blocks/tech/tech.js';
