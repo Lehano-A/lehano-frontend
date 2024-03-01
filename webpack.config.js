@@ -3,7 +3,6 @@ const { config: devServerConfig } = require('./devServer.config');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 module.exports = {
   entry: {
     app: './src/index.js',
@@ -20,6 +19,11 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env']
+            ]
+          },
         },
       },
       {
@@ -42,6 +46,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
         test: /\.html$/,
         use: [
           {
@@ -51,6 +59,9 @@ module.exports = {
       },
     ],
   },
+
+
+
 
   plugins: [
     new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['./docs/*', '!./docs/CNAME'], dangerouslyAllowCleanPatternsOutsideProject: true, dry: false }),

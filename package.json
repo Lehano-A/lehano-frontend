@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/Lehano-A/lehano-frontend#readme",
   "devDependencies": {
-    "babel-loader": "^9.1.2",
+    "@babel/preset-env": "^7.24.0",
+    "babel-loader": "^8.3.0",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.7.3",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -31,13 +33,13 @@
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.2.4",
-    "postcss-preset-env": "^8.3.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.78.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
-    "@babel/core": "^7.21.4"
+    "@babel/core": "^7.21.4",
+    "postcss-preset-env": "^9.4.0"
   }
 }

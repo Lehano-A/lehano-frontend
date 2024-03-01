@@ -18,7 +18,7 @@ const langs = [
     name: 'JavaScript',
     link: 'https://developer.mozilla.org/ru/docs/Web/JavaScript',
     textAlt: 'Логотип языка программирования "JavaScript"',
-    fileNameLogo: 'javascript'
+    fileNameLogo: 'javaScript'
   }
 ]
 
@@ -85,7 +85,7 @@ const instruments = [
     name: 'styled components',
     link: 'https://styled-components.com',
     textAlt: 'Логотип CSS-библиотеки "styled elements" для React',
-    fileNameLogo: 'styled-components'
+    fileNameLogo: 'styledComponents'
   },
 
   {
@@ -165,7 +165,7 @@ const graphics = [
     name: 'After Effects',
     link: 'https://www.adobe.com/ru/products/aftereffects.html',
     textAlt: 'Логотип программы "After Effects" для создания анимационной графики и визуальных эффектов',
-    fileNameLogo: 'after-effects'
+    fileNameLogo: 'afterEffects'
   },
 ]
 

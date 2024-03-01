@@ -1,5 +1,6 @@
 import setAttrsLinkNode from "../../utils/common/setAttrsLinkNode";
-import listUsedTechs from "../../utils/techs/listUsedTechs";
+import listUsedTechs from "../../utils/tech/listUsedTechs";
+import logos from '../../utils/tech/logosUsedTechs'
 
 
 // создать техно-карточку
@@ -27,26 +28,40 @@ function handleDataCard(data, templateCard, blockNode) {
     const cloneCard = templateCard.content.cloneNode(true)
 
     const linkNode = cloneCard.querySelector('.tech__link')
-    const logoNode = cloneCard.querySelector('.tech__logo')
     const techNameNode = cloneCard.querySelector('.tech__card-description')
+    const logoNode = createLogoNode(fileNameLogo)
 
 
     techNameNode.textContent = name
     setAttrsLinkNode(linkNode, link)
-    setAttrsLogoNode(logoNode, textAlt, fileNameLogo)
-
+    setAttrsLogoNode(logoNode, textAlt)
+    addLogoToLink(linkNode, logoNode)
 
     blockNode.appendChild(cloneCard)
   })
 }
 
 
-// установить аттрибуты для узла логотипа
-function setAttrsLogoNode(logoNode, textAlt, fileNameLogo) {
-  logoNode.setAttribute('alt', textAlt)
-  logoNode.setAttribute('src', `src/images/tech-card-logos/${fileNameLogo}.svg`)
+
+function createLogoNode(fileNameLogo) {
+  const image = new Image()
+
+  image.src = logos[`${fileNameLogo}Logo`]
+  image.classList.add('tech__logo')
+
+  return image
 }
 
+
+// установить аттрибуты для узла логотипа
+function setAttrsLogoNode(logoNode, textAlt) {
+  logoNode.setAttribute('alt', textAlt)
+}
+
+
+function addLogoToLink(linkNode, image) {
+  linkNode.appendChild(image)
+}
 
 
 createTechCard()
