@@ -1,0 +1,9 @@
+.start-column_1-with-span_2 {
+  grid-column: 1 / span 2;
+}
+
+@media (max-width: 858px) {
+  .start-column_1-with-span_2 {
+    grid-column: 1;
+  }
+}

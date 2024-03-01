@@ -12,6 +12,49 @@ const petProjects = [
     style: {
       cardColor: 'gray',
       projectNameColor: 'light-gray',
+      gridColumn: '1',
+    },
+  },
+
+
+  {
+    data: {
+      name: 'Сервис - чтояем.рф',
+      type: 'Одностраничное приложение',
+      usedTechs: 'React / CSS / MUI',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://чтояем.рф',
+      githubRepo: 'https://github.com/Lehano-A/cye-frontend',
+    },
+
+    style: {
+      cardColor: 'pale-lilac',
+      projectNameColor: 'light-lilac',
+      gridColumn: '1',
+    },
+  },
+
+
+  {
+    data: {
+      name: 'Сервис - чтояем.рф',
+      type: 'Одностраничное приложение',
+      usedTechs: 'JavaScript / Mongoose / Express ',
+      features: 'backend',
+    },
+
+    links: {
+      project: '',
+      githubRepo: '',
+    },
+
+    style: {
+      cardColor: 'pale-lilac',
+      projectNameColor: 'light-lilac',
+      gridColumn: '2 / span 2'
     },
   },
 
@@ -32,6 +75,7 @@ const petProjects = [
     style: {
       cardColor: 'pale-blue',
       projectNameColor: 'light-blue',
+      gridColumn: '1'
     },
   },
 ];
@@ -54,6 +98,7 @@ const educationalProjects = [
     style: {
       cardColor: 'cornflower-crayola',
       projectNameColor: 'light-cornflower',
+      gridColumn: '1'
     },
   },
 
@@ -74,7 +119,7 @@ const educationalProjects = [
     style: {
       cardColor: 'cornflower-crayola',
       projectNameColor: 'light-cornflower',
-      columns: 'works__grid-item_in-two-columns',
+      gridColumn: '2 / span 2'
     },
   },
 
@@ -95,6 +140,7 @@ const educationalProjects = [
     style: {
       cardColor: 'purple',
       projectNameColor: 'light-purple',
+      gridColumn: '1'
     },
   },
 

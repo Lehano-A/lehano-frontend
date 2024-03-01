@@ -3,6 +3,7 @@ import handleFeatures from "./handleFeatures"
 import handleProjectType from "./handleProjectType"
 import handleRequireNodes from "./handleRequireNodes"
 import handleUsedTechs from "./handleUsedTechs"
+import handleGridColumn from "./handleGridColumn"
 
 
 function createCard(project) {
@@ -14,7 +15,10 @@ function createCard(project) {
   const { type, usedTechs, features } = data
   const { columns } = style
 
+
+
   handleRequireNodes(cardClone, project)
+  handleGridColumn(cardClone, style)
   handleProjectType(cardClone, type)
   handleUsedTechs(cardClone, usedTechs)
   handleFeatures(cardClone, features)
