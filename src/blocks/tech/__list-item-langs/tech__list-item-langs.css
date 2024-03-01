@@ -1,0 +1,4 @@
+.tech__list-item-langs {
+  grid-column: langs;
+  grid-row: langs;
+}

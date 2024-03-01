@@ -6,3 +6,9 @@
   list-style: none;
   width: 100%;
 }
+
+@media(max-width: 800px) {
+  .tech__list-item {
+    align-items: center;
+  }
+}

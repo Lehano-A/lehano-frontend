@@ -1,0 +1,4 @@
+.tech__list-item-instruments {
+  grid-column: instruments;
+  grid-row: instruments;
+}
