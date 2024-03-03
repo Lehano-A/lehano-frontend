@@ -133,7 +133,7 @@ const instruments = [
   {
     name: 'Webpack',
     link: 'https://webpack.js.org',
-    textAlt: 'Логотип инструмента сборки проектов "webpack"',
+    textAlt: 'Логотип инструмента сборки проектов - "webpack"',
     fileNameLogo: 'webpack'
   },
 
@@ -142,6 +142,13 @@ const instruments = [
     link: 'https://redux.js.org',
     textAlt: 'Логотип библиотеки для управления состоянием приложения - "Redux"',
     fileNameLogo: 'redux'
+  },
+
+  {
+    name: 'React Router',
+    link: 'https://reactrouter.com/en/main',
+    textAlt: 'Логотип библиотеки для создания навигации приложения - "React Router"',
+    fileNameLogo: 'reactRouter'
   },
 ]
 

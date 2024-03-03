@@ -23,14 +23,14 @@ import vscodeLogo from '../../images/tech-card-logos/vscode.svg'
 import bemLogo from '../../images/tech-card-logos/bem.svg'
 import webpackLogo from '../../images/tech-card-logos/webpack.svg'
 import reduxLogo from '../../images/tech-card-logos/redux.svg'
-
+import reactRouterLogo from '../../images/tech-card-logos/react-router.svg'
 
 import photoshopLogo from '../../images/tech-card-logos/photoshop.svg'
 import illustratorLogo from '../../images/tech-card-logos/illustrator.svg'
 import afterEffectsLogo from '../../images/tech-card-logos/after-effects.svg'
 
 const logos = {
-   html5Logo,
+  html5Logo,
   css3Logo,
   javaScriptLogo,
 
@@ -52,6 +52,7 @@ const logos = {
   bemLogo,
   webpackLogo,
   reduxLogo,
+  reactRouterLogo,
 
   photoshopLogo,
   illustratorLogo,
