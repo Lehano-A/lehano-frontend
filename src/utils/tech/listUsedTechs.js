@@ -150,6 +150,13 @@ const instruments = [
     textAlt: 'Логотип библиотеки для создания навигации приложения - "React Router"',
     fileNameLogo: 'reactRouter'
   },
+
+  {
+    name: 'JWT',
+    link: 'https://jwt.io/',
+    textAlt: 'Логотип библиотеки для генерации токена - "JWT"',
+    fileNameLogo: 'jwt'
+  },
 ]
 
 

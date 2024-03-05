@@ -24,6 +24,7 @@ import bemLogo from '../../images/tech-card-logos/bem.svg'
 import webpackLogo from '../../images/tech-card-logos/webpack.svg'
 import reduxLogo from '../../images/tech-card-logos/redux.svg'
 import reactRouterLogo from '../../images/tech-card-logos/react-router.svg'
+import jwtLogo from '../../images/tech-card-logos/jwt.svg'
 
 import photoshopLogo from '../../images/tech-card-logos/photoshop.svg'
 import illustratorLogo from '../../images/tech-card-logos/illustrator.svg'
@@ -53,6 +54,7 @@ const logos = {
   webpackLogo,
   reduxLogo,
   reactRouterLogo,
+  jwtLogo,
 
   photoshopLogo,
   illustratorLogo,
