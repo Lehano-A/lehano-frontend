@@ -133,8 +133,8 @@ const educationalProjects = [
     },
 
     links: {
-      project: '',
-      githubRepo: 'https://github.com/Lehano-A/mesto-react',
+      project: 'https://mesto-react.lehano.ru',
+      githubRepo: 'https://github.com/Lehano-A/react-mesto-api-full',
     },
 
     style: {
@@ -155,7 +155,7 @@ const educationalProjects = [
 
     links: {
       project: '',
-      githubRepo: 'https://github.com/Lehano-A/express-mesto',
+      githubRepo: 'https://github.com/Lehano-A/react-mesto-api-full',
     },
 
     style: {
@@ -174,7 +174,7 @@ const educationalProjects = [
     },
 
     links: {
-      project: 'https://github.com/Lehano-A/mesto/src/index.html',
+      project: 'https://mesto-classes.lehano.ru',
       githubRepo: 'https://github.com/Lehano-A/mesto',
     },
 
