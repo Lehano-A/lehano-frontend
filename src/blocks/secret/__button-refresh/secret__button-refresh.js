@@ -24,8 +24,8 @@ const secretWords = [
     bg: 'rgba(180, 80, 80, 1)',
   },
   {
-    title: 'Коньяка',
-    icons: '🥃',
+    title: 'Винишка',
+    icons: '🍷',
     bg: 'rgba(223, 186, 130, 1)',
   },
   {
@@ -49,15 +49,34 @@ const secretWords = [
     bg: 'rgba(248, 196, 253, 1)',
   },
   {
-    title: 'Игрулек',
+    title: 'Контры',
     icons: '🎮',
     bg: 'rgba(250, 163, 246, 1)',
-
   },
   {
-    title: 'Ультра хэви-металла',
+    title: 'Ультра хэви-метала',
     icons: '🤘🎸🤘',
     bg: 'rgba(182, 182, 182, 1)',
+  },
+  {
+    title: 'Бюджета',
+    icons: '💳💵💰',
+    bg: 'rgba(255, 215, 0, 1)',
+  },
+  {
+    title: 'Кислорода',
+    icons: '🏞️🌳🏖️',
+    bg: 'rgba(132, 245, 224, 1)',
+  },
+  {
+    title: 'Сна',
+    icons: '💤',
+    bg: 'rgba(171, 148, 235, 1)',
+  },
+  {
+    title: 'Тёплой шапки',
+    icons: '🥴',
+    bg: 'rgba(134, 208, 240, 1)',
   },
 ]
 
@@ -84,6 +103,6 @@ buttonRefresh.addEventListener('click', () => {
   subtitleSecret.style.backgroundColor = bg;
   iconSecret.textContent = icons;
   secretWord.textContent = title.toLowerCase();
-  
+
   secretWord.animate(rulesSecretWord, optionsChangeRgba);
 })
