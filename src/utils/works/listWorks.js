@@ -84,7 +84,7 @@ const petProjects = [
 const educationalProjects = [
   {
     data: {
-      name: 'Movies Explorer',
+      name: 'Сервис - Movies Explorer',
       type: 'Одностраничное приложение',
       usedTechs: 'React / CSS',
       features: 'frontend',
@@ -105,7 +105,7 @@ const educationalProjects = [
 
   {
     data: {
-      name: 'Movies Explorer',
+      name: 'Сервис - Movies Explorer',
       type: 'Одностраничное приложение',
       usedTechs: 'JavaScript / Mongoose / Express',
       features: 'backend',
