@@ -310,77 +310,76 @@
   </footer>
   <!-- FOOTER - КОНЕЦ -->
 
-</body>
 
-
-<template id="templateCardTech">
-  <li class="tech__list-item">
-    <figure class="tech__card">
-      <a class="tech__link" rel="noopener noreferrer"></a>
-      <figcaption class="tech__card-description"></figcaption>
-    </figure>
-  </li>
-</template>
+  <template id="templateCardTech">
+    <li class="tech__list-item">
+      <figure class="tech__card">
+        <a class="tech__link" rel="noopener noreferrer"></a>
+        <figcaption class="tech__card-description"></figcaption>
+      </figure>
+    </li>
+  </template>
 
 
 
-<template id="templateCardWork">
-  <li class="works__grid-item"> <!-- class: works__grid-item_in-two-columns-->
-    <div class="works__card-box">
-      <div class="works__card box-shadow"> <!--class: works__card_color_purple-->
-        <div class="works__card-title-description-box">
+  <template id="templateCardWork">
+    <li class="works__grid-item"> <!-- class: works__grid-item_in-two-columns-->
+      <div class="works__card-box">
+        <div class="works__card box-shadow"> <!--class: works__card_color_purple-->
+          <div class="works__card-title-description-box">
 
-          <div>
-            <h3 class="works__card-title"></h3> <!--
-              class: works__card-title_color_light_purple
-              textContent: Movies Explorer
-            -->
-          </div>
-
-
-          <div class="works__card-description">
-
-            <p class="works__card-description-type"></p> <!-- Одностраничное приложение -->
-
-            <div class="works__card-description-option-box">
-              <div class="works__card-description-tech-box">
-                <h4 class="works__card-description-title-tech">Основные технологии:</h4>
-                <p class="works__card-description-tech"></p> <!--JavaScript / Mongoose / Express -->
-              </div>
-
-              <p class="works__card-description-option"></p> <!--backend, классы, коллаборация-->
+            <div>
+              <h3 class="works__card-title"></h3> <!--
+                class: works__card-title_color_light_purple
+                textContent: Movies Explorer
+              -->
             </div>
 
+
+            <div class="works__card-description">
+
+              <p class="works__card-description-type"></p> <!-- Одностраничное приложение -->
+
+              <div class="works__card-description-option-box">
+                <div class="works__card-description-tech-box">
+                  <h4 class="works__card-description-title-tech">Основные технологии:</h4>
+                  <p class="works__card-description-tech"></p> <!--JavaScript / Mongoose / Express -->
+                </div>
+
+                <p class="works__card-description-option"></p> <!--backend, классы, коллаборация-->
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="works__link-card-box">
-        <a id="projectLink" class="works__link-card" rel="noopener noreferrer"> <!--
-        href: URI
-        target: _blank
-      -->
-          <img id="projectIcon" class="works__icon-link" src="./images/icons/open-in-new.svg" alt=""> <!--
-            title: Нет возможности перейти на страницу проекта
-            alt: Неактивная иконка перехода на внешнюю страницу
-            class: works__icon-link_inactive
-          -->
-        </a>
-
-        <a id="githubRepoLink" class="works__link-card" rel="noopener noreferrer"> <!--
+        <div class="works__link-card-box">
+          <a id="projectLink" class="works__link-card" rel="noopener noreferrer"> <!--
           href: URI
           target: _blank
         -->
-          <img id="githubRepoIcon" class="works__icon-link" src="./images/tech-card-logos/github.svg">
-          <!--
-            title: Перейти в репозиторий проекта
-            alt: Неактивная иконка с логотипом GitHub
-            class: works__icon-link_inactive
+            <img id="projectIcon" class="works__icon-link" src="./images/icons/open-in-new.svg" alt=""> <!--
+              title: Нет возможности перейти на страницу проекта
+              alt: Неактивная иконка перехода на внешнюю страницу
+              class: works__icon-link_inactive
+            -->
+          </a>
+
+          <a id="githubRepoLink" class="works__link-card" rel="noopener noreferrer"> <!--
+            href: URI
+            target: _blank
           -->
-        </a>
+            <img id="githubRepoIcon" class="works__icon-link" src="./images/tech-card-logos/github.svg">
+            <!--
+              title: Перейти в репозиторий проекта
+              alt: Неактивная иконка с логотипом GitHub
+              class: works__icon-link_inactive
+            -->
+          </a>
+        </div>
       </div>
-    </div>
-  </li>
-</template>
+    </li>
+  </template>
+</body>
 
 </html>
