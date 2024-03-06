@@ -1,7 +1,7 @@
 {
   "name": "lehano-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Сайт-портфолио frontend-разработчика на старте",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -41,5 +41,9 @@
   "dependencies": {
     "@babel/core": "^7.21.4",
     "postcss-preset-env": "^9.4.0"
+  },
+  "engine": {
+    "npm": "^10.2.4",
+    "node": "^20.11.1"
   }
 }
