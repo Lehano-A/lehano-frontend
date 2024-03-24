@@ -235,7 +235,7 @@ const educationalProjects = [
 
     links: {
       project: 'https://lehano-a.github.io/kuda-ya-poedu/',
-      githubRepo: 'https://lehano-a.github.io/kuda-ya-poedu/',
+      githubRepo: 'https://github.com/Lehano-A/kuda-ya-poedu',
     },
 
     style: {
