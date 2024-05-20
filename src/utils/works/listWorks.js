@@ -16,7 +16,7 @@ const petProjects = [
     },
   },
 
-  
+
   {
     data: {
       name: 'Калькулятор доходности',
@@ -42,7 +42,7 @@ const petProjects = [
     data: {
       name: 'Сервис - чтояем.рф',
       type: 'Одностраничное приложение',
-      usedTechs: 'React / CSS / MUI',
+      usedTechs: 'React / styled-components / MUI',
       features: 'frontend',
     },
 
