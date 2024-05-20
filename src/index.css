@@ -98,6 +98,7 @@
 @import url('./blocks/works/__card/_color/_pale-blue/works__card_color_pale-blue.css');
 @import url('./blocks/works/__card/_color/_cornflower-crayola/works__card_color_cornflower-crayola.css');
 @import url('./blocks/works/__card/_color/_pale-lilac/works__card_color_pale-lilac.css');
+@import url('./blocks/works/__card/_color/_honey/works__card_color_honey.css');
 
 @import url('./blocks/works/__card-title/_color/_light-gray/works__card-title_color_light-gray.css');
 @import url('./blocks/works/__card-title/_color/_light-purple/works__card-title_color_light-purple.css');
@@ -107,6 +108,7 @@
 @import url('./blocks/works/__card-title/_color/_light-blue/works__card-title_color_light-blue.css');
 @import url('./blocks/works/__card-title/_color/_light-cornflower/works__card-title_color_light-cornflower.css');
 @import url('./blocks/works/__card-title/_color/_light-lilac/works__card-title_color_light-lilac.css');
+@import url('./blocks/works/__card-title/_color/_light-honey/works__card-title_color_light-honey.css');
 /* --------------------------------- SECRET --------------------------------- */
 @import url('./blocks/secret/secret.css');
 @import url('./blocks/secret/_visible/secret_visible.css');

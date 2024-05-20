@@ -16,6 +16,27 @@ const petProjects = [
     },
   },
 
+  
+  {
+    data: {
+      name: 'Калькулятор доходности',
+      type: 'Одностраничное приложение',
+      usedTechs: 'React / styled-components',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://profitcalc.lehano.ru',
+      githubRepo: 'https://github.com/Lehano-A/profitability_calculator',
+    },
+
+    style: {
+      cardColor: 'honey',
+      projectNameColor: 'light-honey',
+      gridColumn: '1',
+    },
+  },
+
 
   {
     data: {
