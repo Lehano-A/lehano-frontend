@@ -96,6 +96,7 @@
 @import url('./blocks/works/__card/_color/_mint/works__card_color_mint.css');
 @import url('./blocks/works/__card/_color/_pale-pink/works__card_color_pale-pink.css');
 @import url('./blocks/works/__card/_color/_pale-blue/works__card_color_pale-blue.css');
+@import url('./blocks/works/__card/_color/_pale-purple/works__card_color_pale-purple.css');
 @import url('./blocks/works/__card/_color/_cornflower-crayola/works__card_color_cornflower-crayola.css');
 @import url('./blocks/works/__card/_color/_pale-lilac/works__card_color_pale-lilac.css');
 @import url('./blocks/works/__card/_color/_honey/works__card_color_honey.css');
@@ -104,6 +105,7 @@
 @import url('./blocks/works/__card-title/_color/_light-purple/works__card-title_color_light-purple.css');
 @import url('./blocks/works/__card-title/_color/_light-yellow/works__card-title_color_light-yellow.css');
 @import url('./blocks/works/__card-title/_color/_light-mint/works__card-title_color_light-mint.css');
+@import url('./blocks/works/__card-title/_color/_light-pale-purple/works__card-title_color_light-pale-purple.css');
 @import url('./blocks/works/__card-title/_color/_light-pink/works__card-title_color_light-pink.css');
 @import url('./blocks/works/__card-title/_color/_light-blue/works__card-title_color_light-blue.css');
 @import url('./blocks/works/__card-title/_color/_light-cornflower/works__card-title_color_light-cornflower.css');

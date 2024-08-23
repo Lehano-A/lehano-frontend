@@ -16,6 +16,48 @@ const petProjects = [
     },
   },
 
+  {
+    data: {
+      name: 'Сервис - trackerman',
+      type: 'Одностраничное приложение',
+      usedTechs: 'React / Redux / styled-components',
+      features: 'frontend',
+    },
+
+    links: {
+      project: '',
+      githubRepo: 'https://github.com/Lehano-A/trackerman-frontend',
+    },
+
+    style: {
+      cardColor: 'pale-purple',
+      projectNameColor: 'light-pale-purple',
+      gridColumn: '1',
+    },
+  },
+
+
+  {
+    data: {
+      name: 'Сервис - trackerman',
+      type: 'Одностраничное приложение',
+      usedTechs: 'JavaScript / Mongoose / Express ',
+      features: 'backend',
+    },
+
+    links: {
+      project: '',
+      githubRepo: '',
+    },
+
+    style: {
+      cardColor: 'pale-purple',
+      projectNameColor: 'light-pale-purple',
+      gridColumn: '2 / span 2'
+    },
+  },
+
+
 
   {
     data: {
