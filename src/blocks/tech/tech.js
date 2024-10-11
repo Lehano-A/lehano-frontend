@@ -29,24 +29,30 @@ function handleDataCard(data, templateCard, blockNode) {
 
     const linkNode = cloneCard.querySelector('.tech__link')
     const techNameNode = cloneCard.querySelector('.tech__card-description')
-    const logoNode = createLogoNode(fileNameLogo)
-
-
     techNameNode.textContent = name
-    setAttrsLinkNode(linkNode, link)
-    setAttrsLogoNode(logoNode, textAlt)
-    addLogoToLink(linkNode, logoNode)
 
+    const logoSource = logos[`${fileNameLogo}Logo`]
+
+    // если нет пути к логотипу, значит логотоип - не файл
+    if (logoSource.path === null) {
+      linkNode.textContent = logoSource.icon
+    } else { // иначе, создаём узел изображения
+
+      const logoNode = createLogoNode(logoSource)
+      setAttrsLogoNode(logoNode, textAlt)
+      addLogoToLink(linkNode, logoNode)
+    }
+
+    setAttrsLinkNode(linkNode, link)
     blockNode.appendChild(cloneCard)
   })
 }
 
 
-
-function createLogoNode(fileNameLogo) {
+// создать узел для логотипа
+function createLogoNode(logoPath) {
   const image = new Image()
-
-  image.src = logos[`${fileNameLogo}Logo`]
+  image.src = logoPath
   image.classList.add('tech__logo')
 
   return image

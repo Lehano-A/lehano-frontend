@@ -5,30 +5,23 @@
   grid-template-columns: minmax(min-content, 380px);
   grid-template-rows: auto;
   grid-template-areas:
-    "langs frameworks data-bases"
-    "instruments     graphic       .    ";
+    'langs        ui'
+    'frameworks   data-bases'
+    'instruments  graphic';
   grid-column-gap: 70px;
   grid-row-gap: 40px;
   padding: 0;
 }
 
-@media (max-width: 1149px) {
-  .tech__grid-list {
-    grid-template-areas:
-      "langs frameworks"
-      "data-bases   ."
-      "instruments     graphic";
-  }
-}
-
 @media (max-width: 800px) {
   .tech__grid-list {
     grid-template-areas:
-      "langs"
-      "frameworks"
-      "data-bases"
-      "instruments"
-      "graphic";
+      'langs'
+      'ui'
+      'frameworks'
+      'data-bases'
+      'instruments'
+      'graphic';
     justify-items: center;
   }
 }
