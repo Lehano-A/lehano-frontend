@@ -14,38 +14,45 @@ const langs = [
   },
 
   {
-
     name: 'JavaScript',
     link: 'https://developer.mozilla.org/ru/docs/Web/JavaScript',
     textAlt: 'Логотип языка программирования "JavaScript"',
     fileNameLogo: 'javaScript'
+  },
+
+  {
+    name: 'TypeScript',
+    link: 'https://www.typescriptlang.org/',
+    textAlt: 'Логотип языка программирования "TypeScript"',
+    fileNameLogo: 'typeScript'
   }
 ]
 
 
 
-const frameworks = [
+const ui = [
   {
     name: 'React',
     link: 'https://react.dev',
     textAlt: 'Логотип frontend-фреймворка "React"',
     fileNameLogo: 'react'
   },
-
-  {
-    name: 'express',
-    link: 'https://expressjs.com',
-    textAlt: 'Логотип backend-фреймворка "express"',
-    fileNameLogo: 'express',
-
-  },
   {
     name: 'mui',
     link: 'https://mui.com',
     textAlt: 'Логотип библиотеки пользовательского интерфейса - Material UI',
     fileNameLogo: 'mui',
-
   }
+]
+
+
+const frameworks = [
+  {
+    name: 'express',
+    link: 'https://expressjs.com',
+    textAlt: 'Логотип backend-фреймворка "express"',
+    fileNameLogo: 'express',
+  },
 ]
 
 
@@ -117,6 +124,13 @@ const instruments = [
   },
 
   {
+    name: 'nginx',
+    link: 'https://nginx.org',
+    textAlt: 'Логотип прокси-сервера "nginx"',
+    fileNameLogo: 'nginx'
+  },
+
+  {
     name: 'Visual Studio Code',
     link: 'https://code.visualstudio.com',
     textAlt: 'Логотип редактора программного обеспечения "Visual Studio Code"',
@@ -157,6 +171,13 @@ const instruments = [
     textAlt: 'Логотип библиотеки для генерации токена - "JWT"',
     fileNameLogo: 'jwt'
   },
+
+  {
+    name: 'Husky',
+    link: 'https://typicode.github.io/husky',
+    textAlt: 'Логотип библиотеки для более гибкого использования git - "Husky"',
+    fileNameLogo: 'husky'
+  },
 ]
 
 
@@ -186,6 +207,7 @@ const graphics = [
 
 const listUsedTechs = [
   { blockName: 'langs', data: langs },
+  { blockName: 'ui', data: ui },
   { blockName: 'frameworks', data: frameworks },
   { blockName: 'dataBases', data: dataBases },
   { blockName: 'instruments', data: instruments },

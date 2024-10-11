@@ -4,6 +4,8 @@
   cursor: pointer;
   transition: 0.3s;
   animation-duration: ease-in-out;
+  margin: 20px 10px 0;
+  font-size: 30px;
 }
 
 .tech__link:hover {
