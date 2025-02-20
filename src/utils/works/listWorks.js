@@ -18,6 +18,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'Pascal Vent',
+      type: 'landing page',
+      usedTechs: 'React / SCSS / TypeScript',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://pascal-vent.lehano.ru/',
+      githubRepo: 'https://github.com/Lehano-A/pascal-vent',
+    },
+
+    style: {
+      cardColor: 'white-green',
+      projectNameColor: 'pale-green',
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'Сервис - trackerman',
       type: 'Одностраничное приложение',
       usedTechs: 'React / Redux / styled-components',
