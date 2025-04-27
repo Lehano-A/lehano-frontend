@@ -1,6 +1,6 @@
 import setAttrsLinkNode from "../../utils/common/setAttrsLinkNode";
-import listUsedTechs from "../../utils/tech/listUsedTechs";
-import logos from '../../utils/tech/logosUsedTechs'
+import listUsedTechs from "./listUsedTechs";
+import logos from './logosUsedTechs'
 
 
 // создать техно-карточку
