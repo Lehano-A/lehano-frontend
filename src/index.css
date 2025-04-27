@@ -64,6 +64,7 @@
 @import url('./blocks/tech/__list-item-ui/tech__list-item-ui.css');
 @import url('./blocks/tech/__list-item-frameworks/tech__list-item-frameworks.css');
 @import url('./blocks/tech/__list-item-data-bases/tech__list-item-data-bases.css');
+@import url('./blocks/tech/__list-item-builders/tech__list-item-builders.css');
 @import url('./blocks/tech/__list-item-instruments/tech__list-item-instruments.css');
 @import url('./blocks/tech/__list-item-graphic/tech__list-item-graphic.css');
 

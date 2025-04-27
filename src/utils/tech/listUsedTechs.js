@@ -87,6 +87,20 @@ const dataBases = [
   }
 ]
 
+const builders = [{
+  name: 'Webpack',
+  link: 'https://webpack.js.org',
+  textAlt: 'Логотип инструмента сборки проектов - "webpack"',
+  fileNameLogo: 'webpack'
+},
+
+{
+  name: 'Vite',
+  link: 'https://vite.dev/',
+  textAlt: 'Логотип инструмента сборки проектов - "vite"',
+  fileNameLogo: 'vite'
+},]
+
 
 const instruments = [
   {
@@ -160,20 +174,6 @@ const instruments = [
   },
 
   {
-    name: 'Webpack',
-    link: 'https://webpack.js.org',
-    textAlt: 'Логотип инструмента сборки проектов - "webpack"',
-    fileNameLogo: 'webpack'
-  },
-
-  {
-    name: 'Vite',
-    link: 'https://vite.dev/',
-    textAlt: 'Логотип инструмента сборки проектов - "vite"',
-    fileNameLogo: 'vite'
-  },
-
-  {
     name: 'Redux',
     link: 'https://redux.js.org',
     textAlt: 'Логотип библиотеки для управления состоянием приложения - "Redux"',
@@ -232,6 +232,7 @@ const listUsedTechs = [
   { blockName: 'ui', data: ui },
   { blockName: 'frameworks', data: frameworks },
   { blockName: 'dataBases', data: dataBases },
+  { blockName: 'builders', data: builders },
   { blockName: 'instruments', data: instruments },
   { blockName: 'graphics', data: graphics },
 ]

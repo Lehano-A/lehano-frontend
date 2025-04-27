@@ -7,7 +7,8 @@
   grid-template-areas:
     'langs        ui'
     'frameworks   data-bases'
-    'instruments  graphic';
+    'builders     graphic'
+    'instruments  none';
   grid-column-gap: 70px;
   grid-row-gap: 40px;
   padding: 0;
@@ -20,6 +21,7 @@
       'ui'
       'frameworks'
       'data-bases'
+      'builders'
       'instruments'
       'graphic';
     justify-items: center;
