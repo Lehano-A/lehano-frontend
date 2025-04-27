@@ -6,6 +6,7 @@ import typeScriptLogo from '../../images/tech-card-logos/typescript.svg'
 
 import reactLogo from '../../images/tech-card-logos/react.svg'
 import muiLogo from '../../images/tech-card-logos/mui.svg'
+import antDesignLogo from '../../images/tech-card-logos/ant-design.svg'
 import styledComponentsLogo from '../../images/tech-card-logos/styled-components.svg'
 import scssLogo from '../../images/tech-card-logos/scss.svg'
 
@@ -46,6 +47,7 @@ const logos = {
 
   reactLogo,
   muiLogo,
+  antDesignLogo,
   styledComponentsLogo,
   scssLogo,
 

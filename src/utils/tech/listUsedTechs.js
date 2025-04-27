@@ -37,11 +37,19 @@ const ui = [
     textAlt: 'Логотип frontend-фреймворка "React"',
     fileNameLogo: 'react'
   },
+
   {
     name: 'mui',
     link: 'https://mui.com',
     textAlt: 'Логотип библиотеки пользовательского интерфейса - Material UI',
     fileNameLogo: 'mui',
+  },
+
+  {
+    name: 'Ant Design',
+    link: 'https://ant.design/',
+    textAlt: 'Логотип библиотеки пользовательского интерфейса - Ant Design',
+    fileNameLogo: 'antDesign',
   },
 
   {
