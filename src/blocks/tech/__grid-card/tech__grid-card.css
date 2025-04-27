@@ -5,7 +5,6 @@
   grid-auto-rows: 120px;
   grid-gap: 10px;
   padding: 0;
-
 }
 
 @media (max-width: 800px) {
@@ -15,11 +14,8 @@
     grid-auto-flow: column;
   }
 
-  .tech__grid-card#langs {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: row;
-  }
-
+  .tech__grid-card#ui,
+  .tech__grid-card#langs,
   .tech__grid-card#instruments {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
