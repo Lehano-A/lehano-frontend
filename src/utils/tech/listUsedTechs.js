@@ -43,6 +43,14 @@ const ui = [
     textAlt: 'Логотип библиотеки пользовательского интерфейса - Material UI',
     fileNameLogo: 'mui',
   },
+
+  {
+    name: 'styled components',
+    link: 'https://styled-components.com',
+    textAlt: 'Логотип CSS-библиотеки "styled elements" для React',
+    fileNameLogo: 'styledComponents'
+  },
+
   {
     name: 'SCSS',
     link: 'https://sass-lang.com/',
@@ -92,13 +100,6 @@ const instruments = [
     link: 'https://github.com/Lehano-A',
     textAlt: 'Логотип сервиса контроля версий кода "GitHub"',
     fileNameLogo: 'github'
-  },
-
-  {
-    name: 'styled components',
-    link: 'https://styled-components.com',
-    textAlt: 'Логотип CSS-библиотеки "styled elements" для React',
-    fileNameLogo: 'styledComponents'
   },
 
   {
