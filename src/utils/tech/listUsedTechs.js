@@ -87,6 +87,7 @@ const dataBases = [
   }
 ]
 
+
 const builders = [{
   name: 'Webpack',
   link: 'https://webpack.js.org',
@@ -102,7 +103,7 @@ const builders = [{
 },]
 
 
-const instruments = [
+const backend = [
   {
     name: 'Node.js',
     link: 'https://nodejs.org/en/docs',
@@ -110,6 +111,23 @@ const instruments = [
     fileNameLogo: 'nodejs'
   },
 
+  {
+    name: 'nginx',
+    link: 'https://nginx.org',
+    textAlt: 'Логотип прокси-сервера "nginx"',
+    fileNameLogo: 'nginx'
+  },
+
+  {
+    name: 'mongoose',
+    link: 'https://mongoosejs.com',
+    textAlt: 'Логотип библиотеки "Mongoose" для работы с базой данных mongoDB',
+    fileNameLogo: 'mongoose'
+  },
+]
+
+
+const instruments = [
   {
     name: 'GitBash',
     link: 'https://gitforwindows.org',
@@ -143,20 +161,6 @@ const instruments = [
     link: 'https://www.figma.com',
     textAlt: 'Логотип графического инструмента Figma',
     fileNameLogo: 'figma'
-  },
-
-  {
-    name: 'mongoose',
-    link: 'https://mongoosejs.com',
-    textAlt: 'Логотип библиотеки "Mongoose" для работы с базой данных mongoDB',
-    fileNameLogo: 'mongoose'
-  },
-
-  {
-    name: 'nginx',
-    link: 'https://nginx.org',
-    textAlt: 'Логотип прокси-сервера "nginx"',
-    fileNameLogo: 'nginx'
   },
 
   {
@@ -233,6 +237,7 @@ const listUsedTechs = [
   { blockName: 'frameworks', data: frameworks },
   { blockName: 'dataBases', data: dataBases },
   { blockName: 'builders', data: builders },
+  { blockName: 'backend', data: backend },
   { blockName: 'instruments', data: instruments },
   { blockName: 'graphics', data: graphics },
 ]

@@ -7,8 +7,8 @@
 }
 
 .tech::before {
-  content: "";
-  background-image: url("./../../images/blocks/tech/tech.svg");
+  content: '';
+  background-image: url('./../../images/blocks/tech/tech.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: 100px;
