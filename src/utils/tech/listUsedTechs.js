@@ -158,6 +158,13 @@ const instruments = [
   },
 
   {
+    name: 'Vite',
+    link: 'https://vite.dev/',
+    textAlt: 'Логотип инструмента сборки проектов - "vite"',
+    fileNameLogo: 'vite'
+  },
+
+  {
     name: 'Redux',
     link: 'https://redux.js.org',
     textAlt: 'Логотип библиотеки для управления состоянием приложения - "Redux"',

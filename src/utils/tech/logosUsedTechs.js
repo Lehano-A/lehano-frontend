@@ -26,6 +26,7 @@ import nginxLogo from '../../images/tech-card-logos/nginx.svg'
 import vscodeLogo from '../../images/tech-card-logos/vscode.svg'
 import bemLogo from '../../images/tech-card-logos/bem.svg'
 import webpackLogo from '../../images/tech-card-logos/webpack.svg'
+import viteLogo from '../../images/tech-card-logos/vite.svg'
 import reduxLogo from '../../images/tech-card-logos/redux.svg'
 import reactRouterLogo from '../../images/tech-card-logos/react-router.svg'
 import jwtLogo from '../../images/tech-card-logos/jwt.svg'
@@ -62,6 +63,7 @@ const logos = {
   vscodeLogo,
   bemLogo,
   webpackLogo,
+  viteLogo,
   reduxLogo,
   reactRouterLogo,
   jwtLogo,
