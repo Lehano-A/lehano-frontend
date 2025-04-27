@@ -6,9 +6,9 @@
   grid-template-rows: auto;
   grid-template-areas:
     'langs        ui'
-    'frameworks   data-bases'
-    'builders     backend'
-    'instruments  graphic';
+    'backend      data-bases'
+    'builders     graphic'
+    'instruments  none';
   grid-column-gap: 70px;
   grid-row-gap: 40px;
   padding: 0;
@@ -19,10 +19,9 @@
     grid-template-areas:
       'langs'
       'ui'
-      'frameworks'
+      'backend'
       'data-bases'
       'builders'
-      'backend'
       'instruments'
       'graphic';
     justify-items: center;

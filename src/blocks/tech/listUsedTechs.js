@@ -68,12 +68,33 @@ const ui = [
 ]
 
 
-const frameworks = [
+const backend = [
+  {
+    name: 'Node.js',
+    link: 'https://nodejs.org/en/docs',
+    textAlt: 'Логотип среды выполнения "Node.js" для языка программирования JavaScript на стороне backend',
+    fileNameLogo: 'nodejs'
+  },
+
+  {
+    name: 'nginx',
+    link: 'https://nginx.org',
+    textAlt: 'Логотип прокси-сервера "nginx"',
+    fileNameLogo: 'nginx'
+  },
+
   {
     name: 'express',
     link: 'https://expressjs.com',
     textAlt: 'Логотип backend-фреймворка "express"',
     fileNameLogo: 'express',
+  },
+
+  {
+    name: 'mongoose',
+    link: 'https://mongoosejs.com',
+    textAlt: 'Логотип библиотеки "Mongoose" для работы с базой данных mongoDB',
+    fileNameLogo: 'mongoose'
   },
 ]
 
@@ -101,30 +122,6 @@ const builders = [{
   textAlt: 'Логотип инструмента сборки проектов - "vite"',
   fileNameLogo: 'vite'
 },]
-
-
-const backend = [
-  {
-    name: 'Node.js',
-    link: 'https://nodejs.org/en/docs',
-    textAlt: 'Логотип среды выполнения "Node.js" для языка программирования JavaScript на стороне backend',
-    fileNameLogo: 'nodejs'
-  },
-
-  {
-    name: 'nginx',
-    link: 'https://nginx.org',
-    textAlt: 'Логотип прокси-сервера "nginx"',
-    fileNameLogo: 'nginx'
-  },
-
-  {
-    name: 'mongoose',
-    link: 'https://mongoosejs.com',
-    textAlt: 'Логотип библиотеки "Mongoose" для работы с базой данных mongoDB',
-    fileNameLogo: 'mongoose'
-  },
-]
 
 
 const instruments = [
@@ -234,10 +231,9 @@ const graphics = [
 const listUsedTechs = [
   { blockName: 'langs', data: langs },
   { blockName: 'ui', data: ui },
-  { blockName: 'frameworks', data: frameworks },
+  { blockName: 'backend', data: backend },
   { blockName: 'dataBases', data: dataBases },
   { blockName: 'builders', data: builders },
-  { blockName: 'backend', data: backend },
   { blockName: 'instruments', data: instruments },
   { blockName: 'graphics', data: graphics },
 ]
