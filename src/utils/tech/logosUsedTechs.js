@@ -6,7 +6,7 @@ import typeScriptLogo from '../../images/tech-card-logos/typescript.svg'
 
 import reactLogo from '../../images/tech-card-logos/react.svg'
 import muiLogo from '../../images/tech-card-logos/mui.svg'
-
+import scssLogo from '../../images/tech-card-logos/scss.svg'
 
 import expressLogo from '../../images/tech-card-logos/express.svg'
 
@@ -43,8 +43,10 @@ const logos = {
   typeScriptLogo,
 
   reactLogo,
-  expressLogo,
   muiLogo,
+  scssLogo,
+
+  expressLogo,
 
   mongodbLogo,
 
@@ -63,7 +65,7 @@ const logos = {
   reduxLogo,
   reactRouterLogo,
   jwtLogo,
-  huskyLogo: {icon:'🐶', path: null},
+  huskyLogo: { icon: '🐶', path: null },
 
   photoshopLogo,
   illustratorLogo,

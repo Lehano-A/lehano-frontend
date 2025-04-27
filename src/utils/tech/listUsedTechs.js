@@ -42,7 +42,13 @@ const ui = [
     link: 'https://mui.com',
     textAlt: 'Логотип библиотеки пользовательского интерфейса - Material UI',
     fileNameLogo: 'mui',
-  }
+  },
+  {
+    name: 'SCSS',
+    link: 'https://sass-lang.com/',
+    textAlt: 'Логотип препроцессора "scss"',
+    fileNameLogo: 'scss'
+  },
 ]
 
 
