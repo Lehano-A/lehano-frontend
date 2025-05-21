@@ -19,7 +19,7 @@ const petProjects = [
   {
     data: {
       name: 'toodoo',
-      type: 'SPA',
+      type: 'spa',
       usedTechs: 'React / TypeScript/ Redux ',
       features: 'frontend',
     },
@@ -39,7 +39,7 @@ const petProjects = [
   {
     data: {
       name: 'Pascal Vent',
-      type: 'landing page',
+      type: 'long page',
       usedTechs: 'React / SCSS / TypeScript',
       features: 'frontend',
     },
@@ -59,7 +59,7 @@ const petProjects = [
   {
     data: {
       name: 'Сервис - trackerman',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'React / Redux / styled-components',
       features: 'frontend',
     },
@@ -80,7 +80,7 @@ const petProjects = [
   {
     data: {
       name: 'Сервис - trackerman',
-      type: 'Одностраничное приложение',
+      type: '',
       usedTechs: 'JavaScript / Mongoose / Express ',
       features: 'backend',
     },
@@ -102,7 +102,7 @@ const petProjects = [
   {
     data: {
       name: 'Калькулятор доходности',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'React / styled-components',
       features: 'frontend',
     },
@@ -123,7 +123,7 @@ const petProjects = [
   {
     data: {
       name: 'Сервис - чтояем.рф',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'React / styled-components / MUI',
       features: 'frontend',
     },
@@ -144,7 +144,7 @@ const petProjects = [
   {
     data: {
       name: 'Сервис - чтояем.рф',
-      type: 'Одностраничное приложение',
+      type: '',
       usedTechs: 'JavaScript / Mongoose / Express ',
       features: 'backend',
     },
@@ -165,7 +165,7 @@ const petProjects = [
   {
     data: {
       name: 'Портфолио - lehano.ru',
-      type: 'Одностраничный сайт',
+      type: 'long page',
       usedTechs: 'HTML / CSS / JavaScript',
       features: 'frontend',
     },
@@ -188,7 +188,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Сервис - Movies Explorer',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'React / CSS',
       features: 'frontend',
     },
@@ -209,7 +209,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Сервис - Movies Explorer',
-      type: 'Одностраничное приложение',
+      type: '',
       usedTechs: 'JavaScript / Mongoose / Express',
       features: 'backend',
     },
@@ -230,7 +230,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Мини-соцсеть "Mesto"',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'React / CSS',
       features: 'frontend',
     },
@@ -251,7 +251,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Мини-соцсеть "Mesto"',
-      type: 'Одностраничное приложение',
+      type: '',
       usedTechs: 'JavaScript / Mongoose / Express',
       features: 'backend',
     },
@@ -271,9 +271,9 @@ const educationalProjects = [
   {
     data: {
       name: 'Мини-соцсеть "Mesto"',
-      type: 'Одностраничное приложение',
+      type: 'spa',
       usedTechs: 'HTML / CSS / JavaScript',
-      features: 'классы',
+      features: 'frontend (классы)',
     },
 
     links: {
@@ -291,7 +291,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Путешествия по России',
-      type: 'Одностраничный сайт',
+      type: 'long page',
       usedTechs: 'HTML / CSS',
       features: 'frontend',
     },
@@ -311,7 +311,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Как учиться',
-      type: 'Одностраничный сайт',
+      type: 'long page',
       usedTechs: 'HTML / CSS',
       features: 'frontend',
     },
@@ -331,7 +331,7 @@ const educationalProjects = [
   {
     data: {
       name: 'Куда я поеду',
-      type: 'Одностраничный сайт',
+      type: 'long page',
       usedTechs: 'HTML / CSS',
       features: 'коллаборация',
     },
