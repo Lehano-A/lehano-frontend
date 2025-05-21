@@ -1,5 +1,6 @@
 @import url('./vendor/normalize.css');
 @import url('./vendor/fonts/fonts.css');
+@import url('./styles/common.css');
 
 @import url('./common/text/text.css');
 @import url('./common/text/_bold/text_bold.css');
