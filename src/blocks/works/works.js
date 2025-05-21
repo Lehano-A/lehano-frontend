@@ -1,4 +1,4 @@
-import { petProjects, educationalProjects } from '../../utils/works/listWorks'
+import { petProjects, educationalProjects } from './listWorks'
 import createCard from '../../utils/works/createCard'
 
 
