@@ -9,13 +9,9 @@ import handleGridColumn from "./handleGridColumn"
 function createCard(project) {
   const templateCard = document.querySelector('#templateCardWork')
   const cardClone = templateCard.content.cloneNode(true)
-  const itemListNode = cardClone.querySelector('.works__grid-item')
 
   const { data, links, style } = project
   const { type, usedTechs, features } = data
-  const { columns } = style
-
-
 
   handleRequireNodes(cardClone, project)
   handleGridColumn(cardClone, style)
@@ -24,16 +20,10 @@ function createCard(project) {
   handleFeatures(cardClone, features)
   handleLinks(cardClone, links)
 
-
   if (!type && !usedTechs && !features) {
     const mainBoxDescriptionCardNode = cardClone.querySelector('.works__card-description')
     mainBoxDescriptionCardNode.remove()
   }
-
-  if (columns) {
-    itemListNode.classList.add(columns)
-  }
-
 
   return cardClone
 }
