@@ -18,6 +18,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'toodoo',
+      type: 'SPA',
+      usedTechs: 'React / TypeScript/ Redux ',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://toodoo.lehano.ru/',
+      githubRepo: 'https://github.com/Lehano-A/toodoo',
+    },
+
+    style: {
+      cardColor: 'peach',
+      projectNameColor: 'light-peach',
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'Pascal Vent',
       type: 'landing page',
       usedTechs: 'React / SCSS / TypeScript',
