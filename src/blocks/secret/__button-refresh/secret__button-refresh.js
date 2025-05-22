@@ -1,4 +1,5 @@
-import { blockSecret, getRandomNum } from "../../../styles/common/common";
+import { getRandomNum } from "../../../utils/common/common";
+import { blockSecret } from "../../../../constants";
 import { getRulesAnimationChangeRgba, optionsChangeRgba } from "../__secret-word/secret__secret-word-animation-data";
 const titleSecret = blockSecret.querySelector('.section__title');
 const subtitleSecret = blockSecret.querySelector('.section__subtitle');

@@ -1,4 +1,5 @@
-import { blockHeader, getUniqueRandomNum } from "../../../styles/common/common";
+import { getUniqueRandomNum } from "../../../utils/common/common";
+import { blockHeader } from "../../../../constants";
 import { getRulesAnimationSmiles, optionsTranslateSmile } from '../__welcome-button-smile/header__welcome-button-smile-animation-data';
 
 const buttonBox = blockHeader.querySelector('.header__welcome-button-box');

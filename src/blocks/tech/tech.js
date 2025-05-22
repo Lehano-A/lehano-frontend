@@ -1,4 +1,4 @@
-import setAttrsLinkNode from "../../utils/common/setAttrsLinkNode";
+import { setAttrsLinkNode } from "../../utils/common/common";
 import listUsedTechs from "./listUsedTechs";
 import logos from './logosUsedTechs'
 

@@ -1,4 +1,4 @@
-import { getUniqueRandomNum } from './../../../styles/common/common.js';
+import { getUniqueRandomNum } from "../../../utils/common/common";
 
 
 function getRulesAnimationSmiles() {

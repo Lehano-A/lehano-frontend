@@ -1,4 +1,4 @@
-import { regexAlphaRgba, } from "../../../styles/common/common";
+import { regexAlphaRgba } from "../../../../constants";
 
 function getRulesAnimationChangeRgba(numberRgba) {
   return [

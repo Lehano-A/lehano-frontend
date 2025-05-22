@@ -1,4 +1,4 @@
-import { blockSecret, blockFooter } from "../../styles/common/common";
+import { blockSecret, blockFooter } from "../../../constants";
 import { isSecretOpened } from "../works/__button-block-secret/works__button-block-secret";
 
 let prevHeightSecret = null;

@@ -1,4 +1,4 @@
-import { blockWorks, blockSecret, blockFooter } from "../../../styles/common/common";
+import { blockWorks, blockSecret, blockFooter } from "../../../../constants";
 import { getHeightSecret } from "../../secret/secret";
 import {
   COMMON_DURATION,

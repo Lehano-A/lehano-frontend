@@ -1,5 +1,4 @@
-import setAttrsLinkNode from "../common/setAttrsLinkNode"
-import { textTitleLinkCardWork } from "../constants"
+import { setAttrsLinkNode } from "../common/common"
 import handleIcon from "./handleIcon"
 
 
@@ -9,7 +8,6 @@ function handleLinks(cardClone, links) {
     handleLink(cardClone, links, keyElementHandledLink)
   })
 }
-
 
 
 // обработать ссылку
@@ -38,13 +36,11 @@ function handleLink(cardClone, links, keyElementHandledLink) {
 }
 
 
-
 // обработать пустую ссылку
 function handleEmptyLink(linkNode, iconNode) {
   linkNode.parentNode.insertBefore(iconNode, linkNode)
   linkNode.remove()
 }
-
 
 
 // обработать удаление иконки
@@ -62,7 +58,6 @@ function handleDeleteIcon(cardClone, keyElementHandledLink) {
       githubRepoLinkNode.remove()
     }
 }
-
 
 
 export { handleLinks }

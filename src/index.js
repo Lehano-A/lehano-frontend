@@ -7,7 +7,7 @@ function handlerOnload() {
 
 import './index.html';
 import './index.css';
-import './styles/common/common.js';
+import '../constants.js';
 import './blocks/header/__welcome-button/header__welcome-button.js'
 import './blocks/tech/tech.js';
 import './blocks/works/works.js';
