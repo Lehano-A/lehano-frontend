@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.text:nth-child(1n):not(:last-child) {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 800px) {
   .text {
     font-size: 14px;
