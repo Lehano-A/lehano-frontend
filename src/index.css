@@ -26,16 +26,20 @@
 
 /* --------------------------------- HEADER --------------------------------- */
 @import url('./blocks/header/header.css');
-@import url('./blocks/header/__nav/header__nav.css');
-@import url('./blocks/header/__list-item/header__list-item.css');
-@import url('./blocks/header/__link/header__link.css');
-@import url('./blocks/header/__path-list/header__path-list.css');
 @import url('./blocks/button-next-block/button-next-block.css');
 @import url('./blocks/link-next-block/link-next-block.css');
 @import url('./blocks/header/__button-menu/header__button-menu.css');
 
 @import url('./blocks/header/__icon-menu/header__icon-menu.css');
 @import url('./blocks/header/__icon-menu/_opened/header__icon-menu_opened.css');
+
+/* --------------------------------- NAVIGATION --------------------------------- */
+@import url('./blocks/navigation/navigation.css');
+@import url('./blocks/navigation/__link/navigation__link.css');
+@import url('./blocks/navigation/__list-item/navigation__list-item.css');
+@import url('./blocks/navigation/__path-list/navigation__path-list.css');
+@import url('./blocks/navigation/_pos/navigation_pos_fixed.css');
+@import url('./blocks/navigation/_visible/navigation_visible.css');
 
 /* ---------------------------------- HERO ---------------------------------- */
 @import url('./blocks/hero/hero.css');

@@ -1,0 +1,7 @@
+.navigation {
+  display: none;
+  min-height: 58px;
+  width: 100%;
+  position: relative;
+  background: #e5daec;
+}

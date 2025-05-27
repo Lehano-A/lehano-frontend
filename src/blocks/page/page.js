@@ -1,16 +1,16 @@
 import {
-  setIconByDefault,
   getCurrentIconTypeButtonMenu,
-  showButtonMenu,
-  hideButtonMenu,
-} from '../header/__button-menu/header__button-menu'
+  setIconByDefault,
+} from '../header/__button-menu/header__button-menu-handler-click'
+import { showButtonMenu, hideButtonMenu } from '../header/__button-menu/header__button-menu-states'
 
-import { setHeaderHidden } from '../header/header'
+import { nav, removeNavPosFixed, setNavHidden, setNavPosFixed, setNavVisible } from '../navigation/navigation'
+
+const hero = document.querySelector('.hero')
+const body = document.querySelector('body')
 
 //обработать изменение позиции скролла
 function handleChangeScrollPos() {
-  const hero = document.querySelector('.hero')
-
   let isScrollOverHero = null // скролл находится НАД секцией hero?
 
   // установить состояние позиции скролла - ПОД секцией hero
@@ -39,6 +39,10 @@ function handleChangeScrollPos() {
     if (heroRect.top <= 0) {
       setStateScrollPosLikeUnder()
       showButtonMenu()
+
+      body.appendChild(nav)
+      setNavPosFixed()
+      setNavHidden()
       return
     }
 
@@ -47,7 +51,12 @@ function handleChangeScrollPos() {
       setStateScrollPosLikeOver()
       hideButtonMenu()
       setIconByDefault()
-      setHeaderHidden()
+      setNavHidden()
+      const header = document.querySelector('.header')
+
+      header.appendChild(nav)
+      setNavVisible()
+      removeNavPosFixed()
     }
   }
 

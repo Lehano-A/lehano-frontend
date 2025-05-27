@@ -1,4 +1,4 @@
-.header__path-list {
+.navigation__path-list {
   display: flex;
   justify-content: flex-start;
   font-size: 20px;
@@ -9,14 +9,14 @@
 }
 
 @media (max-width: 758px) {
-  .header__path-list {
+  .navigation__path-list {
     font-size: 18px;
     padding-left: 20px;
   }
 }
 
 @media (max-width: 600px) {
-  .header__path-list {
+  .navigation__path-list {
     flex-direction: column;
   }
 }

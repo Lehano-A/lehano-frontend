@@ -1,38 +1,33 @@
-import { toggleDisplayHeader } from '../header'
+import {
+  removeNavPosFixed,
+  setNavHidden,
+  setNavPosFixed,
+  setNavVisible,
+  toggleDisplayNav,
+} from '../../navigation/navigation'
+import { buttonMenu, showIconClose, showIconMenu } from './header__button-menu-states'
+
 const TYPE_DEFAULT = 'default'
 const TYPE_CLOSED = 'closed'
 
-const buttonMenu = document.querySelector('.header__button-menu')
-
-// спрятать кнопку меню
-export function hideButtonMenu() {
-  buttonMenu.classList.remove('header__button-menu_visible')
-}
-
-// показать кнопку меню
-export function showButtonMenu() {
-  buttonMenu.classList.add('header__button-menu_visible')
-}
-
 // поменять иконку
 function changeIcon(iconType = TYPE_DEFAULT) {
-  const iconMenu = document.querySelector('#icon-menu')
-  const iconClose = document.querySelector('#icon-close')
-
   if (iconType === TYPE_DEFAULT) {
-    iconMenu.classList.add('header__icon-menu_opened')
-    iconClose.classList.remove('header__icon-menu_opened')
+    showIconMenu()
+    setNavHidden()
+    removeNavPosFixed()
     return
   }
 
   if (iconType === TYPE_CLOSED) {
-    iconMenu.classList.remove('header__icon-menu_opened')
-    iconClose.classList.add('header__icon-menu_opened')
+    showIconClose()
+    setNavPosFixed()
+    setNavVisible()
   }
 }
 
 // обработать клик кнопки меню
-export function handleClickButtonMenu() {
+function handleClickButtonMenu() {
   let currentIcon = null
 
   // установить иконку по дефолту
@@ -52,16 +47,21 @@ export function handleClickButtonMenu() {
     return currentIcon
   }
 
-  function handleClick() {
-    toggleDisplayHeader()
+  // переключить иконку
+  function toggleIcon() {
     currentIcon === TYPE_DEFAULT ? setIconLikeClosed() : setIconByDefault()
   }
 
+  function handleClick() {
+    toggleDisplayNav()
+    toggleIcon()
+  }
+
   return {
+    handleClick,
+    getCurrentIconTypeButtonMenu,
     setIconByDefault,
     setIconLikeClosed,
-    getCurrentIconTypeButtonMenu,
-    handleClick,
   }
 }
 

@@ -1,9 +1,0 @@
-.header__nav {
-  min-height: 58px;
-}
-
-@media (min-width: 601px) {
-  .header__nav {
-    display: flex;
-  }
-}
