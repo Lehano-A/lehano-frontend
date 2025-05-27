@@ -3,7 +3,7 @@
 .header__button-menu {
   display: none;
   position: fixed;
-  top: 15px;
+  top: 12px;
   right: 20px;
   width: 35px;
   height: 35px;
@@ -29,4 +29,12 @@
 .header__button-menu_visible {
   display: block;
   animation: opacity-forward 0.3s ease;
+}
+
+@media (min-width: 1280px) {
+  .header__button-menu {
+    top: 10px;
+    width: 45px;
+    height: 45px;
+  }
 }
