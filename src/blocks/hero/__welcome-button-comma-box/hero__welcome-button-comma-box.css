@@ -1,0 +1,15 @@
+.hero__welcome-button-comma-box {
+  display: flex;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.hero__welcome-button-comma-box > span {
+  font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  .hero__welcome-button-comma-box > span {
+    font-size: 20px;
+  }
+}

@@ -1,15 +1,13 @@
-// обработать существующую ссылку
+// установить атрибуты для ссылки
 function setAttrsLinkNode(linkNode, link) {
   linkNode.setAttribute('href', link)
   linkNode.setAttribute('target', '_blank')
 }
 
-
 // получить рандомное число в пределах аргумента
 function getRandomNum(num) {
   return Math.floor(Math.random() * num)
 }
-
 
 // получить уникальное рандомное число в пределах аргумента, которого ещё нет в списке сохранённых чисел
 function getUniqueRandomNum(num, listSaveRandomNum) {
@@ -17,16 +15,11 @@ function getUniqueRandomNum(num, listSaveRandomNum) {
 
   if (listSaveRandomNum !== undefined && listSaveRandomNum[randomNum]) {
     while (listSaveRandomNum[randomNum]) {
-      randomNum = getRandomNum(num);
+      randomNum = getRandomNum(num)
     }
   }
 
   return randomNum
 }
 
-
-export {
-  setAttrsLinkNode,
-  getRandomNum,
-  getUniqueRandomNum
-}
+export { setAttrsLinkNode, getRandomNum, getUniqueRandomNum }

@@ -1,11 +1,10 @@
-export const blockHeader = document.querySelector('.header');
-export const blockWorks = document.querySelector('.works');
-export const blockSecret = document.querySelector('.secret');
-export const blockFooter = document.querySelector('.footer');
+export const blockHero = document.querySelector('.hero')
+export const blockWorks = document.querySelector('.works')
+export const blockSecret = document.querySelector('.secret')
+export const blockFooter = document.querySelector('.footer')
 
-export const regexSearchNums = /[\d]/g;
-export const regexAlphaRgba = /[^,]+(?=\))/;
-
+export const regexSearchNums = /[\d]/g
+export const regexAlphaRgba = /[^,]+(?=\))/
 
 export const textTitleIconCardWork = {
   active: {
@@ -16,9 +15,8 @@ export const textTitleIconCardWork = {
   inactive: {
     project: 'Нет возможности перейти на страницу проекта',
     githubRepo: 'Нет возможности перейти в репозиторий',
-  }
+  },
 }
-
 
 export const textAltIconCardWork = {
   active: {
@@ -29,5 +27,5 @@ export const textAltIconCardWork = {
   inactive: {
     project: 'Неактивная иконка перехода на внешнюю страницу',
     githubRepo: 'Неактивная иконка с логотипом GitHub',
-  }
+  },
 }

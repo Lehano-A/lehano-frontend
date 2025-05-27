@@ -1,6 +1,8 @@
+#lehano
+
 ## Ccылка на проект
 
-https://lehano.ru
+URL: lehano.ru
 
 ## Установка
 

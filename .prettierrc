@@ -1,0 +1,14 @@
+{
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "semi": false,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "endOfLine": "auto",
+  "jsxSingleQuote": true,
+  "importOrder": ["^@core/(.*)$", "^@ui/(.*)$", "^[./]"],
+  "attributeSort": "alphabetical",
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "arrowParens": "always"
+}

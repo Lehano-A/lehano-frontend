@@ -1,0 +1,17 @@
+@keyframes opacity-forward {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes opacity-backward {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}

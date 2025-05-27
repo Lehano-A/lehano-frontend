@@ -1,10 +1,7 @@
-.header__welcome-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero__welcome-button {
   position: relative;
   background-color: #ffc01a;
-  font-family: "Comfortaa-Bold";
+  font-family: 'Comfortaa-Bold';
   font-size: 23px;
   border: none;
   border-radius: 4px;
@@ -16,18 +13,18 @@
   transition: transform 0.1s ease-in-out;
 }
 
-.header__welcome-button:hover {
+.hero__welcome-button:hover {
   background-color: #fdcb4d;
 }
 
-.header__welcome-button:active {
+.hero__welcome-button:active {
   transform: scale(0.85);
 }
 
-@media (max-width: 758px) {
-  .header__welcome-button {
+@media (max-width: 480px) {
+  .hero__welcome-button {
     font-size: 16px;
     width: 85px;
-    height: 30px;
+    height: 35px;
   }
 }

@@ -1,0 +1,9 @@
+.header__nav_visible {
+  display: block;
+}
+
+@media (min-width: 601px) {
+  .header__nav {
+    display: flex;
+  }
+}

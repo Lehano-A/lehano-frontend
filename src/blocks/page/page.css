@@ -1,14 +1,17 @@
 .page {
   position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-width: 303px;
-  font-family: "Comfortaa-Regular", "Verdana", sans-serif;
+  font-family: 'Comfortaa-Regular', 'Verdana', sans-serif;
   color: #000;
   margin: 0 auto;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }

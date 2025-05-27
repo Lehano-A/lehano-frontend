@@ -25,7 +25,7 @@
       right: 0;
       bottom: 0;
       background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);
-      z-index: 1000;
+      z-index: 10000;
     }
 
     .preloader__spinner {
@@ -58,8 +58,20 @@
 
   <!-- HEADER НАЧАЛО -->
   <header class="header">
-    <div class="header__common-box">
-      <nav>
+    <div>
+      <button class="header__button-menu">
+        <svg id="icon-menu" class="header__icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+          fill="#e3e3e3">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+
+        <svg id="icon-close" class="header__icon-menu" xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </button>
+
+      <nav class="header__nav">
         <ul class="header__path-list">
           <li class="header__list-item"><a href="#about" class="header__link">О себе</a></li>
           <li class="header__list-item"><a href="#tech" class="header__link">Технологии</a></li>
@@ -68,25 +80,36 @@
           <li class="header__list-item"><a href="#footer" class="header__link">Контакты</a></li>
         </ul>
       </nav>
-
-      <div class="header__welcome-box">
-        <div class="header__welcome-button-box">
-          <button class="header__welcome-button">Привет</button>
-        </div>
-        <span>,</span>
-        <div class="header__welcome-text-box">
-          <p class="header__welcome-text">меня зовут Алексей</p>
-          <p class="header__welcome-text">Я frontend-разработчик на старте</p>
-        </div>
-      </div>
-
-    </div>
   </header>
   <!-- HEADER КОНЕЦ -->
 
-
   <!-- НАЧАЛО MAIN -->
   <main class="main">
+
+    <!-- НАЧАЛО HERO -->
+    <section class="hero">
+      <div class="hero__common-box">
+
+
+        <div class="hero__welcome-box">
+          <div class="hero__welcome-button-comma-box">
+            <div class="hero__welcome-button-box">
+              <button class="hero__welcome-button">Привет</button>
+            </div>
+            <span>,</span>
+          </div>
+
+
+          <div>
+            <p class="hero__welcome-text">меня зовут Алексей.</p>
+            <p class=" hero__welcome-text">Я frontend-разработчик на старте.</p>
+          </div>
+        </div>
+
+        <img class="hero__image" src="./images/backgrounds/hero/monsters-at-the-monitor.svg">
+      </div>
+    </section>
+    <!-- КОНЕЦ HERO -->
 
     <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
     <section class="about margin-section" id="about">
@@ -105,7 +128,7 @@
 
             <div class="about__main-text-box">
               <div class="about__text-box about__text-box_width-1 box-shadow">
-                <p class="text">Меня зовут - <span class="text_bold">Алексей</span>. Мне 35 лет. Проживаю в городе
+                <p class="text">Меня зовут - <span class="text_bold">Алексей</span>. Я проживаю в городе
                   Долгопрудный, Московской области.
                 </p>
               </div>

@@ -1,0 +1,15 @@
+.hero__welcome-text {
+  font-family: 'Comfortaa-Bold';
+  font-size: 20px;
+  margin: 0;
+}
+
+.hero__welcome-text:first-child {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .hero__welcome-text {
+    font-size: 16px;
+  }
+}
