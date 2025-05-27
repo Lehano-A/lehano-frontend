@@ -4,8 +4,8 @@ import {
   setNavPosFixed,
   setNavVisible,
   toggleDisplayNav,
-} from '../../navigation/navigation'
-import { buttonMenu, showIconClose, showIconMenu } from './header__button-menu-states'
+} from '../navigation/navigation'
+import { buttonMenu, showIconClose, showIconMenu } from './button-menu-states'
 
 const TYPE_DEFAULT = 'default'
 const TYPE_CLOSED = 'closed'

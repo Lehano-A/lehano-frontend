@@ -24,14 +24,15 @@
 @import url('./blocks/page/page.css');
 @import url('./blocks/main/main.css');
 
-/* --------------------------------- HEADER --------------------------------- */
-@import url('./blocks/header/header.css');
 @import url('./blocks/button-next-block/button-next-block.css');
 @import url('./blocks/link-next-block/link-next-block.css');
-@import url('./blocks/header/__button-menu/header__button-menu.css');
+/* --------------------------------- HEADER --------------------------------- */
+@import url('./blocks/header/header.css');
 
-@import url('./blocks/header/__icon-menu/header__icon-menu.css');
-@import url('./blocks/header/__icon-menu/_opened/header__icon-menu_opened.css');
+/* --------------------------------- BUTTON MENU --------------------------------- */
+@import url('./blocks/button-menu/button-menu.css');
+@import url('./blocks/button-menu/__icon/button-menu__icon.css');
+@import url('./blocks/button-menu/__icon/_opened/button-menu__icon_opened.css');
 
 /* --------------------------------- NAVIGATION --------------------------------- */
 @import url('./blocks/navigation/navigation.css');

@@ -10,7 +10,7 @@ import './index.css'
 import '../constants.js'
 import './blocks/page/page.js'
 
-import './blocks/header/__button-menu/header__button-menu-states.js'
+import './blocks/button-menu/button-menu-states.js'
 import './blocks/navigation/__link/navigation__link.js'
 
 import './blocks/hero/__welcome-button/hero__welcome-button.js'
