@@ -39,7 +39,7 @@ const petProjects = [
   {
     data: {
       name: 'Pascal Vent',
-      type: 'long page',
+      type: 'landing page',
       usedTechs: 'React / SCSS / TypeScript',
       features: 'frontend',
     },
