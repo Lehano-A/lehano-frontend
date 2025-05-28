@@ -5,32 +5,34 @@
 }
 
 .about::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-image: url("./../../images/backgrounds/about/bg-about.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100%);
+  background-image: url('./../../images/backgrounds/about/bg-about.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 320px) {
   .about::before {
-    background-size: 200% 100%;
+    top: -100px;
+    background-position: -800px 0;
   }
 }
 
-@media (max-width: 800px) {
-  .about {
-    min-height: 600px;
+@media (min-width: 576px) {
+  .about::before {
+    top: -110px;
+    background-position: -300px 0px;
+    padding: 100px 0;
   }
 }
 
-@media (max-width: 675px) {
+@media (min-width: 1440px) {
   .about::before {
-    background-size: 400% 100%;
+    background-position: 0;
+    padding: 135px 0;
   }
 }
