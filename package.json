@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "start": "webpack serve --open --mode=development",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs",
+    "budest": "npm run build && npm run deploy && npm start"
   },
   "repository": {
     "type": "git",
