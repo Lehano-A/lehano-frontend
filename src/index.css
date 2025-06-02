@@ -37,7 +37,6 @@
 /* --------------------------------- NAVIGATION --------------------------------- */
 @import url('./blocks/navigation/navigation.css');
 @import url('./blocks/navigation/__link/navigation__link.css');
-@import url('./blocks/navigation/__list-item/navigation__list-item.css');
 @import url('./blocks/navigation/__path-list/navigation__path-list.css');
 @import url('./blocks/navigation/_pos/navigation_pos_fixed.css');
 @import url('./blocks/navigation/_visible/navigation_visible.css');
