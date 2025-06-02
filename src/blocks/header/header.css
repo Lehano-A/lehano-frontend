@@ -1,17 +1,20 @@
 .header {
-  min-height: 58px;
+  --pb: 30px;
+
+  min-height: calc(64px + var(--pb));
   width: 100%;
   background: #e5daec;
 }
 
 @media (min-width: 320px) {
   .header {
-    padding-bottom: 30px;
+    padding-bottom: var(--pb);
   }
 }
 
 @media (min-width: 600px) {
   .header {
-    padding-bottom: 50px;
+    --pb: 50px;
+    padding-bottom: var(--pb);
   }
 }
