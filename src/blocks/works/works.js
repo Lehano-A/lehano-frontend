@@ -1,9 +1,7 @@
 import { petProjects, educationalProjects } from './listWorks'
 import createCard from '../../utils/works/createCard'
 
-
 function createCardsWorks(idParentBox, projects) {
-
   const boxWorks = document.querySelector(idParentBox)
 
   projects.forEach((project) => {
@@ -11,7 +9,6 @@ function createCardsWorks(idParentBox, projects) {
     boxWorks.appendChild(newCard)
   })
 }
-
 
 createCardsWorks('#pet', petProjects)
 createCardsWorks('#education', educationalProjects)

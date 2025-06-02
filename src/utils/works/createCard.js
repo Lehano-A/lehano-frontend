@@ -1,10 +1,9 @@
-import { handleLinks } from "./handleLink"
-import handleFeatures from "./handleFeatures"
-import handleProjectType from "./handleProjectType"
-import handleRequireNodes from "./handleRequireNodes"
-import handleUsedTechs from "./handleUsedTechs"
-import handleGridColumn from "./handleGridColumn"
-
+import { handleLinks } from './handleLink'
+import handleFeatures from './handleFeatures'
+import handleProjectType from './handleProjectType'
+import handleRequireNodes from './handleRequireNodes'
+import handleUsedTechs from './handleUsedTechs'
+import handleGridColumn from './handleGridColumn'
 
 function createCard(project) {
   const templateCard = document.querySelector('#templateCardWork')
@@ -22,7 +21,6 @@ function createCard(project) {
   handleLinks(cardClone, links)
 
   if (!type) {
-
     if (!usedTechs && !features) {
       boxDescription.remove()
       return cardClone

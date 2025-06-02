@@ -1,7 +1,7 @@
-const path = require('path');
-const { config: devServerConfig } = require('./devServer.config');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const { config: devServerConfig } = require('./devServer.config')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './docs')
+    path: path.resolve(__dirname, './docs'),
   },
 
   module: {
@@ -20,9 +20,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              ['@babel/preset-env']
-            ]
+            presets: [['@babel/preset-env']],
           },
         },
       },
@@ -32,14 +30,10 @@ module.exports = {
           'style-loader',
           'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  [
-                    "postcss-preset-env",
-                  ],
-                ],
+                plugins: [['postcss-preset-env']],
               },
             },
           },
@@ -60,17 +54,17 @@ module.exports = {
     ],
   },
 
-
-
-
   plugins: [
-    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['./docs/*', '!./docs/CNAME'], dangerouslyAllowCleanPatternsOutsideProject: true, dry: false }),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['./docs/*', '!./docs/CNAME'],
+      dangerouslyAllowCleanPatternsOutsideProject: true,
+      dry: false,
+    }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
     }),
   ],
 
-
-  devServer: devServerConfig
-};
+  devServer: devServerConfig,
+}

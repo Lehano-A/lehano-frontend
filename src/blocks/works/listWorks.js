@@ -76,7 +76,6 @@ const petProjects = [
     },
   },
 
-
   {
     data: {
       name: 'Сервис - trackerman',
@@ -93,11 +92,9 @@ const petProjects = [
     style: {
       cardColor: 'pale-purple',
       projectNameColor: 'light-pale-purple',
-      gridColumn: '2 / span 2'
+      gridColumn: '2 / span 2',
     },
   },
-
-
 
   {
     data: {
@@ -119,7 +116,6 @@ const petProjects = [
     },
   },
 
-
   {
     data: {
       name: 'Сервис - чтояем.рф',
@@ -140,7 +136,6 @@ const petProjects = [
     },
   },
 
-
   {
     data: {
       name: 'Сервис - чтояем.рф',
@@ -157,10 +152,9 @@ const petProjects = [
     style: {
       cardColor: 'pale-lilac',
       projectNameColor: 'light-lilac',
-      gridColumn: '2 / span 2'
+      gridColumn: '2 / span 2',
     },
   },
-
 
   {
     data: {
@@ -178,11 +172,10 @@ const petProjects = [
     style: {
       cardColor: 'pale-blue',
       projectNameColor: 'light-blue',
-      gridColumn: '1'
+      gridColumn: '1',
     },
   },
-];
-
+]
 
 const educationalProjects = [
   {
@@ -201,10 +194,9 @@ const educationalProjects = [
     style: {
       cardColor: 'cornflower-crayola',
       projectNameColor: 'light-cornflower',
-      gridColumn: '1'
+      gridColumn: '1',
     },
   },
-
 
   {
     data: {
@@ -222,10 +214,9 @@ const educationalProjects = [
     style: {
       cardColor: 'cornflower-crayola',
       projectNameColor: 'light-cornflower',
-      gridColumn: '2 / span 2'
+      gridColumn: '2 / span 2',
     },
   },
-
 
   {
     data: {
@@ -243,10 +234,9 @@ const educationalProjects = [
     style: {
       cardColor: 'purple',
       projectNameColor: 'light-purple',
-      gridColumn: '1'
+      gridColumn: '1',
     },
   },
-
 
   {
     data: {
@@ -266,7 +256,6 @@ const educationalProjects = [
       projectNameColor: 'light-purple',
     },
   },
-
 
   {
     data: {
@@ -287,7 +276,6 @@ const educationalProjects = [
     },
   },
 
-
   {
     data: {
       name: 'Путешествия по России',
@@ -307,7 +295,6 @@ const educationalProjects = [
     },
   },
 
-
   {
     data: {
       name: 'Как учиться',
@@ -326,7 +313,6 @@ const educationalProjects = [
       projectNameColor: 'light-mint',
     },
   },
-
 
   {
     data: {

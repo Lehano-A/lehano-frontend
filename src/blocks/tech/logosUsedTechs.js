@@ -3,19 +3,15 @@ import css3Logo from '../../images/tech-card-logos/css3.svg'
 import javaScriptLogo from '../../images/tech-card-logos/javascript.svg'
 import typeScriptLogo from '../../images/tech-card-logos/typescript.svg'
 
-
 import reactLogo from '../../images/tech-card-logos/react.svg'
 import muiLogo from '../../images/tech-card-logos/mui.svg'
 import antDesignLogo from '../../images/tech-card-logos/ant-design.svg'
 import styledComponentsLogo from '../../images/tech-card-logos/styled-components.svg'
 import scssLogo from '../../images/tech-card-logos/scss.svg'
 
-
 import expressLogo from '../../images/tech-card-logos/express.svg'
 
-
 import mongodbLogo from '../../images/tech-card-logos/mongodb.svg'
-
 
 import nodejsLogo from '../../images/tech-card-logos/nodejs.svg'
 import gitbashLogo from '../../images/tech-card-logos/gitbash.svg'
@@ -33,11 +29,9 @@ import reduxLogo from '../../images/tech-card-logos/redux.svg'
 import reactRouterLogo from '../../images/tech-card-logos/react-router.svg'
 import jwtLogo from '../../images/tech-card-logos/jwt.svg'
 
-
 import photoshopLogo from '../../images/tech-card-logos/photoshop.svg'
 import illustratorLogo from '../../images/tech-card-logos/illustrator.svg'
 import afterEffectsLogo from '../../images/tech-card-logos/after-effects.svg'
-
 
 const logos = {
   html5Logo,

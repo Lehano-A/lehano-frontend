@@ -1,5 +1,5 @@
-import { blockWorks, blockSecret, blockFooter } from "../../../../constants";
-import { getHeightSecret } from "../../secret/secret";
+import { blockWorks, blockSecret, blockFooter } from '../../../../constants'
+import { getHeightSecret } from '../../secret/secret'
 import {
   COMMON_DURATION,
   getRulesAnimationMoveBlockDown,
@@ -10,90 +10,79 @@ import {
   optionsMoveDown,
   optionsMoveTop,
   optionsRotate180,
-  optionsRotate360
-} from "./works__button-block-secret-animation-data";
+  optionsRotate360,
+} from './works__button-block-secret-animation-data'
 
+const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret')
 
-const buttonBlockSecret = blockWorks.querySelector('.works__button-block-secret');
-
-let isAnimating = null;
-let isSecretOpened = null;
-
+let isAnimating = null
+let isSecretOpened = null
 
 // таймер для очередной возможности запуска анимации
 function setTimerAnimation() {
   const timer = setTimeout(() => {
-    isAnimating = false;
-    clearTimeout(timer);
-  }, COMMON_DURATION);
+    isAnimating = false
+    clearTimeout(timer)
+  }, COMMON_DURATION)
 
-  return timer;
+  return timer
 }
-
 
 // передвинуть блоки вниз
 function moveBlocksDown() {
-  const heightSecret = getHeightSecret();
-  const rulesMoveDown = getRulesAnimationMoveBlockDown(heightSecret);
+  const heightSecret = getHeightSecret()
+  const rulesMoveDown = getRulesAnimationMoveBlockDown(heightSecret)
 
-  blockSecret.classList.add('secret_visible');
+  blockSecret.classList.add('secret_visible')
 
   blockSecret.animate(rulesMoveDown, optionsMoveDown).onfinish = function () {
-    blockSecret.style.bottom = `${-blockSecret.clientHeight}px`;
-  };
+    blockSecret.style.bottom = `${-blockSecret.clientHeight}px`
+  }
 
   blockFooter.animate(rulesMoveDown, optionsMoveDown).onfinish = function () {
-    blockFooter.style.top = `${blockSecret.clientHeight}px`;
-  };
+    blockFooter.style.top = `${blockSecret.clientHeight}px`
+  }
 
   buttonBlockSecret.animate(rulesRotateIcon180, optionsRotate180).onfinish = function () {
-    isSecretOpened = true;
-  };
-
-
+    isSecretOpened = true
+  }
 }
-
 
 // передвинуть блоки вверх
 function moveBlocksTop() {
-  const heightSecret = getHeightSecret();
-  const rulesSecret = getRulesAnimationMoveTopSecret(heightSecret);
-  const rulesFooter = getRulesAnimationMoveTopFooter(heightSecret);
+  const heightSecret = getHeightSecret()
+  const rulesSecret = getRulesAnimationMoveTopSecret(heightSecret)
+  const rulesFooter = getRulesAnimationMoveTopFooter(heightSecret)
 
   blockSecret.animate(rulesSecret, optionsMoveTop).onfinish = function () {
-    blockSecret.style.bottom = 0;
-    blockSecret.classList.remove('secret_visible');
-  };
+    blockSecret.style.bottom = 0
+    blockSecret.classList.remove('secret_visible')
+  }
 
   blockFooter.animate(rulesFooter, optionsMoveTop).onfinish = function () {
-    blockFooter.style.top = 0;
-  };
+    blockFooter.style.top = 0
+  }
 
   buttonBlockSecret.animate(rulesRotateIcon360, optionsRotate360).onfinish = function () {
-    isSecretOpened = false;
-  };
-
-
+    isSecretOpened = false
+  }
 }
-
 
 // запуск анимации
 function handleLaunchAnimation() {
-
   if (!isAnimating) {
-    isAnimating = true;
+    isAnimating = true
 
-    setTimerAnimation();
+    setTimerAnimation()
 
     if (!isSecretOpened) {
-      moveBlocksDown();
+      moveBlocksDown()
     } else {
-      moveBlocksTop();
+      moveBlocksTop()
     }
   }
 }
 
+buttonBlockSecret.addEventListener('click', handleLaunchAnimation)
 
-buttonBlockSecret.addEventListener('click', handleLaunchAnimation);
-
-export { isSecretOpened };
+export { isSecretOpened }

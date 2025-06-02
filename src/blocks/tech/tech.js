@@ -1,13 +1,11 @@
-import { setAttrsLinkNode } from "../../utils/common/common";
-import listUsedTechs from "./listUsedTechs";
+import { setAttrsLinkNode } from '../../utils/common/common'
+import listUsedTechs from './listUsedTechs'
 import logos from './logosUsedTechs'
-
 
 // создать техно-карточку
 function createTechCard() {
   const techGridNode = document.querySelector('.tech__grid-list')
   const templateCard = document.querySelector('#templateCardTech')
-
 
   listUsedTechs.forEach((tech) => {
     const { blockName, data } = tech
@@ -18,10 +16,8 @@ function createTechCard() {
   })
 }
 
-
 // обработать данные карточки
 function handleDataCard(data, templateCard, blockNode) {
-
   data.forEach((dataTech) => {
     const { name, link, textAlt, fileNameLogo } = dataTech
 
@@ -36,7 +32,8 @@ function handleDataCard(data, templateCard, blockNode) {
     // если нет пути к логотипу, значит логотоип - не файл
     if (logoSource.path === null) {
       linkNode.textContent = logoSource.icon
-    } else { // иначе, создаём узел изображения
+    } else {
+      // иначе, создаём узел изображения
 
       const logoNode = createLogoNode(logoSource)
       setAttrsLogoNode(logoNode, textAlt)
@@ -48,7 +45,6 @@ function handleDataCard(data, templateCard, blockNode) {
   })
 }
 
-
 // создать узел для логотипа
 function createLogoNode(logoPath) {
   const image = new Image()
@@ -58,16 +54,13 @@ function createLogoNode(logoPath) {
   return image
 }
 
-
 // установить аттрибуты для узла логотипа
 function setAttrsLogoNode(logoNode, textAlt) {
   logoNode.setAttribute('alt', textAlt)
 }
 
-
 function addLogoToLink(linkNode, image) {
   linkNode.appendChild(image)
 }
-
 
 createTechCard()

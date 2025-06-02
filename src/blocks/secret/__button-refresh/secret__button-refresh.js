@@ -1,12 +1,11 @@
-import { getRandomNum } from "../../../utils/common/common";
-import { blockSecret } from "../../../../constants";
-import { getRulesAnimationChangeRgba, optionsChangeRgba } from "../__secret-word/secret__secret-word-animation-data";
-const titleSecret = blockSecret.querySelector('.section__title');
-const subtitleSecret = blockSecret.querySelector('.section__subtitle');
-const secretWord = blockSecret.querySelector('.secret__secret-word');
-const iconSecret = blockSecret.querySelector('#secret-icon');
-const buttonRefresh = blockSecret.querySelector('.secret__button-refresh');
-
+import { getRandomNum } from '../../../utils/common/common'
+import { blockSecret } from '../../../../constants'
+import { getRulesAnimationChangeRgba, optionsChangeRgba } from '../__secret-word/secret__secret-word-animation-data'
+const titleSecret = blockSecret.querySelector('.section__title')
+const subtitleSecret = blockSecret.querySelector('.section__subtitle')
+const secretWord = blockSecret.querySelector('.secret__secret-word')
+const iconSecret = blockSecret.querySelector('#secret-icon')
+const buttonRefresh = blockSecret.querySelector('.secret__button-refresh')
 
 const secretWords = [
   {
@@ -81,10 +80,8 @@ const secretWords = [
   },
 ]
 
-
 // получить рандомный секрет
 function getRandomSecret(currentTitle, randomNum) {
-
   randomNum = getRandomNum(secretWords.length)
   const randomWord = secretWords[randomNum].title
 
@@ -95,15 +92,14 @@ function getRandomSecret(currentTitle, randomNum) {
   return getRandomSecret(currentTitle, randomNum)
 }
 
-
 buttonRefresh.addEventListener('click', () => {
-  const { title, icons, bg } = getRandomSecret(titleSecret.textContent, null);
-  const rulesSecretWord = getRulesAnimationChangeRgba(bg);
+  const { title, icons, bg } = getRandomSecret(titleSecret.textContent, null)
+  const rulesSecretWord = getRulesAnimationChangeRgba(bg)
 
-  titleSecret.textContent = title;
-  subtitleSecret.style.backgroundColor = bg;
-  iconSecret.textContent = icons;
-  secretWord.textContent = title.toLowerCase();
+  titleSecret.textContent = title
+  subtitleSecret.style.backgroundColor = bg
+  iconSecret.textContent = icons
+  secretWord.textContent = title.toLowerCase()
 
-  secretWord.animate(rulesSecretWord, optionsChangeRgba);
+  secretWord.animate(rulesSecretWord, optionsChangeRgba)
 })

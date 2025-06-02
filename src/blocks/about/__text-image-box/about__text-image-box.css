@@ -3,11 +3,11 @@
 }
 
 .about__text-image-box::after {
-  content: "";
+  content: '';
   position: relative;
   right: 70px;
   width: 300px;
-  background-image: url("../../../images/backgrounds/about/character.svg");
+  background-image: url('../../../images/backgrounds/about/character.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

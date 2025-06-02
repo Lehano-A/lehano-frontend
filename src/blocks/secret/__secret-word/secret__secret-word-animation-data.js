@@ -1,14 +1,11 @@
-import { regexAlphaRgba } from "../../../../constants";
+import { regexAlphaRgba } from '../../../../constants'
 
 function getRulesAnimationChangeRgba(numberRgba) {
-  return [
-    { backgroundColor: numberRgba },
-    { backgroundColor: `${numberRgba.replace(regexAlphaRgba, 0)}` },
-  ];
+  return [{ backgroundColor: numberRgba }, { backgroundColor: `${numberRgba.replace(regexAlphaRgba, 0)}` }]
 }
 
 const optionsChangeRgba = {
   duration: 1500,
 }
 
-export { getRulesAnimationChangeRgba, optionsChangeRgba };
+export { getRulesAnimationChangeRgba, optionsChangeRgba }
