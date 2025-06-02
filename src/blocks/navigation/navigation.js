@@ -1,32 +1,29 @@
+import { handleLinkClick } from './__link/navigation__link'
+
+const body = document.querySelector('body')
 export const nav = document.querySelector('.navigation')
+export const cloneNav = nav.cloneNode(true)
+const linksCloneNav = cloneNav.querySelectorAll('.navigation__link')
 
-// переключить отображение navigation
-export function toggleDisplayNav() {
-  const isNavVisible = nav.classList.contains('navigation_pos_sticky')
+linksCloneNav.forEach((item) => item.addEventListener('click', handleLinkClick))
+body.appendChild(cloneNav)
 
-  if (isNavVisible) {
-    setNavHidden()
-  } else {
-    setNavVisible()
-  }
+// показать клон navigation
+export function setVisibleCloneNav() {
+  cloneNav.classList.remove('navigation_hidden')
 }
 
-// показать navigation
-export function setNavVisible() {
-  nav.classList.add('navigation_visible')
+// скрыть клон navigation
+export function hiddenCloneNav() {
+  cloneNav.classList.add('navigation_hidden')
 }
 
-// скрыть navigation
-export function setNavHidden() {
-  nav.classList.remove('navigation_visible')
+// установить фиксированное позиционирование для клона navigation
+export function setCloneNavPosFixed() {
+  cloneNav.classList.add('navigation_pos_fixed')
 }
 
-// установить фиксированное позиционирование для navigation
-export function setNavPosFixed() {
-  nav.classList.add('navigation_pos_fixed')
-}
-
-// убрать фиксированное позиционирование у navigation
-export function removeNavPosFixed() {
-  nav.classList.remove('navigation_pos_fixed')
+// убрать фиксированное позиционирование у клона navigation
+export function removeCloneNavPosFixed() {
+  cloneNav.classList.remove('navigation_pos_fixed')
 }

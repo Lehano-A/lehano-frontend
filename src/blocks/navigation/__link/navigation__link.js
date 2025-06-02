@@ -1,11 +1,11 @@
 import { setIconByDefault } from '../../button-menu/button-menu-handler-click'
-import { setNavHidden } from '../navigation'
+import { removeCloneNavPosFixed } from '../navigation'
 
 const navLinks = document.querySelectorAll('.navigation__link')
 
-function handleLinkClick() {
+export function handleLinkClick() {
   setIconByDefault()
-  setNavHidden()
+  removeCloneNavPosFixed()
 }
 
 navLinks.forEach((item) => item.addEventListener('click', handleLinkClick))

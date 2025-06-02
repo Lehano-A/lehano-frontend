@@ -1,10 +1,6 @@
 import { getCurrentIconTypeButtonMenu, setIconByDefault } from '../button-menu/button-menu-handler-click'
 import { showButtonMenu, hideButtonMenu } from '../button-menu/button-menu-states'
 
-import { nav, removeNavPosFixed, setNavHidden, setNavPosFixed, setNavVisible } from '../navigation/navigation'
-
-const body = document.querySelector('body')
-const header = document.querySelector('.header')
 const hero = document.querySelector('.hero')
 
 //обработать изменение позиции скролла
@@ -37,10 +33,6 @@ function handleChangeScrollPos() {
     if (heroRect.top <= 0) {
       setStateScrollPosLikeUnder()
       showButtonMenu()
-
-      body.appendChild(nav)
-      setNavPosFixed()
-      setNavHidden()
       return
     }
 
@@ -49,11 +41,6 @@ function handleChangeScrollPos() {
       setStateScrollPosLikeOver()
       hideButtonMenu()
       setIconByDefault()
-      setNavHidden()
-
-      header.appendChild(nav)
-      setNavVisible()
-      removeNavPosFixed()
     }
   }
 

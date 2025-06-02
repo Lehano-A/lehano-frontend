@@ -40,6 +40,7 @@
 @import url('./blocks/navigation/__path-list/navigation__path-list.css');
 @import url('./blocks/navigation/_pos/navigation_pos_fixed.css');
 @import url('./blocks/navigation/_visible/navigation_visible.css');
+@import url('./blocks/navigation/_hidden/navigation_hidden.css');
 
 /* ---------------------------------- HERO ---------------------------------- */
 @import url('./blocks/hero/hero.css');

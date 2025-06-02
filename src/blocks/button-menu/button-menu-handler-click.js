@@ -1,9 +1,8 @@
 import {
-  removeNavPosFixed,
-  setNavHidden,
-  setNavPosFixed,
-  setNavVisible,
-  toggleDisplayNav,
+  hiddenCloneNav,
+  removeCloneNavPosFixed,
+  setCloneNavPosFixed,
+  setVisibleCloneNav,
 } from '../navigation/navigation'
 import { buttonMenu, showIconClose, showIconMenu } from './button-menu-states'
 
@@ -14,15 +13,15 @@ const TYPE_CLOSED = 'closed'
 function changeIcon(iconType = TYPE_DEFAULT) {
   if (iconType === TYPE_DEFAULT) {
     showIconMenu()
-    setNavHidden()
-    removeNavPosFixed()
+    removeCloneNavPosFixed()
+    hiddenCloneNav()
     return
   }
 
   if (iconType === TYPE_CLOSED) {
     showIconClose()
-    setNavPosFixed()
-    setNavVisible()
+    setCloneNavPosFixed()
+    setVisibleCloneNav()
   }
 }
 
@@ -53,7 +52,6 @@ function handleClickButtonMenu() {
   }
 
   function handleClick() {
-    toggleDisplayNav()
     toggleIcon()
   }
 
