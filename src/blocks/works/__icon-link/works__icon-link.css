@@ -16,11 +16,4 @@
 .works__icon-link[id='githubRepoIcon'] {
   width: 20px;
   height: 20px;
-  margin-top: auto;
-}
-
-@media (max-width: 410px) {
-  .works__icon-link[id='githubRepoIcon'] {
-    margin-left: auto;
-  }
 }

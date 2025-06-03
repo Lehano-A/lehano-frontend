@@ -5,37 +5,34 @@
   align-items: center;
   position: relative;
   z-index: 2;
-  background-color: #fff;
+  margin: 0;
 }
 
 .works::before {
   content: '';
   position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translate(-50%, -50px);
-  background-image: url('./../../images/backgrounds/bg-works.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  top: -140px;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding: 0 0 170px 0;
+  background-image: url('./../../images/backgrounds/bg-works.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 858px) {
-  .works::before {
-    background-size: 250% 100%;
-    transform: translate(-50%, -120px);
-  }
+@media (min-width: 320px) {
   .works {
-    margin: 0 0 0 0;
-    padding: 0 0 45px 0;
+    padding-bottom: 90px;
+  }
+
+  .works::before {
+    padding: 0 0 140px 0;
   }
 }
 
-@media (max-width: 410px) {
-  .works::before {
-    background-size: 350% 100%;
+@media (min-width: 1024px) {
+  .works {
+    padding-bottom: 130px;
   }
 }

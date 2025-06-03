@@ -3,13 +3,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.works__link-card[id='githubRepoLink'] {
-  margin-top: auto;
-}
-
-@media (max-width: 410px) {
-  .works__link-card[id='githubRepoLink'] {
-    margin-left: auto;
-  }
-}
