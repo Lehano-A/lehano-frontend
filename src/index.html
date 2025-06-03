@@ -1,574 +1,414 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link
-      rel="stylesheet"
-      href="./index.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <title>lehano.ru - портфолио frontend-разработчика на старте</title>
 
-    <style>
-      .page {
-        overflow: hidden;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <title>lehano.ru - портфолио frontend-разработчика на старте</title>
+
+  <style>
+    .page {
+      overflow: hidden;
+    }
+
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);
+      z-index: 10000;
+    }
+
+    .preloader__spinner {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(181, 239, 248, 1);
+      border-top-color: rgb(118, 234, 252);
+      border-radius: 50%;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
       }
 
-      .preloader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, #e5daec 0%, #eeeeee 50%, #f0f1f6 70%);
-        z-index: 10000;
+      100% {
+        transform: rotate(360deg);
       }
+    }
+  </style>
+</head>
 
-      .preloader__spinner {
-        width: 60px;
-        height: 60px;
-        border: 5px solid rgba(181, 239, 248, 1);
-        border-top-color: rgb(118, 234, 252);
-        border-radius: 50%;
-        animation: spin 1s ease-in-out infinite;
-      }
+<body class="page">
+  <div class="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
 
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
+  <!-- НАЧАЛО HEADER -->
+  <header class="header">
+    <nav class="navigation">
+      <ul class="navigation__path-list">
+        <li>
+          <a href="#hero" class="navigation__link">Привет</a>
+        </li>
+        <li>
+          <a href="#about" class="navigation__link">О себе</a>
+        </li>
+        <li>
+          <a href="#tech" class="navigation__link">Технологии</a>
+        </li>
+        <li>
+          <a href="#works" class="navigation__link">Работы</a>
+        </li>
+        <li>
+          <a href="#secret" class="navigation__link">Секрет</a>
+        </li>
+        <li>
+          <a href="#footer" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- КОНЕЦ HEADER -->
 
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-  </head>
+  <!-- НАЧАЛО BUTTON MENU -->
+  <button class="button-menu">
+    <svg id="icon-menu" class="button-menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+      fill="#e3e3e3">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
 
-  <body class="page">
-    <div class="preloader">
-      <div class="preloader__spinner"></div>
-    </div>
+    <svg id="icon-close" class="button-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+      viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+      <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+  </button>
+  <!-- КОНЕЦ BUTTON MENU -->
 
-    <!-- НАЧАЛО HEADER -->
-    <header class="header">
-      <nav class="navigation">
-        <ul class="navigation__path-list">
-          <li>
-            <a
-              href="#about"
-              class="navigation__link"
-              >О себе</a
-            >
-          </li>
-          <li>
-            <a
-              href="#tech"
-              class="navigation__link"
-              >Технологии</a
-            >
-          </li>
-          <li>
-            <a
-              href="#works"
-              class="navigation__link"
-              >Работы</a
-            >
-          </li>
-          <li>
-            <a
-              href="#secret"
-              class="navigation__link"
-              >Секрет</a
-            >
-          </li>
-          <li>
-            <a
-              href="#footer"
-              class="navigation__link"
-              >Контакты</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- КОНЕЦ HEADER -->
-
-    <!-- НАЧАЛО BUTTON MENU -->
-    <button class="button-menu">
-      <svg
-        id="icon-menu"
-        class="button-menu__icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 -960 960 960"
-        fill="#e3e3e3"
-      >
-        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-      </svg>
-
-      <svg
-        id="icon-close"
-        class="button-menu__icon"
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#e3e3e3"
-      >
-        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-      </svg>
-    </button>
-    <!-- КОНЕЦ BUTTON MENU -->
-
-    <!-- НАЧАЛО MAIN -->
-    <main class="main">
-      <!-- НАЧАЛО HERO -->
-      <section class="hero">
-        <div class="hero__common-box">
-          <div class="hero__welcome-box">
-            <div class="hero__welcome-button-comma-box">
-              <div class="hero__welcome-button-box">
-                <button class="hero__welcome-button">Привет</button>
-              </div>
-              <span>,</span>
+  <!-- НАЧАЛО MAIN -->
+  <main class="main">
+    <!-- НАЧАЛО HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__common-box">
+        <div class="hero__welcome-box">
+          <div class="hero__welcome-button-comma-box">
+            <div class="hero__welcome-button-box">
+              <button class="hero__welcome-button">Привет</button>
             </div>
-
-            <div>
-              <p class="hero__welcome-text">меня зовут Алексей.</p>
-              <p class="hero__welcome-text">Я frontend-разработчик на старте.</p>
-            </div>
+            <span>,</span>
           </div>
 
-          <img
-            class="hero__image"
-            src="./images/backgrounds/hero/monsters-at-the-monitor.svg"
-          />
-        </div>
-      </section>
-      <!-- КОНЕЦ HERO -->
-
-      <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
-      <section
-        class="about margin-section"
-        id="about"
-      >
-        <div class="about__box">
-          <div class="about__position-section">
-            <div class="section__title-subtitle-box">
-              <h2 class="section__title">О себе</h2>
-              <div>
-                <p class="section__subtitle section__subtitle_color_purple">пара фраз - один абзац</p>
-              </div>
-            </div>
-
-            <div class="about__text-image-box">
-              <div class="about__main-text-box">
-                <div class="about__text-box about__text-box_width-1 box-shadow">
-                  <p class="text">
-                    Меня зовут - <span class="text_bold">Алексей</span>. Я проживаю в городе Долгопрудный, Московской
-                    области.
-                  </p>
-                </div>
-
-                <div class="about__text-box about__text-box_width-2 box-shadow">
-                  <p class="text">
-                    Я окончил курсы Яндекс.Практикума по профессии <span class="text_bold">"Веб-разработчик"</span> и
-                    <span class="text_bold">"Алгоритмы и структуры данных"</span>.
-                  </p>
-                </div>
-
-                <div class="about__text-box about__text-box_width-3 box-shadow">
-                  <p class="text">
-                    У меня есть опыт создания веб-приложений с использованием
-                    <abbr
-                      class="text_bold"
-                      title="HyperText Markup Language"
-                      >HTML</abbr
-                    >
-                    <span class="text_bold">/</span>
-                    <abbr
-                      class="text_bold"
-                      title="Cascading Style Sheets"
-                      >CSS</abbr
-                    ><span class="text_bold">
-                      / JavaScript / TypeScript / React / Redux /
-                      <abbr
-                        class="text_bold"
-                        title="Sassy Cascading Style Sheets"
-                        >SCSS</abbr
-                      >
-                      / styled-components</span
-                    >, и других технологий, необходимых для разработки веб-приложений и дизайна.
-                  </p>
-                  <p class="text">
-                    Также, я имею навыки создания функциональной серверной части, включая базу данных и роутинг.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  КОНЕЦ БЛОКА "О СЕБЕ" -->
-
-      <!--  НАЧАЛО БЛОКА "ТЕХНОЛОГИИ" -->
-      <section
-        class="tech margin-section"
-        id="tech"
-      >
-        <div class="section__title-subtitle-box">
-          <h2 class="section__title">Технологии</h2>
           <div>
-            <p class="section__subtitle section__subtitle_color_orange">которые использую в разработке</p>
+            <p class="hero__welcome-text">меня зовут Алексей.</p>
+            <p class="hero__welcome-text">Я frontend-разработчик на старте.</p>
           </div>
         </div>
 
-        <!-- КОРОБКА ДЛЯ ИЗОБРАЖЕНИЯ БЛОКА И СПИСКА КАРТОЧЕК -->
-        <div class="tech__image-grid-box">
-          <!-- СПИСОК-ГРИД ИЗ КАРТОЧЕК -->
-          <ul class="tech__grid-list">
-            <!--  ЯЗЫКИ -->
-            <li class="tech__list-item tech__list-item-language">
-              <h3 class="title__list-item">Языки</h3>
-              <ul
-                id="langs"
-                class="tech__grid-card"
-              ></ul>
-            </li>
+        <img class="hero__image" src="./images/backgrounds/hero/monsters-at-the-monitor.svg" />
+      </div>
+    </section>
+    <!-- КОНЕЦ HERO -->
 
-            <!-- UI -->
-            <li class="tech__list-item tech__list-item-ui">
-              <h3 class="title__list-item">UI</h3>
-              <ul
-                id="ui"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-
-            <!-- БАЗА ДАННЫХ -->
-            <li class="tech__list-item tech__list-item-data-base">
-              <h3 class="title__list-item">База данных</h3>
-              <ul
-                id="dataBases"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-
-            <!-- СБОРЩИКИ -->
-            <li class="tech__list-item tech__list-item-builders">
-              <h3 class="title__list-item">Сборщики</h3>
-              <ul
-                id="builders"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-
-            <!-- БЭКЕНД -->
-            <li class="tech__list-item tech__list-item-backend">
-              <h3 class="title__list-item">Backend</h3>
-              <ul
-                id="backend"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-
-            <!-- ИНСТРУМЕНТЫ -->
-            <li class="tech__list-item tech__list-item-instruments">
-              <h3 class="title__list-item">Инструменты</h3>
-              <ul
-                id="instruments"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-
-            <!-- ГРАФИКА -->
-            <li class="tech__list-item tech__list-item-graphic">
-              <h3 class="title__list-item">Графика</h3>
-              <ul
-                id="graphics"
-                class="tech__grid-card"
-              ></ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--  КОНЕЦ БЛОКА "ТЕХНОЛОГИИ" -->
-
-      <!--  НАЧАЛО БЛОКА "РАБОТЫ" -->
-      <section class="works margin-section">
-        <div class="works__title-grid-box">
+    <!--  НАЧАЛО БЛОКА "О СЕБЕ" -->
+    <section class="about margin-section" id="about">
+      <div class="about__box">
+        <div class="about__position-section">
           <div class="section__title-subtitle-box">
-            <h2
-              class="section__title"
-              id="works"
-            >
-              Работы
-            </h2>
+            <h2 class="section__title">О себе</h2>
             <div>
-              <p class="section__subtitle section__subtitle_color_scarlet">выполненные с ❤️</p>
+              <p class="section__subtitle section__subtitle_color_purple">пара фраз - один абзац</p>
             </div>
           </div>
 
-          <!--------------------------------- Pet-проекты --------------------------------->
+          <div class="about__text-image-box">
+            <div class="about__main-text-box">
+              <div class="about__text-box about__text-box_width-1 box-shadow">
+                <p class="text">
+                  Меня зовут - <span class="text_bold">Алексей</span>. Я проживаю в городе Долгопрудный, Московской
+                  области.
+                </p>
+              </div>
 
-          <div class="works__subtitle-list-box">
-            <h2 class="title__list-item">Pet-проекты</h2>
+              <div class="about__text-box about__text-box_width-2 box-shadow">
+                <p class="text">
+                  Я окончил курсы Яндекс.Практикума по профессии <span class="text_bold">"Веб-разработчик"</span> и
+                  <span class="text_bold">"Алгоритмы и структуры данных"</span>.
+                </p>
+              </div>
 
-            <ul
-              id="pet"
-              class="works__grid"
-            ></ul>
-          </div>
-
-          <!--------------------------------- Учебные --------------------------------->
-
-          <div class="works__subtitle-list-box">
-            <h2 class="title__list-item">Учебные</h2>
-
-            <ul
-              id="education"
-              class="works__grid"
-            ></ul>
-          </div>
-        </div>
-        <button
-          id="secret"
-          class="works__button-block-secret"
-        ></button>
-      </section>
-      <!--  КОНЕЦ БЛОКА "РАБОТЫ" -->
-
-      <!-- НАЧАЛО БЛОКА "SECRET" -->
-      <section class="secret">
-        <div class="secret__common-box">
-          <div class="secret__title-subtitle-text-box">
-            <button
-              class="secret__button-refresh"
-              type="button"
-            >
-              <img
-                class="secret__icon-button"
-                src="./images/icons/refresh.svg"
-                alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги."
-              />
-            </button>
-
-            <div class="section__title-subtitle-box">
-              <h2 class="section__title">Кофе</h2>
-              <div>
-                <p class="section__subtitle section__subtitle_color_beige">
-                  много не бывает <span id="secret-icon">🤎</span>
+              <div class="about__text-box about__text-box_width-3 box-shadow">
+                <p class="text">
+                  У меня есть опыт создания веб-приложений с использованием
+                  <abbr class="text_bold" title="HyperText Markup Language">HTML</abbr>
+                  <span class="text_bold">/</span>
+                  <abbr class="text_bold" title="Cascading Style Sheets">CSS</abbr><span class="text_bold">
+                    / JavaScript / TypeScript / React / Redux /
+                    <abbr class="text_bold" title="Sassy Cascading Style Sheets">SCSS</abbr>
+                    / styled-components</span>, и других технологий, необходимых для разработки веб-приложений и
+                  дизайна.
+                </p>
+                <p class="text">
+                  Также, я имею навыки создания функциональной серверной части, включая базу данных и роутинг.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  КОНЕЦ БЛОКА "О СЕБЕ" -->
 
-            <div class="secret__text-box">
-              <p>
-                Вот что может произойти, если во время разработки пренебрегать применением в достаточном количестве
-                <span
-                  class="secret__secret-word"
-                  id="secret-word"
-                  >кофе</span
-                >
+    <!--  НАЧАЛО БЛОКА "ТЕХНОЛОГИИ" -->
+    <section class="tech margin-section" id="tech">
+      <div class="section__title-subtitle-box">
+        <h2 class="section__title">Технологии</h2>
+        <div>
+          <p class="section__subtitle section__subtitle_color_orange">которые использую в разработке</p>
+        </div>
+      </div>
+
+      <!-- КОРОБКА ДЛЯ ИЗОБРАЖЕНИЯ БЛОКА И СПИСКА КАРТОЧЕК -->
+      <div class="tech__image-grid-box">
+        <!-- СПИСОК-ГРИД ИЗ КАРТОЧЕК -->
+        <ul class="tech__grid-list">
+          <!--  ЯЗЫКИ -->
+          <li class="tech__list-item tech__list-item-language">
+            <h3 class="title__list-item">Языки</h3>
+            <ul id="langs" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- UI -->
+          <li class="tech__list-item tech__list-item-ui">
+            <h3 class="title__list-item">UI</h3>
+            <ul id="ui" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- БАЗА ДАННЫХ -->
+          <li class="tech__list-item tech__list-item-data-base">
+            <h3 class="title__list-item">База данных</h3>
+            <ul id="dataBases" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- СБОРЩИКИ -->
+          <li class="tech__list-item tech__list-item-builders">
+            <h3 class="title__list-item">Сборщики</h3>
+            <ul id="builders" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- БЭКЕНД -->
+          <li class="tech__list-item tech__list-item-backend">
+            <h3 class="title__list-item">Backend</h3>
+            <ul id="backend" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- ИНСТРУМЕНТЫ -->
+          <li class="tech__list-item tech__list-item-instruments">
+            <h3 class="title__list-item">Инструменты</h3>
+            <ul id="instruments" class="tech__grid-card"></ul>
+          </li>
+
+          <!-- ГРАФИКА -->
+          <li class="tech__list-item tech__list-item-graphic">
+            <h3 class="title__list-item">Графика</h3>
+            <ul id="graphics" class="tech__grid-card"></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  КОНЕЦ БЛОКА "ТЕХНОЛОГИИ" -->
+
+    <!--  НАЧАЛО БЛОКА "РАБОТЫ" -->
+    <section class="works margin-section">
+      <div class="works__title-grid-box">
+        <div class="section__title-subtitle-box">
+          <h2 class="section__title" id="works">
+            Работы
+          </h2>
+          <div>
+            <p class="section__subtitle section__subtitle_color_scarlet">выполненные с ❤️</p>
+          </div>
+        </div>
+
+        <!--------------------------------- Pet-проекты --------------------------------->
+
+        <div class="works__subtitle-list-box">
+          <h2 class="title__list-item">Pet-проекты</h2>
+
+          <ul id="pet" class="works__grid"></ul>
+        </div>
+
+        <!--------------------------------- Учебные --------------------------------->
+
+        <div class="works__subtitle-list-box">
+          <h2 class="title__list-item">Учебные</h2>
+
+          <ul id="education" class="works__grid"></ul>
+        </div>
+      </div>
+      <button id="secret" class="works__button-block-secret"></button>
+    </section>
+    <!--  КОНЕЦ БЛОКА "РАБОТЫ" -->
+
+    <!-- НАЧАЛО БЛОКА "SECRET" -->
+    <section class="secret">
+      <div class="secret__common-box">
+        <div class="secret__title-subtitle-text-box">
+          <button class="secret__button-refresh" type="button">
+            <img class="secret__icon-button" src="./images/icons/refresh.svg"
+              alt="Иконка 'Обновить' в виде круглообразной стрелки-дуги." />
+          </button>
+
+          <div class="section__title-subtitle-box">
+            <h2 class="section__title">Кофе</h2>
+            <div>
+              <p class="section__subtitle section__subtitle_color_beige">
+                много не бывает <span id="secret-icon">🤎</span>
               </p>
             </div>
           </div>
 
-          <div class="secret__text-before-after-slider-box">
-            <p class="secret__slider-text-start">норма</p>
-
-            <!-- НАЧАЛО "БЫЛО/СТАЛО" -->
-            <div class="secret__before-after-slider-box">
-              <div class="secret__before-after-box">
-                <div class="secret__image-after-box">
-                  <img
-                    class="secret__image-after"
-                    src="./images/blocks/secret/fine-app.svg"
-                    alt="Изображение 'после'"
-                  />
-                </div>
-                <input
-                  class="secret__button-slider"
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="100"
-                />
-              </div>
-            </div>
-            <!-- КОНЕЦ "БЫЛО/СТАЛО" -->
-
-            <p class="secret__slider-text-end">недостаточно</p>
+          <div class="secret__text-box">
+            <p>
+              Вот что может произойти, если во время разработки пренебрегать применением в достаточном количестве
+              <span class="secret__secret-word" id="secret-word">кофе</span>
+            </p>
           </div>
         </div>
-      </section>
-      <!-- КОНЕЦ БЛОКА "SECRET" -->
-    </main>
-    <!-- КОНЕЦ MAIN -->
 
-    <!-- FOOTER - НАЧАЛО -->
-    <footer
-      class="footer"
-      id="footer"
-    >
-      <div class="footer__contacts">
-        <ul class="footer__list-contacts">
-          <li class="footer__list-item">
-            <img
-              class="footer__icon-item-list"
-              title="Telegram"
-              alt="Логотип мессенджера 'Telegram'"
-              src="./images/icons/telegram-white.svg"
-            />
-            lehano
-          </li>
+        <div class="secret__text-before-after-slider-box">
+          <p class="secret__slider-text-start">норма</p>
 
-          <li class="footer__list-item">
-            <img
-              class="footer__icon-item-list"
-              title="Email"
-              alt="Иконка закрытого конверта"
-              src="./images/icons/email-white.svg"
-            />
-            hello@lehano.ru
-          </li>
+          <!-- НАЧАЛО "БЫЛО/СТАЛО" -->
+          <div class="secret__before-after-slider-box">
+            <div class="secret__before-after-box">
+              <div class="secret__image-after-box">
+                <img class="secret__image-after" src="./images/blocks/secret/fine-app.svg" alt="Изображение 'после'" />
+              </div>
+              <input class="secret__button-slider" type="range" min="0" max="100" value="100" />
+            </div>
+          </div>
+          <!-- КОНЕЦ "БЫЛО/СТАЛО" -->
 
-          <li class="footer__list-item">
-            <img
-              class="footer__icon-item-list"
-              alt="Логотип сервиса контроля версий кода 'GitHub'"
-              title="GitHub"
-              src="./images/icons/github-white.svg"
-            />
-            <a
-              class="footer__link-contacts"
-              href="https://github.com/Lehano-A"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Lehano-A
-            </a>
-          </li>
-        </ul>
+          <p class="secret__slider-text-end">недостаточно</p>
+        </div>
       </div>
+    </section>
+    <!-- КОНЕЦ БЛОКА "SECRET" -->
+  </main>
+  <!-- КОНЕЦ MAIN -->
 
-      <p>Made with ❤️☕ 2023</p>
-    </footer>
-    <!-- FOOTER - КОНЕЦ -->
+  <!-- FOOTER - НАЧАЛО -->
+  <footer class="footer" id="footer">
+    <div class="footer__contacts">
+      <ul class="footer__list-contacts">
+        <li class="footer__list-item">
+          <img class="footer__icon-item-list" title="Telegram" alt="Логотип мессенджера 'Telegram'"
+            src="./images/icons/telegram-white.svg" />
+          lehano
+        </li>
 
-    <template id="templateCardTech">
-      <li class="tech__list-item">
-        <figure class="tech__card">
-          <a
-            class="tech__link"
-            rel="noopener noreferrer"
-          ></a>
-          <figcaption class="tech__card-description"></figcaption>
-        </figure>
-      </li>
-    </template>
+        <li class="footer__list-item">
+          <img class="footer__icon-item-list" title="Email" alt="Иконка закрытого конверта"
+            src="./images/icons/email-white.svg" />
+          hello@lehano.ru
+        </li>
 
-    <template id="templateCardWork">
-      <li class="works__grid-item">
-        <!-- class: works__grid-item_in-two-columns-->
-        <div class="works__card-box">
-          <div class="works__card box-shadow">
-            <!--class: works__card_color_purple-->
-            <div class="works__card-title-description-box">
-              <div>
-                <h3 class="works__card-title"></h3>
-                <!--
+        <li class="footer__list-item">
+          <img class="footer__icon-item-list" alt="Логотип сервиса контроля версий кода 'GitHub'" title="GitHub"
+            src="./images/icons/github-white.svg" />
+          <a class="footer__link-contacts" href="https://github.com/Lehano-A" target="_blank" rel="noopener noreferrer">
+            Lehano-A
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p>Made with ❤️☕ 2023</p>
+  </footer>
+  <!-- FOOTER - КОНЕЦ -->
+
+  <template id="templateCardTech">
+    <li class="tech__list-item">
+      <figure class="tech__card">
+        <a class="tech__link" rel="noopener noreferrer"></a>
+        <figcaption class="tech__card-description"></figcaption>
+      </figure>
+    </li>
+  </template>
+
+  <template id="templateCardWork">
+    <li class="works__grid-item">
+      <!-- class: works__grid-item_in-two-columns-->
+      <div class="works__card-box">
+        <div class="works__card box-shadow">
+          <!--class: works__card_color_purple-->
+          <div class="works__card-title-description-box">
+            <div>
+              <h3 class="works__card-title"></h3>
+              <!--
                 class: works__card-title_color_light_purple
                 textContent: Movies Explorer
-              --></div>
+              -->
+            </div>
 
-              <div class="works__card-description jc_space-between">
-                <p class="works__card-description-type"></p>
-                <!-- Одностраничное приложение -->
+            <div class="works__card-description jc_space-between">
+              <p class="works__card-description-type"></p>
+              <!-- Одностраничное приложение -->
 
-                <div class="works__card-description-option-box">
-                  <div class="works__card-description-tech-box">
-                    <h4 class="works__card-description-title-tech">Основные технологии:</h4>
-                    <p class="works__card-description-tech"></p>
-                    <!--JavaScript / Mongoose / Express -->
-                  </div>
-
-                  <p class="works__card-description-option"></p>
-                  <!--backend, классы, коллаборация-->
+              <div class="works__card-description-option-box">
+                <div class="works__card-description-tech-box">
+                  <h4 class="works__card-description-title-tech">Основные технологии:</h4>
+                  <p class="works__card-description-tech"></p>
+                  <!--JavaScript / Mongoose / Express -->
                 </div>
+
+                <p class="works__card-description-option"></p>
+                <!--backend, классы, коллаборация-->
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="works__link-card-box">
-            <a
-              id="projectLink"
-              class="works__link-card"
-              rel="noopener noreferrer"
-            >
-              <!--
+        <div class="works__link-card-box">
+          <a id="projectLink" class="works__link-card" rel="noopener noreferrer">
+            <!--
           href: URI
           target: _blank
         -->
-              <img
-                id="projectIcon"
-                class="works__icon-link"
-                src="./images/icons/open-in-new.svg"
-                alt=""
-              />
-              <!--
+            <img id="projectIcon" class="works__icon-link" src="./images/icons/open-in-new.svg" alt="" />
+            <!--
               title: Нет возможности перейти на страницу проекта
               alt: Неактивная иконка перехода на внешнюю страницу
               class: works__icon-link_inactive
             -->
-            </a>
+          </a>
 
-            <a
-              id="githubRepoLink"
-              class="works__link-card"
-              rel="noopener noreferrer"
-            >
-              <!--
+          <a id="githubRepoLink" class="works__link-card" rel="noopener noreferrer">
+            <!--
             href: URI
             target: _blank
           -->
-              <img
-                id="githubRepoIcon"
-                class="works__icon-link"
-                src="./images/tech-card-logos/github.svg"
-              />
-              <!--
+            <img id="githubRepoIcon" class="works__icon-link" src="./images/tech-card-logos/github.svg" />
+            <!--
               title: Перейти в репозиторий проекта
               alt: Неактивная иконка с логотипом GitHub
               class: works__icon-link_inactive
             -->
-            </a>
-          </div>
+          </a>
         </div>
-      </li>
-    </template>
-  </body>
+      </div>
+    </li>
+  </template>
+</body>
+
 </html>
