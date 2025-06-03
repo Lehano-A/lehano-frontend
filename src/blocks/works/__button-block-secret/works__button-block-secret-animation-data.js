@@ -1,9 +1,9 @@
 function getRulesAnimationMoveBlockDown(heightSecret) {
-  return [{ transform: `translateY(0)` }, { transform: `translateY(${heightSecret}px)` }]
+  return [{ transform: 'translateY(0)' }, { transform: `translateY(${heightSecret}px)` }]
 }
 
 function getRulesAnimationMoveTopSecret(heightSecret) {
-  return [{ transform: `translateY(0)` }, { transform: `translateY(${-heightSecret}px)` }]
+  return [{ transform: 'translateY(0)' }, { transform: `translateY(${-heightSecret}px)` }]
 }
 
 function getRulesAnimationMoveTopFooter(heightSecret) {
