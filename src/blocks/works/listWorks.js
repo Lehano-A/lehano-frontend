@@ -22,6 +22,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'Kaspersky Snippet News',
+      type: 'spa',
+      usedTechs: 'React / TypeScript / SCSS',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://snippet-news.lehano.ru/',
+      githubRepo: 'https://github.com/Lehano-A/kaspersky-snippet-news',
+    },
+
+    style: {
+      bgColorCard: '#797cb8',
+      bgColorProjectName: getBgColorProjectName(),
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'Ozon Progress',
       type: 'widget',
       usedTechs: 'HTML / CSS / JavaScript',
