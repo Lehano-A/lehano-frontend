@@ -22,6 +22,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'Ozon Progress',
+      type: 'widget',
+      usedTechs: 'HTML / CSS / JavaScript',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://lehano-a.github.io/ozon-progress-test-work/',
+      githubRepo: 'https://github.com/Lehano-A/ozon-progress-test-work',
+    },
+
+    style: {
+      bgColorCard: '#4489ff',
+      bgColorProjectName: getBgColorProjectName(),
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'BankDash.',
       type: 'spa',
       usedTechs: 'React / SCSS / БЭМ',
