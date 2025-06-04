@@ -22,6 +22,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'Yamaguchi',
+      type: 'sections',
+      usedTechs: 'HTML / CSS / JavaScript ',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://lehano-a.github.io/yamaguchi-test-work/',
+      githubRepo: 'https://github.com/Lehano-A/yamaguchi-test-work',
+    },
+
+    style: {
+      bgColorCard: '#e03638',
+      bgColorProjectName: getBgColorProjectName(),
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'toodoo',
       type: 'spa',
       usedTechs: 'React / TypeScript/ Redux ',
