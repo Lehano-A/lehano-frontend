@@ -22,6 +22,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'BankDash.',
+      type: 'spa',
+      usedTechs: 'React / SCSS / БЭМ',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://lehano-a.github.io/att-test-work/',
+      githubRepo: 'https://github.com/Lehano-A/att-test-work',
+    },
+
+    style: {
+      bgColorCard: '#a5c2de',
+      bgColorProjectName: getBgColorProjectName(0.5),
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'ФИН Контроль',
       type: 'spa',
       usedTechs: 'React / TypeScript / styled-components',
