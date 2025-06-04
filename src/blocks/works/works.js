@@ -1,4 +1,4 @@
-import { petProjects, educationalProjects } from './listWorks'
+import { petProjects, educationalProjects, testProjects } from './listWorks'
 import createCard from '../../utils/works/createCard'
 
 function createCardsWorks(idParentBox, projects) {
@@ -10,5 +10,6 @@ function createCardsWorks(idParentBox, projects) {
   })
 }
 
+createCardsWorks('#test', testProjects)
 createCardsWorks('#pet', petProjects)
 createCardsWorks('#education', educationalProjects)

@@ -2,24 +2,7 @@ function getBgColorProjectName(alpha = 0.6) {
   return `rgba(255, 255, 255, ${alpha})`
 }
 
-const petProjects = [
-  {
-    data: {
-      name: 'В процессе разработки',
-    },
-
-    links: {
-      project: '',
-      githubRepo: '',
-    },
-
-    style: {
-      bgColorCard: '#ececec',
-      bgColorProjectName: getBgColorProjectName(0.8),
-      gridColumn: '1',
-    },
-  },
-
+const testProjects = [
   {
     data: {
       name: 'Kaspersky Snippet News',
@@ -36,7 +19,6 @@ const petProjects = [
     style: {
       bgColorCard: '#797cb8',
       bgColorProjectName: getBgColorProjectName(),
-      gridColumn: '1',
     },
   },
 
@@ -56,7 +38,6 @@ const petProjects = [
     style: {
       bgColorCard: '#4489ff',
       bgColorProjectName: getBgColorProjectName(),
-      gridColumn: '1',
     },
   },
 
@@ -76,7 +57,6 @@ const petProjects = [
     style: {
       bgColorCard: '#a5c2de',
       bgColorProjectName: getBgColorProjectName(0.5),
-      gridColumn: '1',
     },
   },
 
@@ -96,7 +76,6 @@ const petProjects = [
     style: {
       bgColorCard: '#609efc',
       bgColorProjectName: getBgColorProjectName(),
-      gridColumn: '1',
     },
   },
 
@@ -116,6 +95,24 @@ const petProjects = [
     style: {
       bgColorCard: '#e03638',
       bgColorProjectName: getBgColorProjectName(),
+    },
+  },
+]
+
+const petProjects = [
+  {
+    data: {
+      name: 'В процессе разработки',
+    },
+
+    links: {
+      project: '',
+      githubRepo: '',
+    },
+
+    style: {
+      bgColorCard: '#ececec',
+      bgColorProjectName: getBgColorProjectName(0.8),
       gridColumn: '1',
     },
   },
@@ -438,4 +435,4 @@ const educationalProjects = [
   },
 ]
 
-export { petProjects, educationalProjects }
+export { testProjects, petProjects, educationalProjects }
