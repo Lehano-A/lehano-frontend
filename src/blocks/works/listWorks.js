@@ -113,7 +113,6 @@ const petProjects = [
     style: {
       bgColorCard: '#ececec',
       bgColorProjectName: getBgColorProjectName(0.8),
-      gridColumn: '1',
     },
   },
 
@@ -153,7 +152,25 @@ const petProjects = [
     style: {
       bgColorCard: '#bdecb6',
       bgColorProjectName: getBgColorProjectName(),
-      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
+      name: 'Калькулятор доходности',
+      type: 'spa',
+      usedTechs: 'React / styled-components',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://profitcalc.lehano.ru',
+      githubRepo: 'https://github.com/Lehano-A/profitability_calculator',
+    },
+
+    style: {
+      bgColorCard: '#fee5ac',
+      bgColorProjectName: getBgColorProjectName(0.8),
     },
   },
 
@@ -194,26 +211,6 @@ const petProjects = [
       bgColorCard: '#e5aee4',
       bgColorProjectName: getBgColorProjectName(),
       gridColumn: '2 / span 2',
-    },
-  },
-
-  {
-    data: {
-      name: 'Калькулятор доходности',
-      type: 'spa',
-      usedTechs: 'React / styled-components',
-      features: 'frontend',
-    },
-
-    links: {
-      project: 'https://profitcalc.lehano.ru',
-      githubRepo: 'https://github.com/Lehano-A/profitability_calculator',
-    },
-
-    style: {
-      bgColorCard: '#fee5ac',
-      bgColorProjectName: getBgColorProjectName(0.8),
-      gridColumn: '1',
     },
   },
 
