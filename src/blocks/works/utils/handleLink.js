@@ -1,4 +1,4 @@
-import { setAttrsLinkNode } from '../common/common'
+import { setAttrsLinkNode } from '../../../utils/common/common'
 import handleIcon from './handleIcon'
 
 // обработать ссылки

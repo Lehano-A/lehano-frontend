@@ -1,4 +1,4 @@
-import { textAltIconCardWork, textTitleIconCardWork } from '../../../constants'
+import { textAltIconCardWork, textTitleIconCardWork } from '../../../../constants'
 
 function handleIcon(iconNode, activity, keyElementHandledLink) {
   const textTitle = textTitleIconCardWork[activity][keyElementHandledLink]
