@@ -1,3 +1,7 @@
+function getBgColorProjectName(alpha = 0.6) {
+  return `rgba(255, 255, 255, ${alpha})`
+}
+
 const petProjects = [
   {
     data: {
@@ -10,8 +14,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'gray',
-      projectNameColor: 'light-gray',
+      bgColorCard: '#ececec',
+      bgColorProjectName: getBgColorProjectName(0.8),
       gridColumn: '1',
     },
   },
@@ -30,8 +34,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'peach',
-      projectNameColor: 'light-peach',
+      bgColorCard: '#fdddc0',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -50,8 +54,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'white-green',
-      projectNameColor: 'pale-green',
+      bgColorCard: '#bdecb6',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -70,8 +74,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'pale-purple',
-      projectNameColor: 'light-pale-purple',
+      bgColorCard: '#e5aee4',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -90,8 +94,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'pale-purple',
-      projectNameColor: 'light-pale-purple',
+      bgColorCard: '#e5aee4',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '2 / span 2',
     },
   },
@@ -110,8 +114,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'honey',
-      projectNameColor: 'light-honey',
+      bgColorCard: '#fee5ac',
+      bgColorProjectName: getBgColorProjectName(0.8),
       gridColumn: '1',
     },
   },
@@ -130,8 +134,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'pale-lilac',
-      projectNameColor: 'light-lilac',
+      bgColorCard: '#a4b5e6',
+      bgColorProjectName: getBgColorProjectName(0.5),
       gridColumn: '1',
     },
   },
@@ -150,8 +154,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'pale-lilac',
-      projectNameColor: 'light-lilac',
+      bgColorCard: '#a4b5e6',
+      bgColorProjectName: getBgColorProjectName(0.5),
       gridColumn: '2 / span 2',
     },
   },
@@ -170,8 +174,8 @@ const petProjects = [
     },
 
     style: {
-      cardColor: 'pale-blue',
-      projectNameColor: 'light-blue',
+      bgColorCard: '#afeeee',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -192,8 +196,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'cornflower-crayola',
-      projectNameColor: 'light-cornflower',
+      bgColorCard: '#9aceeb',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -212,8 +216,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'cornflower-crayola',
-      projectNameColor: 'light-cornflower',
+      bgColorCard: '#9aceeb',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '2 / span 2',
     },
   },
@@ -232,8 +236,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'purple',
-      projectNameColor: 'light-purple',
+      bgColorCard: '#c997f5',
+      bgColorProjectName: getBgColorProjectName(),
       gridColumn: '1',
     },
   },
@@ -252,8 +256,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'purple',
-      projectNameColor: 'light-purple',
+      bgColorCard: '#c997f5',
+      bgColorProjectName: getBgColorProjectName(),
     },
   },
 
@@ -271,8 +275,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'purple',
-      projectNameColor: 'light-purple',
+      bgColorCard: '#c997f5',
+      bgColorProjectName: getBgColorProjectName(),
     },
   },
 
@@ -290,8 +294,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'yellow-crayola',
-      projectNameColor: 'light-yellow',
+      bgColorCard: '#fce883',
+      bgColorProjectName: getBgColorProjectName(0.7),
     },
   },
 
@@ -309,8 +313,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'mint',
-      projectNameColor: 'light-mint',
+      bgColorCard: '#3eb489',
+      bgColorProjectName: getBgColorProjectName(),
     },
   },
 
@@ -328,8 +332,8 @@ const educationalProjects = [
     },
 
     style: {
-      cardColor: 'pale-pink',
-      projectNameColor: 'light-pink',
+      bgColorCard: '#fadadd',
+      bgColorProjectName: getBgColorProjectName(0.7),
     },
   },
 ]

@@ -106,8 +106,6 @@
 @import url('./blocks/works/__card-description-tech-box/works__card-description-tech-box.css');
 @import url('./blocks/works/__card-title-description-box/works__card-title-description-box.css');
 
-@import url('./blocks/works/__card/_color/works__card_color.css');
-@import url('./blocks/works/__card-title/_color/works__card-title_color.css');
 
 /* --------------------------------- SECRET --------------------------------- */
 @import url('./blocks/secret/secret.css');
