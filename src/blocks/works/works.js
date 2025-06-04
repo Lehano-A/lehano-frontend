@@ -1,5 +1,7 @@
-import { petProjects, educationalProjects, testProjects } from './listWorks'
-import createCard from '../../utils/works/createCard'
+import { educationalWorks } from './dataWorks/educationalWorks'
+import { petWorks } from './dataWorks/petWorks'
+import { testWorks } from './dataWorks/testWorks'
+import createCard from './utils/createCard'
 
 function createCardsWorks(idParentBox, projects) {
   const boxWorks = document.querySelector(idParentBox)
@@ -10,6 +12,6 @@ function createCardsWorks(idParentBox, projects) {
   })
 }
 
-createCardsWorks('#test', testProjects)
-createCardsWorks('#pet', petProjects)
-createCardsWorks('#education', educationalProjects)
+createCardsWorks('#test', testWorks)
+createCardsWorks('#pet', petWorks)
+createCardsWorks('#education', educationalWorks)
