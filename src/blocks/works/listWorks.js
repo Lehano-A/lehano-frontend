@@ -22,6 +22,26 @@ const petProjects = [
 
   {
     data: {
+      name: 'ФИН Контроль',
+      type: 'spa',
+      usedTechs: 'React / TypeScript / styled-components',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://lehano-a.github.io/financial-control-test-work/',
+      githubRepo: 'https://github.com/Lehano-A/financial-control-test-work',
+    },
+
+    style: {
+      bgColorCard: '#609efc',
+      bgColorProjectName: getBgColorProjectName(),
+      gridColumn: '1',
+    },
+  },
+
+  {
+    data: {
       name: 'Yamaguchi',
       type: 'sections',
       usedTechs: 'HTML / CSS / JavaScript ',
