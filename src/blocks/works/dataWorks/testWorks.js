@@ -3,6 +3,25 @@ import { getBgColorProjectName } from '../utils/getBgColorProjectName'
 export const testWorks = [
   {
     data: {
+      name: 'AI Test',
+      type: 'spa',
+      usedTechs: 'React / TypeScript / styled-components',
+      features: 'frontend',
+    },
+
+    links: {
+      project: 'https://aitest.lehano.ru/',
+      githubRepo: 'https://github.com/Lehano-A/ai-test',
+    },
+
+    style: {
+      bgColorCard: '#45a5f6',
+      bgColorProjectName: getBgColorProjectName(),
+    },
+  },
+
+  {
+    data: {
       name: 'Kaspersky Snippet News',
       type: 'spa',
       usedTechs: 'React / TypeScript / SCSS',
